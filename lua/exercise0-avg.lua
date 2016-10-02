@@ -1,0 +1,73 @@
+-- Calc avg from any number of notes
+function avg (a)
+    sum = 0
+    qtd = #a
+    for i, v in ipairs(a) do
+        sum = sum + v
+    end
+    return sum/qtd
+end
+
+
+function read_notes ()
+    -- menu from read_notes
+    local function menu ()
+        os.execute("clear")
+        print("any number - add note in notes")
+        print("q - quit and calc avg")
+    end
+
+    local notes = {}
+    local exit = false
+    local io_buffer = ""
+
+    while not exit do
+        menu()
+        io_buffer = io.read()       -- io.read, reads like string
+
+        if io_buffer == "q" then
+            exit = true
+        else
+            table.insert(notes, io_buffer)
+        end
+    end
+
+    -- convert all strings to numbers
+    for i = 1, #notes do
+        notes[i] = tonumber(notes[i])
+    end
+
+    -- calc the avg
+    avg_val = avg(notes)
+
+    print("the avg is " .. avg_val)
+
+    -- sleep for 1 second
+    os.execute("sleep " .. tonumber(1))
+end
+
+-- main function
+function main ()
+    -- menu from main
+    local function menu ()
+        os.execute("clear")
+        print("c - calc avg")
+        print("q - quit")
+    end
+
+    local exit = false
+    local io_buffer = ""
+
+    while not exit do
+        menu()
+        io_buffer = io.read()
+        
+        if io_buffer == "q" then
+            exit = true
+        else
+            read_notes()
+        end
+    end
+end
+
+main()
