@@ -9,6 +9,10 @@ A collection of samples of programs in various languages
 1. Lua (not completed)
 1. C++ and Lua (not completed)
 
+## Benchmark
+
+The timer.c program execute a program an return the amount of time used in execution
+
 ## Organization
 
 ### Lessons Folder
