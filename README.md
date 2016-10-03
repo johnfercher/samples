@@ -4,8 +4,10 @@ A collection of samples of programs in various languages
 
 ## Languages
 
-1. Lua
-2. Lua + C++
+1. C (not completed)
+1. C++ (not completed)
+1. Lua (not completed)
+1. C++ and Lua (not completed)
 
 ## Organization
 
