@@ -22,7 +22,9 @@ end
 
 function multipliy_matrix (A, B)
     R = {}
-    local less = I and J        -- And alwats return the lower value
+    local less = 0 
+    
+    if I < J then less = I else less = J end
 
     for i = 1, less do
         R[i] = {}
@@ -48,8 +50,10 @@ end
 math.randomseed(os.time())
 
 -- calc I and J, that will respectively cols and rows from matrix A, and rows and cols from matrix B
-I = math.random(2, 5)
-J = math.random(2, 5)
+I = math.random(2, 6)
+J = math.random(2, 6)
+
+print(I .. " " .. J)
 
 A = alloc_matrix(I, J)
 B = alloc_matrix(J, I)
