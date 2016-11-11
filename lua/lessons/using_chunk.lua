@@ -13,7 +13,7 @@
 --copies or substantial portions of the Software.
 
 
-dofile("1-function-n-comment.lua")
+dofile("function-n-comment.lua")
 
 n = norm(3.4, 1.0)
 print(twice(n))

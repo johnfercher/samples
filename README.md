@@ -8,6 +8,7 @@ A collection of samples of programs in various languages
 1. C++ (not completed)
 1. Lua (not completed)
 1. C++ and Lua (not completed)
+1. Rust (not completed)
 
 ## Benchmark
 
