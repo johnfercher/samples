@@ -101,5 +101,5 @@ int main(int argc, char *argv[]){
 	//print_matrix(&B);
 
 	multiply_matrix(&R, &A, &B);								//! the matrix A and B are multipliable
-	//print_matrix(&R);
+	print_matrix(&R);
 }
