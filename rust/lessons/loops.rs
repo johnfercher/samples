@@ -15,19 +15,34 @@
 **/
 
 fn main() {
-    let logical_a = true;
-    let logical_b: bool;
-    let logical_c: bool = true;
-    let mut logical_d: bool = true;
+    let mut a = 0;
+    loop {  // while true
+        if(a > 2){
+            break;
+        }
+        println!("a = {}", a);
+        a += 1;
+    }
 
-    let float_a = 1.0;
-    let float_b: f64;
-    let float_c: f64 = 1.0;
-    let mut float_d: f64 = 1.0;
+    let mut b = 0;
+    'row: loop {
+        'col: loop {
+            if(b > 2){ 
+                // breaks to loop row
+                break 'row;
+            }
+            println!("b = {}", b);
+            b += 1;
+        }
+    }
 
-    let int: i32 = 1;
-    // ...
+    let mut c = 0;
+    while c < 3 {
+        println!("c = {}", c);
+        c += 1;
+    }
 
-    float_d = 33.3;
-    // ERRO: float_c = 33.3;
+    for d in 0..3 {
+        println!("d = {}", d);
+    }
 }

@@ -13,7 +13,7 @@
 --copies or substantial portions of the Software.
 
 
--- Calc avg from any number of notes
+-- calc avg from any number of notes
 function avg (a)
     sum = 0                                     -- sum
     qtd = #a                                    -- qtd of elements in a
@@ -32,7 +32,7 @@ function read_notes ()
         print("q - quit and calc avg")
     end
 
-    local notes = {}                            -- Create a table
+    local notes = {}                            -- create a table
     local exit = false
     local io_buffer = ""
 

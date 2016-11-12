@@ -15,13 +15,13 @@
 **/
 
 fn main() {
-    println!("1 + 2 = {}", 1.0 + 2.0);                  // Soma
-    println!("1 - 2 = {}", 1.0 - 2.0);                  // Subtração
-    println!("2 * 2 = {}", 2.0 * 2.0);                  // Multiplicação
-    println!("3 / 2 = {}", 3.0 / 2.0);                  // Divisão
-    println!("4 % 2 = {}", 4.0 % 2.0);                  // Resto da divisão
+    println!("1 + 2 = {}", 1.0 + 2.0);                  // sum
+    println!("1 - 2 = {}", 1.0 - 2.0);                  // subtraction
+    println!("2 * 2 = {}", 2.0 * 2.0);                  // multiplication
+    println!("3 / 2 = {}", 3.0 / 2.0);                  // division
+    println!("4 % 2 = {}", 4.0 % 2.0);                  // rest of division
 
-    println!("true AND false = {}", true && false);     // E
-    println!("true OR false = {}", true || false);      // OU
-    println!("NOT true = {}", !true);                   // Negando algo
+    println!("true AND false = {}", true && false);     
+    println!("true OR false = {}", true || false);      
+    println!("NOT true = {}", !true);                  
 }

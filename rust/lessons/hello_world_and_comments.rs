@@ -18,6 +18,6 @@
 fn main() -> (){
     println!("Hello World and Comments");
 
-    /// Irá gerar um following na documentação
-    //! Irá gerar um enclosing na documentação
+    /// Will generates a following in doc
+    //! Will generates a enclosing in doc
 }

@@ -14,20 +14,19 @@
  *	copies or substantial portions of the Software.
 **/
 
+#[allow(non_camel_case_types)] // removes warnings from the new type be lowercase
+type radian = f64;
+
+type Degree = f64;
+
+#[allow(overflowing_literals)] // removes warnings from conversions
 fn main() {
-    let logical_a = true;
-    let logical_b: bool;
-    let logical_c: bool = true;
-    let mut logical_d: bool = true;
+    let pi = 3.1415926;
+    let radians: radian = 1.0;
+    let degrees: Degree;
 
-    let float_a = 1.0;
-    let float_b: f64;
-    let float_c: f64 = 1.0;
-    let mut float_d: f64 = 1.0;
+    degrees = radians * 180.0/pi;
 
-    let int: i32 = 1;
-    // ...
-
-    float_d = 33.3;
-    // ERRO: float_c = 33.3;
+    println!("{} radians = {} degrees", radians, degrees);
+    println!("{} degrees float = {} degrees int", degrees, degrees as u8);
 }

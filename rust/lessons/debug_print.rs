@@ -15,33 +15,32 @@
 **/
 
 /*
- *  std::fmt somente implementa a impressão para tipos de dados padrões
- *  para imprimir tipos criados é necessário implementação
+ *  std::fmt only implements the print for default data types
+ *  to print new data types you must implements by your own
  *  
- *  std::Debug facilita a implementação 
+ *  std::Debug makes easier the implementation 
 **/
 
-// Cria uma estrutura com um inteiro, que deriva de Debug
+// creates a struct with one integer, which derives from Debug
 #[derive(Debug)]
 struct Structure(i32);
 
-// Cria uma estrutura com uma estrutura dentro, que também deriva de Debug
+// creates a struct with another struct inside, which also derives from Debug
 #[derive(Debug)]
 struct Deep(Structure);
 
 fn main() {
-    // {:?} imprime varios tipos, simples e criado 
+    // {:?} prints various datatypes, simple and created. 
     println!("A resposta para vida, o univero e tudo mais: {:?}", 42);
 
-    // {:?} funciona da mesma forma
+    // {:?} works with the same way
     println!("I have a {0:?}, I have an {1:?}. Annn, {0:?}{1:?}.",
              "Apple",
              "Pen");
 
-    // Imprimindo a estrutura
+    // prints a struct
     println!("Now {:?} will print!", Structure(3));
 
-    // The problem with `derive` is there is no control over how
-    // the results look. What if I want this to just show a `7`?
+    //! prints a struct with another struct inside
     println!("Now {:?} will print!", Deep(Structure(7)));
 }

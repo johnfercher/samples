@@ -15,15 +15,15 @@
 **/
 
 fn main() {
-    // Criando um array fixo de 5 posições de i32
-    let array_a: [i32; 5] = [1, 2, 3, 4, 5];            // Iniciando as 5 posições
-    // Criando um array fixo de 500 posições de i32
-    let array_b: [i32; 500] = [0; 500];                 // Iniciando as 500 posições com 0
+    // creates an static array with 5 positions of i32
+    let array_a: [i32; 5] = [1, 2, 3, 4, 5];                // initializes the 5 positions
+    // creates an static array with 500 positions of i32
+    let array_b: [i32; 500] = [0; 500];                     // initializes the 500 positions with 0s
 
-    // Imprimindo um valor
+    // prints the value at position 0 of array
     println!("{}", array_a[0]);
-    // Imprimindo o tamango do array
+    // prints the size of array
     println!("{}", array_b.len());
-    // Imprimindo o valor da última posição de um array
+    // prints the value of the last position of the array
     println!("{}", array_b[array_b.len()-1]);
 }

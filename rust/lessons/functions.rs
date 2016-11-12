@@ -14,20 +14,27 @@
  *	copies or substantial portions of the Software.
 **/
 
+// receives two u8 and returns the bigger
+fn return_max(a: u8, b: u8) -> u8 {
+    if a > b {
+        a
+    }else{
+        b
+    }
+}
+
+// receives two u8 and prints the bigger, without any return
+fn print_max(a: u8, b: u8) -> () {
+    let mut low;
+    if a > b {
+        low = a;
+    }else{
+        low = b;
+    }
+    println!("{}", low);
+}
+
 fn main() {
-    let logical_a = true;
-    let logical_b: bool;
-    let logical_c: bool = true;
-    let mut logical_d: bool = true;
-
-    let float_a = 1.0;
-    let float_b: f64;
-    let float_c: f64 = 1.0;
-    let mut float_d: f64 = 1.0;
-
-    let int: i32 = 1;
-    // ...
-
-    float_d = 33.3;
-    // ERRO: float_c = 33.3;
+    println!("{}", return_max(10, 50));
+    print_max(10, 50);
 }

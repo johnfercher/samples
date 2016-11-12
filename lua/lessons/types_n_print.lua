@@ -22,4 +22,4 @@ print(type(nil))                --> nil
 print(type(type(X)))            --> string cause the result from type is always string          
 
 imprime = print
-imprime("batata frita")
+imprime("testing")

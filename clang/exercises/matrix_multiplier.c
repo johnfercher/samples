@@ -17,85 +17,89 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-void imprimeMatriz(int **matriz, int n_linhas, int n_colunas){
+//! struct which defines a matrix 
+struct Matrix{
+	int *rows;													//! number of lines	
+	int *cols;													//! number of columns
+	float **M;													//! matrix
+};
+
+//! function which allocates a matrix dynamically in memory
+void alloc_matrix(int *rows, int *cols, struct Matrix *A){
 	int i, j;
-	for (i = 0; i < n_linhas; i++){
-  		for (j = 0; j < n_colunas; j++){ 
-			printf("%d ", matriz[i][j]);
+
+	A->cols = cols;
+	A->rows = rows;
+	
+	A->M = (float**)malloc(*(A->rows) * sizeof(float*));		//! allocates an array of pointers of float (line)
+	
+	for(i = 0 ; i < *(A->rows) ; i++){							//! walks through the array of pointers, allocating an array of floats
+		A->M[i] = (float*)malloc(*(A->cols) * sizeof(float*));
+	}
+}
+
+//! function which fill a matrix with random values
+void fill_matrix(struct Matrix *A){
+	int i, j;
+
+	for(i = 0 ; i < *(A->rows) ; i++){							
+		for(j = 0 ; j < *(A->cols) ; j++){
+			A->M[i][j] = rand() % 10;
+		}
+	}
+}
+
+//! function which prints a matrix
+void print_matrix(struct Matrix *A){
+	int i, j;
+
+	for (i = 0; i < *(A->rows); i++){
+  		for (j = 0; j < *(A->cols); j++){ 
+			printf("%f ", A->M[i][j]);
 		}
 		printf("\n");
 	}
 }
 
-void alocaMatriz(int ***m, int n_linhas, int n_colunas){
-	int i, j;
-	int **matriz;
+//! function which multiply two matrix
+void multiply_matrix(struct Matrix *R, struct Matrix *A, struct Matrix *B){
+	int i, j, k;
+	float hold = 0;
+	
+	alloc_matrix((A->rows), (B->cols), R);						//! allocates a matrix of response in the final shape
 
-	matriz = (int**)malloc(n_linhas * sizeof(int*));
+	for(i = 0 ; i < *(A->rows) ; i++){							//! multiply line of A with column of B
+		for(j = 0 ; j < *(B->cols) ; j++){
+			hold = 0; 											//! variable which keeps the sum of multiplications 
 
-	for (i = 0; i < n_linhas; i++){
-  		matriz[i] = (int*)malloc(n_colunas * sizeof(int));
-		for (j = 0; j < n_colunas; j++){ 
-			//matriz[i][j] = 2; 
-			printf("Insira o valor[%d][%d]\n", i, j);
-			scanf("%d", &matriz[i][j]);
+			for(k = 0 ; k < *(A->cols) ; k++){
+				hold += A->M[i][k] * B->M[k][j];
+			}
+
+			R->M[i][j] = hold; 
 		}
 	}
-
-	*m = matriz; 
 }
 
-void inicializaMatriz(int ***m, int n_linhas, int n_colunas){
-	int i, j;
-	int **matriz;
+int main(int argc, char *argv[]){
+	srand(time(NULL));											//! initializes the random numbers
+	int i, j;													//! number of lines and columns
+	
+	struct Matrix A;											//! matrix A
+	struct Matrix B;											//! matriz B
+	struct Matrix R;											//! matriz R = A X B
 
-	matriz = (int**)malloc(n_linhas * sizeof(int*));
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	
+	alloc_matrix(&i, &j, &A);									//! allocates matrix A  !! A[i][j] !!
+	fill_matrix(&A);
+	print_matrix(&A);
 
-	for (i = 0; i < n_linhas; i++){
-  		matriz[i] = (int*)malloc(n_colunas * sizeof(int));
-		for (j = 0; j < n_colunas; j++){ 
-			matriz[i][j] = 0; 
-		}
-	}
+	alloc_matrix(&j, &i, &B);									//! allocates Matrix B	!! B[j][i] !!
+	fill_matrix(&B);
+	print_matrix(&B);
 
-	*m = matriz; 
-}
-
-void multiplicaMatriz(int **matriz1, int n_linhas1, int n_colunas1, int **matriz2, int n_linhas2, int n_colunas2){
-	//if(n_colunas1 == n_linhas2){
-	int i, j, k, acumula;
-	int **matrizR, n_linhasR = n_linhas1, n_colunasR = n_colunas2;
-
-	inicializaMatriz(&matrizR, n_linhasR, n_colunasR);
-
-	for(i = 0 ; i < n_linhasR ; i++){
-		for(j = 0 ; j < n_colunasR ; j++){
-			acumula = 0; 
-	       	for(k = 0 ; k < n_colunasR ; k++){
-	       		acumula += matriz1[i][k]*matriz2[k][j];
-	       	}
-	       	matrizR[i][j] = acumula; 
-	    }
-	}
-
-	imprimeMatriz(matriz1, n_linhas1, n_colunas1);
-	printf(" *\n");
-	imprimeMatriz(matriz2, n_linhas2, n_colunas2);
-	printf(" =\n");
-	imprimeMatriz(matrizR, n_linhasR, n_colunasR);
-
-}
-
-int main(){
-	int i,j; 
-	int n_linhas1 = 3, n_colunas1 = 2, **matriz1;
-	int n_linhas2 = 2, n_colunas2 = 2, **matriz2;
-
-	printf("Matriz 1\n");
-	alocaMatriz(&matriz1, n_linhas1, n_colunas1);
-
-	printf("Matriz 2\n");
-	alocaMatriz(&matriz2, n_linhas2, n_colunas2);
-
-	multiplicaMatriz(matriz1, n_linhas1, n_colunas1, matriz2, n_linhas2, n_colunas2);
+	multiply_matrix(&R, &A, &B);								//! the matrix A and B are multipliable
+	print_matrix(&R);
 }

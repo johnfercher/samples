@@ -15,11 +15,11 @@
 
 -- alloc the matrix
 function alloc_matrix (cols, rows)
-    local A = {}                                        -- Create a table
+    local A = {}                                        -- create a table
 
     -- initializes
-    for i = 1, cols do                                  -- Foreach cols
-        A[i] = {}                                       -- Add a table in the table, matrix -> array of array
+    for i = 1, cols do                                  -- foreach cols
+        A[i] = {}                                       -- add a table in the table, matrix -> array of array
         for j = 1, rows do                              
             A[i][j] = math.random(0, 9)                 -- added a random number between 0 and 9
         end

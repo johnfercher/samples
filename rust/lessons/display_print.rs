@@ -15,25 +15,25 @@
 **/
 
 /*
- *  fmt::Debug imprime muitas coisas além da informação necessária,
- *  por isso, pode-se implementar no módulo std::fmt um método para
- *  conhecer e imprimir seu novo tipo de dados.
+ *  fmt::Debug prints a lot of things beyond the useful information,
+ *  to solve this, is possible implement in the module std:fmt a method to
+ *  print the new data type.
 **/
 
-// (C-Like include). Inclui o módulo responsável por imprimir valores 
+// (C-Like include). imports the module responsible for print values 
 use std::fmt;
 
-// Estrutura que define um ponto no R^2
+// struct which defines a point in R^2
 #[derive(Debug)]
 struct Square {
     x: f64,
     y: f64,
 }
 
-// Implementação do println! para Point2
+// implementation of println! for Point2
 impl fmt::Display for Square {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        // Não pode ter ; no final
+        // can not have ; at the final
         write!(f, "x: {}, y: {}", self.x, self.y)
     }
 }

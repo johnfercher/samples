@@ -16,7 +16,7 @@
 print(4 and 5)          --> 5
 print(4 or 5)           --> 4
 
-if not x then x = "papibaquigrafo" end
+if not x then x = "testing" end
 print(x)
 
 print(not true)         --> false

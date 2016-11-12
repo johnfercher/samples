@@ -13,7 +13,7 @@
 --copies or substantial portions of the Software.
 
 
-print("teste\nteste\tteste")
+print("testing\ntestingt\ttesting")
 
 ppap_introduction = [[
     PPAP
