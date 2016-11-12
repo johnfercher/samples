@@ -21,7 +21,7 @@
 #include <sys/time.h>
 #include <sys/types.h>
 
-#define QTD 1
+#define QTD 10
 
 main(int argc, char *argv[]){
 	int times = 0;

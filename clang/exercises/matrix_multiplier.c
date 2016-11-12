@@ -89,7 +89,7 @@ int main(int argc, char *argv[]){
 	struct Matrix B;											//! matriz B
 	struct Matrix R;											//! matriz R = A X B
 
-	i = atoi(argv[1]);
+	i = atoi(argv[1]);										
 	j = atoi(argv[2]);
 
 	alloc_matrix(&i, &j, &A);									//! allocates matrix A  !! A[i][j] !!
