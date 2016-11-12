@@ -23,7 +23,6 @@ private:
     //! method which allocates a matrix dynamically in memory
     void alloc(){
         M = new float*[*rows];                                  //! allocates an array of pointers of float (line)
-
         for(int i = 0 ; i < *rows ; i++){						//! walks through the array of pointers, allocating an array of floats
             M[i] = new float[*cols];
         }
@@ -62,14 +61,13 @@ public:
 
 //! function which multiply two matrix
 void multiply_matrix(Matrix *R, Matrix *A, Matrix *B){
-	int i, j, k;
 	float hold = 0;
 
-	for(i = 0 ; i < *(A->rows) ; i++){							//! multiply line of A with column of B
-		for(j = 0 ; j < *(B->cols) ; j++){
+	for(int i = 0 ; i < *(A->rows) ; i++){						//! multiply line of A with column of B
+		for(int j = 0 ; j < *(B->cols) ; j++){
 			hold = 0; 											//! variable which keeps the sum of multiplications 
 
-			for(k = 0 ; k < *(A->cols) ; k++){
+			for(int k = 0 ; k < *(A->cols) ; k++){
 				hold += A->M[i][k] * B->M[k][j];
 			}
 
@@ -92,7 +90,7 @@ int main(int argc, char *argv[]){
     A.fill();
     B.fill();
 
-    multiply_matrix(&R, &A, &B);
+    multiply_matrix(&R, &A, &B);                                //! the matrix A and B are multipliable
 
     //A.print();
     //B.print();
