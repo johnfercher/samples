@@ -6,13 +6,15 @@ A collection of samples of programs in various languages
 
 1. C (not completed)
 1. C++ (not completed)
+1; C# (not completed)
 1. Lua (not completed)
 1. C++ and Lua (not completed)
-1. Rust (not completed)
+1. PHP (not completed)
+1. Rust (not completed) 
 
 ## Benchmark
 
-The timer.c program execute a program an return the amount of time used in execution
+The benchmark/benchmark.c program execute a program an return the amount of time used in execution
 
 ## Organization
 
