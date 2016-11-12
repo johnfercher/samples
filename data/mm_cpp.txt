@@ -1,0 +1,28 @@
+CPP
+./cpp/exercises/matrix_multiplier_opt0 50 50 0 0.001671
+./cpp/exercises/matrix_multiplier_opt0 100 100 0 0.005093
+./cpp/exercises/matrix_multiplier_opt0 150 150 0 0.014237
+./cpp/exercises/matrix_multiplier_opt0 200 200 0 0.031780
+./cpp/exercises/matrix_multiplier_opt0 250 250 0 0.061687
+ 
+CPP -O1
+./cpp/exercises/matrix_multiplier_opt1 50 50 0 0.001187
+./cpp/exercises/matrix_multiplier_opt1 100 100 0 0.002279
+./cpp/exercises/matrix_multiplier_opt1 150 150 0 0.004646
+./cpp/exercises/matrix_multiplier_opt1 200 200 0 0.009305
+./cpp/exercises/matrix_multiplier_opt1 250 250 0 0.017280
+ 
+CPP -O2
+./cpp/exercises/matrix_multiplier_opt2 50 50 0 0.001304
+./cpp/exercises/matrix_multiplier_opt2 100 100 0 0.002166
+./cpp/exercises/matrix_multiplier_opt2 150 150 0 0.004592
+./cpp/exercises/matrix_multiplier_opt2 200 200 0 0.009252
+./cpp/exercises/matrix_multiplier_opt2 250 250 0 0.017216
+ 
+CPP -O3
+./cpp/exercises/matrix_multiplier_opt3 50 50 0 0.001508
+./cpp/exercises/matrix_multiplier_opt3 100 100 0 0.002158
+./cpp/exercises/matrix_multiplier_opt3 150 150 0 0.004666
+./cpp/exercises/matrix_multiplier_opt3 200 200 0 0.009249
+./cpp/exercises/matrix_multiplier_opt3 250 250 0 0.017253
+ 

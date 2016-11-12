@@ -15,90 +15,113 @@
 #	copies or substantial portions of the Software.
 #
 
-RUN_C () {
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 50 50 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 100 100 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 150 150 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 200 200 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 250 250 0
 
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 50 50 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 100 100 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 150 150 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 200 200 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 250 250 0
+RUN_C_MM () {
+    rm data/mm_clang.txt
+    echo "C" >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 50 50 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 100 100 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 150 150 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 200 200 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt0 250 250 0` >> data/mm_clang.txt
+    echo " " >> data/mm_clang.txt
 
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 50 50 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 100 100 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 150 150 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 200 200 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 250 250 0
+    echo "C -O1" >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 50 50 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 100 100 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 150 150 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 200 200 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt1 250 250 0` >> data/mm_clang.txt
+    echo " " >> data/mm_clang.txt
 
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 50 50 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 100 100 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 150 150 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 200 200 0
-    ./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 250 250 0
+    echo "C -O2" >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 50 50 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 100 100 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 150 150 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 200 200 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt2 250 250 0` >> data/mm_clang.txt
+    echo " " >> data/mm_clang.txt
+
+    echo "C -O3" >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 50 50 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 100 100 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 150 150 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 200 200 0` >> data/mm_clang.txt
+    echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 250 250 0` >> data/mm_clang.txt
+    echo " " >> data/mm_clang.txt
 }
 
-RUN_CPP () {
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 50 50 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 100 100 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 150 150 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 200 200 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 250 250 0
+RUN_CPP_MM () {
+    rm data/mm_cpp.txt
+    echo "CPP" >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 50 50 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 100 100 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 150 150 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 200 200 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt0 250 250 0` >> data/mm_cpp.txt
+    echo " " >> data/mm_cpp.txt
 
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 50 50 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 100 100 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 150 150 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 200 200 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 250 250 0
+    echo "CPP -O1" >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 50 50 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 100 100 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 150 150 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 200 200 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt1 250 250 0` >> data/mm_cpp.txt
+    echo " " >> data/mm_cpp.txt
+    
+    echo "CPP -O2" >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 50 50 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 100 100 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 150 150 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 200 200 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 250 250 0` >> data/mm_cpp.txt
+    echo " " >> data/mm_cpp.txt
 
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 50 50 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 100 100 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 150 150 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 200 200 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt2 250 250 0
-
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 50 50 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 100 100 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 150 150 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 200 200 0
-    ./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 250 250 0
+    echo "CPP -O3" >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 50 50 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 100 100 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 150 150 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 200 200 0` >> data/mm_cpp.txt
+    echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 250 250 0` >> data/mm_cpp.txt
+    echo " " >> data/mm_cpp.txt
 }
 
-RUN_CSHARP () {
-    ./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 50 50 0
-    ./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 100 100 0
-    ./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 150 150 0
-    ./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 200 200 0
-    ./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 250 250 0
+RUN_CSHARP_MM () {
+    rm data/mm_csharp.txt
+    echo "CSHARP" >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 50 50 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 100 100 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 150 150 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 200 200 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 250 250 0` >> data/mm_csharp.txt
 }
 
-RUN_LUA () {
-    ./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 50 50
-    ./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 100 100
-    ./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 150 150
-    ./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 200 200
-    ./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 250 250
+RUN_LUA_MM () {
+    rm data/mm_lua.txt
+    echo "LUA" >> data/mm_lua.txt
+    echo `./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 50 50` >> data/mm_lua.txt
+    echo `./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 100 100` >> data/mm_lua.txt
+    echo `./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 150 150` >> data/mm_lua.txt
+    echo `./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 200 200` >> data/mm_lua.txt
+    echo `./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 250 250` >> data/mm_lua.txt
+}
+
+RUN_MM () {
+    echo "C";
+    RUN_C_MM;
+
+    echo "CPP";
+    RUN_CPP_MM;
+
+    echo "CSHARP";
+    RUN_CSHARP_MM;
+
+    echo "Lua";
+    RUN_LUA_MM;
 }
 
 RUN () {
-    echo "C";
-    RUN_C;
-    echo " ";
-
-    echo "CPP";
-    RUN_CPP;
-    echo " ";
-
-    echo "CSHARP";
-    RUN_CSHARP;
-    echo " ";
-
-    echo "Lua";
-    RUN_LUA;
-    echo " ";
+    RUN_MM;
 }
 
 RUN;

@@ -1,0 +1,6 @@
+CSHARP
+./csharp/exercises/matrix_multiplier.exe 50 50 0 0.009564
+./csharp/exercises/matrix_multiplier.exe 100 100 0 0.013730
+./csharp/exercises/matrix_multiplier.exe 150 150 0 0.025979
+./csharp/exercises/matrix_multiplier.exe 200 200 0 0.047906
+./csharp/exercises/matrix_multiplier.exe 250 250 0 0.086834

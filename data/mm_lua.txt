@@ -1,0 +1,6 @@
+LUA
+lua lua/exercises/matrix_multiplier.lua 50 50 0.010083
+lua lua/exercises/matrix_multiplier.lua 100 100 0.066804
+lua lua/exercises/matrix_multiplier.lua 150 150 0.227270
+lua lua/exercises/matrix_multiplier.lua 200 200 0.520179
+lua lua/exercises/matrix_multiplier.lua 250 250 0.992528
