@@ -44,7 +44,7 @@ COMPILE_CSHARP () {
 
 COMPILE_BENCHMARK () {
     cd benchmark
-    g++ benchmark.cpp -o benchmark_opt0
+    g++ main.cpp -o benchmark_opt0
     cd ..
 }
 
