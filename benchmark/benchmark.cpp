@@ -14,6 +14,8 @@
  *	copies or substantial portions of the Software.
 **/
 
+#include "iostream"
+#include "programs.h"
 #include <stdio.h>
 #include "unistd.h"
 #include "stdlib.h"
@@ -21,7 +23,9 @@
 #include <sys/time.h>
 #include <sys/types.h>
 
-main(int argc, char *argv[]){
+using namespace std;
+
+int main(int argc, char *argv[]){
 	int QTD;
 	int times = 0;
 	float tempos = 0;
@@ -50,4 +54,6 @@ main(int argc, char *argv[]){
 		system("clear");
 		printf("A media de tempo por execucao de %s em %d execucoes foi de %lf\n", argv[1], QTD, tempos/QTD);
 	}
+
+	return 0;
 }
