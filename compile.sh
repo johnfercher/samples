@@ -15,8 +15,45 @@
 #	copies or substantial portions of the Software.
 #
 
-all:
-	gcc matrix_multiplier.c -o matrix_multiplier_opt0
+COMPILE_C () {
+    cd clang/exercises/ 
+    gcc matrix_multiplier.c -o matrix_multiplier_opt0
 	gcc matrix_multiplier.c -o matrix_multiplier_opt1 -O1
 	gcc matrix_multiplier.c -o matrix_multiplier_opt2 -O2
 	gcc matrix_multiplier.c -o matrix_multiplier_opt3 -O3
+    cd ..
+    cd ..
+}
+
+COMPILE_CPP () {
+    cd cpp/exercises/
+    g++ matrix_multiplier.cpp -o matrix_multiplier_opt0
+	g++ matrix_multiplier.cpp -o matrix_multiplier_opt1 -O1
+	g++ matrix_multiplier.cpp -o matrix_multiplier_opt2 -O2
+	g++ matrix_multiplier.cpp -o matrix_multiplier_opt3 -O3
+    cd ..
+    cd ..
+}
+
+COMPILE_CSHARP () {
+    cd csharp/exercises/
+    mcs matrix_multiplier.cs
+    cd ..
+    cd ..
+}
+
+COMPILE_BENCHMARK () {
+    cd benchmark
+    g++ benchmark.cpp -o benchmark_opt0
+    cd ..
+}
+
+COMPILE () {
+    COMPILE_C;
+    COMPILE_CPP;
+    COMPILE_CSHARP;
+    COMPILE_BENCHMARK;
+}
+
+COMPILE;
+	

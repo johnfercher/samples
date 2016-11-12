@@ -21,14 +21,15 @@
 #include <sys/time.h>
 #include <sys/types.h>
 
-#define QTD 10
-
 main(int argc, char *argv[]){
+	int QTD;
 	int times = 0;
 	float tempos = 0;
 	int pid;
 	struct timeval tv1, tv2;
 	double t1, t2;
+
+	QTD = atoi(argv[1]);
 
 	pid = fork();
 

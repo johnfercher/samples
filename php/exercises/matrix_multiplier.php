@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/php
+<?php
 #
 #	MIT License
 #
@@ -15,8 +16,5 @@
 #	copies or substantial portions of the Software.
 #
 
-all:
-	g++ matrix_multiplier.cpp -o matrix_multiplier_opt0
-	g++ matrix_multiplier.cpp -o matrix_multiplier_opt1 -O1
-	g++ matrix_multiplier.cpp -o matrix_multiplier_opt2 -O2
-	g++ matrix_multiplier.cpp -o matrix_multiplier_opt3 -O3
+    echo "Hello World\n";
+?>

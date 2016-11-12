@@ -24,7 +24,7 @@ INSTALL_UBUNTU_16_04 () {
 
     sudo apt-get install pkg-config
 
-    sudo apt-get install gcc g++ lua5.3 rustc monodevelop
+    sudo apt-get install gcc g++ lua5.3 rustc monodevelop php php-cli
 }
 
 INSTALL_UBUNTU_14_04 () {
