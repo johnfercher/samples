@@ -12,23 +12,22 @@
 --The above copyright notice and this permission notice shall be included in all
 --copies or substantial portions of the Software.
 
-
--- alloc the matrix
-function alloc_matrix (cols, rows)
+-- function which allocates a matrix dynamically in memory
+function alloc_matrix (rows, cols)
     local A = {}                                        -- create a table
 
     -- initializes
-    for i = 1, cols do                                  -- foreach cols
+    for i = 1, rows do                                  -- foreach cols
         A[i] = {}                                       -- add a table in the table, matrix -> array of array
-        for j = 1, rows do                              
-            A[i][j] = math.random(0, 9)                 -- added a random number between 0 and 9
+        for j = 1, cols do                              
+            A[i][j] = math.random(0, 9) + 0.5           -- added a random number between 0 and 9
         end
     end
     
     return A
 end
 
--- print any matrix
+-- function which prints a matrix
 function print_matrix (A)
     -- initializes
     for i = 1, #A do                                    -- i = 1 to sizeof(A)
@@ -39,27 +38,14 @@ function print_matrix (A)
     end
 end
 
--- multipliy two any matrix
+-- function which multipliy two matrix
 function multipliy_matrix (A, B)
-    R = {}
-    local less = 0 
-    
-    -- if the matrix A and B can be multiplied
-    if I < J then less = I else less = J end
+    R = alloc_matrix(I, I);                             -- allocates a amtrix of response in the final shape
 
-    -- initializes
-    for i = 1, less do
-        R[i] = {}
-        for j = 1, less do
-            R[i][j] = 0
-        end
-    end
-
-    -- multiply
-    for i = 1, less do
-        for j = 1, less do
-            hold = 0
-            for k = 1, less do
+    for i = 1, I do                                     -- multiply line of A with column of B
+        for j = 1, I do                 
+            hold = 0                                    -- variable which keeps the sum of multiplications
+            for k = 1, J do
                 hold = hold + A[i][k]*B[k][j]
             end
             R[i][j] = hold; 
@@ -69,23 +55,19 @@ function multipliy_matrix (A, B)
     return R
 end
 
--- initializes the random numbers
-math.randomseed(os.time())
 
--- calc I and J, that will respectively cols and rows from matrix A, and rows and cols from matrix B
-I = math.random(2, 6)
-J = math.random(2, 6)
+math.randomseed(os.time())                              -- initializes the random numbers
 
-A = alloc_matrix(I, J)
-B = alloc_matrix(J, I)
-R = multipliy_matrix(A, B)
+I = arg[1];
+J = arg[2];
 
-print("matrix A")
-print_matrix(A)
+A = alloc_matrix(I, J)                                  -- allocates matrix A !! A[i][j] !!
+--print_matrix(A)
 
-print("matrix B")
-print_matrix(B)
+B = alloc_matrix(J, I)                                  -- allocates matrix B !! B[]j[i] !!
+--print_matrix(B)
 
-print("matrix R")
-print_matrix(R)
+R = multipliy_matrix(A, B, I, J)                        -- the matrix A and B are multipliable
+--print_matrix(R)
+
 

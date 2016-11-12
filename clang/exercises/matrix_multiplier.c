@@ -91,15 +91,15 @@ int main(int argc, char *argv[]){
 
 	i = atoi(argv[1]);
 	j = atoi(argv[2]);
-	
+
 	alloc_matrix(&i, &j, &A);									//! allocates matrix A  !! A[i][j] !!
 	fill_matrix(&A);
-	print_matrix(&A);
+	//print_matrix(&A);
 
 	alloc_matrix(&j, &i, &B);									//! allocates Matrix B	!! B[j][i] !!
 	fill_matrix(&B);
-	print_matrix(&B);
+	//print_matrix(&B);
 
 	multiply_matrix(&R, &A, &B);								//! the matrix A and B are multipliable
-	print_matrix(&R);
+	//print_matrix(&R);
 }
