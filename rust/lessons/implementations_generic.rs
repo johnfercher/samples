@@ -14,22 +14,18 @@
  *	copies or substantial portions of the Software.
 **/
 
-// um módulo -> namespace?
-mod my {
-    fn pri_function() { 
-        println!("mod private");        // inaccessible
-    }
-
-    pub fn pub_function() {             // accessible
-        println!("mod public");
-    }
+struct GenericVal<T>{
+    t: T,
 }
 
-fn function() {
-    println!("outer");                  // accessible
+impl <T> GenericVal<T>{
+    fn t(&self) -> &T {
+        &self.t
+    } 
 }
 
 fn main() {
-    function();
-    my::pub_function();
+    let i = GenericVal { t: 33.2 };
+
+    println!("{}", i.t());
 }

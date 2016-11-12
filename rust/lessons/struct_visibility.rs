@@ -14,22 +14,29 @@
  *	copies or substantial portions of the Software.
 **/
 
-// um módulo -> namespace?
 mod my {
-    fn pri_function() { 
-        println!("mod private");        // inaccessible
+    #[derive(Debug)]
+    pub struct Test {               // pub for made the struct accessible
+        pub i: u8,                  // pub for made the field accessible
+        j: u8,                      // inaccessible 
     }
 
-    pub fn pub_function() {             // accessible
-        println!("mod public");
+    impl Test {
+        pub fn new() -> Test {      // accessible
+            Test {
+                i: 0,
+                j: 0,
+            }
+        }
+
+        fn test() {                 // inaccessible
+
+        }
     }
 }
 
-fn function() {
-    println!("outer");                  // accessible
-}
+use my::Test;                       // removes the necessite to call Test like my::Test
 
 fn main() {
-    function();
-    my::pub_function();
+    let test: Test = Test::new();
 }
