@@ -37,14 +37,13 @@ int main(int argc, char *argv[]){
 		while(times < QTD){
 			gettimeofday(&tv1, NULL);
 			t1 = (double)(tv1.tv_sec) + (double)(tv1.tv_usec)/ 1000000.00;
-			system("./clang/exercises/matrix_multiplier_opt0 100 100");	
+			system("./clang/exercises/matrix_multiplier_opt0 200 200");	
 			gettimeofday(&tv2, NULL);
 			t2 = (double)(tv2.tv_sec) + (double)(tv2.tv_usec)/ 1000000.00;
 
 			tempos += (t2 - t1);
 			times++;
-			//system("clear");
-			//printf("%d\n", times);
+			printf("%d\n", times);
 		}
 
 		system("clear");
