@@ -16,7 +16,7 @@
 #
 
 all:
-	g++ matrix_multiplier.cpp -o matrix_multiplier_o0
-	g++ matrix_multiplier.cpp -o matrix_multiplier_o1 -O1
-	g++ matrix_multiplier.cpp -o matrix_multiplier_o2 -O2
-	g++ matrix_multiplier.cpp -o matrix_multiplier_o3 -O3
+	g++ matrix_multiplier.cpp -o matrix_multiplier_opt0
+	g++ matrix_multiplier.cpp -o matrix_multiplier_opt1 -O1
+	g++ matrix_multiplier.cpp -o matrix_multiplier_opt2 -O2
+	g++ matrix_multiplier.cpp -o matrix_multiplier_opt3 -O3

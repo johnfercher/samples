@@ -16,7 +16,7 @@
 #
 
 all:
-	gcc matrix_multiplier.c -o matrix_multiplier_o0
-	gcc matrix_multiplier.c -o matrix_multiplier_o1 -O1
-	gcc matrix_multiplier.c -o matrix_multiplier_o2 -O2
-	gcc matrix_multiplier.c -o matrix_multiplier_o3 -O3
+	gcc matrix_multiplier.c -o matrix_multiplier_opt0
+	gcc matrix_multiplier.c -o matrix_multiplier_opt1 -O1
+	gcc matrix_multiplier.c -o matrix_multiplier_opt2 -O2
+	gcc matrix_multiplier.c -o matrix_multiplier_opt3 -O3
