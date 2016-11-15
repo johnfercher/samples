@@ -43,8 +43,9 @@ COMPILE_CSHARP () {
 }
 
 COMPILE_RUST () {
-    cd rust/exercises/
-    rustc matrix_multiplier.rs
+    cd rust/exercises/matrix_multiplier
+    cargo build --release
+    cd ..
     cd ..
     cd ..
 }
