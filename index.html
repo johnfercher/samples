@@ -27,72 +27,127 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
-    <style type="text/css">
-    ${demo.css}
-    </style>
+
     <script type="text/javascript">
-$(function () {
-    $('#container').highcharts({
-        chart: {
-            type: 'area'
-        },
-        title: {
-            text: 'Time Spent: Multipliyng Two Matrices'
-            
-        },
-        subtitle: {
-            text: 'https://github.com/johnfercher/samples'
-        },
-        xAxis: {
-            categories: ['50x50', '100x100', '150x150', '200x200', '250x250'],
-            tickmarkPlacement: 'on',
-            title: {
-                enabled: false
-            }
-        },
-        yAxis: {
-            title: {
-                text: 'Seconds'
+    $(function () {
+        $('#time').highcharts({
+            chart: {
+                type: 'area'
             },
-            labels: {
-                formatter: function () {
-                    return this.value / 1000;
+            title: {
+                text: 'Time Spent: Multipliyng Two Matrices'
+                
+            },
+            subtitle: {
+                text: 'https://github.com/johnfercher/samples'
+            },
+            xAxis: {
+                categories: ['50x50', '100x100', '150x150', '200x200', '250x250'],
+                tickmarkPlacement: 'on',
+                title: {
+                    enabled: false
                 }
-            }
-        },
-        tooltip: {
-            split: true,
-            valueSuffix: ' seconds'
-        },
-        plotOptions: {
-            area: {
-                stacking: 'normal',
-                lineColor: '#666666',
-                lineWidth: 1,
-                marker: {
+            },
+            yAxis: {
+                title: {
+                    text: 'Seconds'
+                },
+                labels: {
+                    formatter: function () {
+                        return this.value / 1000;
+                    }
+                }
+            },
+            tooltip: {
+                split: true,
+                valueSuffix: ' seconds'
+            },
+            plotOptions: {
+                area: {
+                    stacking: 'normal',
+                    lineColor: '#666666',
                     lineWidth: 1,
-                    lineColor: '#666666'
+                    marker: {
+                        lineWidth: 1,
+                        lineColor: '#666666'
+                    }
                 }
-            }
-        },
-        series: [{
-            name: 'Lua',
-            data: [0.009917, 0.065179, 0.215520, 0.501041, 0.973354]
-        }, {
-            name: 'C#',
-            data: [0.009318, 0.013728, 0.025501, 0.047461, 0.084240]
-        }, {
-            name: 'Rust (--release)',
-            data: [0.001583, 0.002914, 0.006573, 0.013499, 0.029844]
-        }, {
-            name: 'C++ (-O1)',
-            data: [0.001245, 0.002159, 0.004663, 0.009195, 0.016937]
-        }, {
-            name: 'C (-O1)',
-            data: [0.000847, 0.001717, 0.004327, 0.009171, 0.016925]
-        }]
+            },
+            series: [{
+                name: 'Lua',
+                data: [0.009917, 0.065179, 0.215520, 0.501041, 0.973354]
+            }, {
+                name: 'C#',
+                data: [0.009318, 0.013728, 0.025501, 0.047461, 0.084240]
+            }, {
+                name: 'Rust (--release)',
+                data: [0.001583, 0.002914, 0.006573, 0.013499, 0.029844]
+            }, {
+                name: 'C++ (-O1)',
+                data: [0.001245, 0.002159, 0.004663, 0.009195, 0.016937]
+            }, {
+                name: 'C (-O1)',
+                data: [0.000847, 0.001717, 0.004327, 0.009171, 0.016925]
+            }]
+        });
     });
-});
+    </script>
+
+    <script type="text/javascript">
+    $(function () {
+        $('#lines').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Amount of Lines: Multipliyng Two Matrices'
+            },
+            subtitle: {
+                text: 'https://github.com/johnfercher/samples'
+            },
+            xAxis: {
+                categories: ['C', 'C#', 'C++', 'Rust', 'Lua'],
+                title: {
+                    text: null
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Amount of Lines',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -40,
+                y: 80,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+                shadow: true
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: 'Lines',
+                data: [105, 99, 98, 81, 72]
+            }]
+        });
+    });
     </script>
 </head> 
 
@@ -108,7 +163,8 @@ $(function () {
 
                             <section id="benchmark-section" class="doc-section">
                                 <h2 class="section-title">Benchmark</h2>
-                                <div id="container" style="min-height: 600px; margin: 0 auto"></div>
+                                <div id="time" style="min-height: 600px; margin: 0 auto"></div>
+                                <div id="lines" style="min-height: 250px; margin: 0 auto"></div>
                             </section><!--//doc-section-->
 
                             <section id="code-section" class="doc-section">
