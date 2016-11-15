@@ -42,6 +42,13 @@ COMPILE_CSHARP () {
     cd ..
 }
 
+COMPILE_RUST () {
+    cd rust/exercises/
+    rustc matrix_multiplier.rs
+    cd ..
+    cd ..
+}
+
 COMPILE_BENCHMARK () {
     cd benchmark
     g++ main.cpp -o benchmark_opt0
@@ -52,6 +59,7 @@ COMPILE () {
     COMPILE_C;
     COMPILE_CPP;
     COMPILE_CSHARP;
+    COMPILE_RUST;
     COMPILE_BENCHMARK;
 }
 

@@ -106,6 +106,16 @@ RUN_LUA_MM () {
     echo `./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 250 250` >> data/mm_lua.txt
 }
 
+RUN_RUST_MM () {
+    rm data/mm_rust.txt
+    echo "RUST" >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier 50 50 0` >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier 100 100 0` >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier 150 150 0` >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier 200 200 0` >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier 250 250 0` >> data/mm_rust.txt
+}
+
 RUN_MM () {
     echo "C";
     RUN_C_MM;
@@ -115,6 +125,9 @@ RUN_MM () {
 
     echo "CSHARP";
     RUN_CSHARP_MM;
+
+    echo "Rust"
+    RUN_RUST_MM;
 
     echo "Lua";
     RUN_LUA_MM;

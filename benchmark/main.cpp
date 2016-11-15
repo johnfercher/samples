@@ -39,7 +39,7 @@ int main(int argc, char *argv[]){
 		stringstream ss;
 		ss << argv[1] << " " << argv[2] << " " << argv[3] << " " << argv[4];
 		
-		cout << ss.str() << endl;
+		//cout << ss.str() << endl;
 		while(times < QTD){
 			gettimeofday(&tv1, NULL);
 			t1 = (double)(tv1.tv_sec) + (double)(tv1.tv_usec)/ 1000000.00;
