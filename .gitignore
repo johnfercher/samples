@@ -1,7 +1,0 @@
-a.out
-*.exe
-*_opt*
-.vscode/.browse.VC*
-*target
-*.cargo
-*.lock
