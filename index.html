@@ -31,56 +31,68 @@
     ${demo.css}
     </style>
     <script type="text/javascript">
-        $(function () {
-            $('#container').highcharts({
-                title: {
-                    text: 'Time Spent: Multipliyng Two Matrices',
-                    x: -20 //center
-                },
-                subtitle: {
-                    text: 'https://github.com/johnfercher/samples',
-                    x: -20
-                },
-                xAxis: {
-                    categories: ['50x50', '100x100', '150x150', '200x200', '250x250']
-                },
-                yAxis: {
-                    title: {
-                        text: 'Time (Seconds)'
-                    },
-                    plotLines: [{
-                        value: 0,
-                        width: 1,
-                        color: '#808080'
-                    }]
-                },
-                tooltip: {
-                    valueSuffix: ' seconds'
-                },
-                legend: {
-                    layout: 'vertical',
-                    align: 'right',
-                    verticalAlign: 'middle',
-                    borderWidth: 0
-                },
-                series: [{
-                    name: 'C (-O1)',
-                    data: [0.000847, 0.001717, 0.004327, 0.009171, 0.016925]
-                }, {
-                    name: 'C++ (-O1)',
-                    data: [0.001245, 0.002159, 0.004663, 0.009195, 0.016937]
-                }, {
-                    name: 'C#',
-                    data: [0.009318, 0.013728, 0.025501, 0.047461, 0.084240]
-                }, {
-                    name: 'Rust (--release)',
-                    data: [0.001583, 0.002914, 0.006573, 0.013499, 0.029844]
-                }, {
-                    name: 'Lua',
-                    data: [0.009917, 0.065179, 0.215520, 0.501041, 0.973354]
-                }]
-            });
-        });
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: 'Time Spent: Multipliyng Two Matrices'
+            
+        },
+        subtitle: {
+            text: 'https://github.com/johnfercher/samples'
+        },
+        xAxis: {
+            categories: ['50x50', '100x100', '150x150', '200x200', '250x250'],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Seconds'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 1000;
+                }
+            }
+        },
+        tooltip: {
+            split: true,
+            valueSuffix: ' seconds'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+            name: 'Lua',
+            data: [0.009917, 0.065179, 0.215520, 0.501041, 0.973354]
+        }, {
+            name: 'C#',
+            data: [0.009318, 0.013728, 0.025501, 0.047461, 0.084240]
+        }, {
+            name: 'Rust (--release)',
+            data: [0.001583, 0.002914, 0.006573, 0.013499, 0.029844]
+        }, {
+            name: 'C++ (-O1)',
+            data: [0.001245, 0.002159, 0.004663, 0.009195, 0.016937]
+        }, {
+            name: 'C (-O1)',
+            data: [0.000847, 0.001717, 0.004327, 0.009171, 0.016925]
+        }]
+    });
+});
     </script>
 </head> 
 
@@ -96,7 +108,7 @@
 
                             <section id="benchmark-section" class="doc-section">
                                 <h2 class="section-title">Benchmark</h2>
-                                <div id="container" style="min-width: 500px; min-height: 720px; margin: 0 auto"></div>
+                                <div id="container" style="min-width: 310px; min-height: 600px; margin: 0 auto"></div>
                             </section><!--//doc-section-->
 
                             <section id="code-section" class="doc-section">
