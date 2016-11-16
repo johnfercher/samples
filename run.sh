@@ -48,7 +48,6 @@ RUN_C_MM () {
     echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 150 150 0` >> data/mm_clang.txt
     echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 200 200 0` >> data/mm_clang.txt
     echo `./benchmark/benchmark_opt0 ./clang/exercises/matrix_multiplier_opt3 250 250 0` >> data/mm_clang.txt
-    echo " " >> data/mm_clang.txt
 }
 
 RUN_CPP_MM () {
@@ -83,17 +82,24 @@ RUN_CPP_MM () {
     echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 150 150 0` >> data/mm_cpp.txt
     echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 200 200 0` >> data/mm_cpp.txt
     echo `./benchmark/benchmark_opt0 ./cpp/exercises/matrix_multiplier_opt3 250 250 0` >> data/mm_cpp.txt
-    echo " " >> data/mm_cpp.txt
 }
 
 RUN_CSHARP_MM () {
     rm data/mm_csharp.txt
     echo "CSHARP" >> data/mm_csharp.txt
-    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 50 50 0` >> data/mm_csharp.txt
-    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 100 100 0` >> data/mm_csharp.txt
-    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 150 150 0` >> data/mm_csharp.txt
-    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 200 200 0` >> data/mm_csharp.txt
-    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier.exe 250 250 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt0 50 50 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt0 100 100 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt0 150 150 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt0 200 200 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt0 250 250 0` >> data/mm_csharp.txt
+    echo " " >> data/mm_csharp.txt
+
+    echo "CSHARP -optimize" >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt1 50 50 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt1 100 100 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt1 150 150 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt1 200 200 0` >> data/mm_csharp.txt
+    echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt1 250 250 0` >> data/mm_csharp.txt
 }
 
 RUN_LUA_MM () {
@@ -117,20 +123,20 @@ RUN_RUST_MM () {
 }
 
 RUN_MM () {
-    #echo "C";
-    #RUN_C_MM;
+    echo "C";
+    RUN_C_MM;
 
-    #echo "CPP";
-    #RUN_CPP_MM;
+    echo "CPP";
+    RUN_CPP_MM;
 
-    #echo "CSHARP";
-    #RUN_CSHARP_MM;
+    echo "CSHARP";
+    RUN_CSHARP_MM;
 
     echo "Rust"
     RUN_RUST_MM;
 
-    #echo "Lua";
-    #RUN_LUA_MM;
+    echo "Lua";
+    RUN_LUA_MM;
 }
 
 RUN () {

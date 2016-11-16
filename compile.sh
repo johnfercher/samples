@@ -37,7 +37,8 @@ COMPILE_CPP () {
 
 COMPILE_CSHARP () {
     cd csharp/exercises/
-    mcs matrix_multiplier.cs
+    mcs matrix_multiplier.cs /out:matrix_multiplier_opt0
+    mcs matrix_multiplier.cs /out:matrix_multiplier_opt1 -optimize
     cd ..
     cd ..
 }
