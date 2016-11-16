@@ -35,7 +35,7 @@
                 type: 'area'
             },
             title: {
-                text: 'Time Spent: Multipliyng Two Matrices'
+                text: 'Time Spent: Multipliyng Two Matrices (Compiled)'
                 
             },
             subtitle: {
@@ -74,9 +74,6 @@
                 }
             },
             series: [{
-                name: 'Lua',
-                data: [0.009509, 0.063462, 0.215520, 0.500202, 0.967530]
-            }, {
                 name: 'C#',
                 data: [0.009310, 0.013679, 0.025478, 0.047360, 0.083896]
             }, {
@@ -95,6 +92,62 @@
 
     <script type="text/javascript">
     $(function () {
+        $('#time-interpreted').highcharts({
+            chart: {
+                type: 'area'
+            },
+            title: {
+                text: 'Time Spent: Multipliyng Two Matrices (Interpreted)'
+                
+            },
+            subtitle: {
+                text: 'https://github.com/johnfercher/samples'
+            },
+            xAxis: {
+                categories: ['50x50', '100x100', '150x150', '200x200', '250x250'],
+                tickmarkPlacement: 'on',
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Seconds'
+                },
+                labels: {
+                    formatter: function () {
+                        return this.value / 1;
+                    }
+                }
+            },
+            tooltip: {
+                split: true,
+                valueSuffix: ' seconds'
+            },
+            plotOptions: {
+                area: {
+                    stacking: 'normal',
+                    lineColor: '#666666',
+                    lineWidth: 1,
+                    marker: {
+                        lineWidth: 1,
+                        lineColor: '#666666'
+                    }
+                }
+            },
+            series: [{
+                name: 'PHP',
+                data: [0.077282, 0.506611, 1.641281, 3.961451, 7.870904]
+            }, {
+                name: 'Lua',
+                data: [0.009509, 0.063462, 0.215520, 0.500202, 0.967530]
+            }]
+        });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(function () {
         $('#lines').highcharts({
             chart: {
                 type: 'bar'
@@ -106,7 +159,7 @@
                 text: 'https://github.com/johnfercher/samples'
             },
             xAxis: {
-                categories: ['C', 'C#', 'C++', 'Rust', 'Lua'],
+                categories: ['C', 'C#', 'C++', 'Rust', 'PHP', 'Lua'],
                 title: {
                     text: null
                 }
@@ -144,7 +197,7 @@
             },
             series: [{
                 name: 'Lines',
-                data: [105, 99, 98, 81, 72]
+                data: [105, 99, 98, 82, 74, 70]
             }]
         });
     });
@@ -163,19 +216,42 @@
 
                             <section id="benchmark-section" class="doc-section">
                                 <h2 class="section-title">Benchmark</h2>
-                                <br>
-                                <p>
-                                    <b>CPU:</b> Intel i5 4440, <b>GPU:</b> XFX Radeon R9 280X Black Edition, <b>8GB</b> RAM 1600MHz
-                                </p>
-                                <p>
-                                    <b>Kernel:</b> Linux 4.4.0-47-generic, <b>Distro:</b> Ubuntu 16.04.1 LTS
-                                </p>
-                                <p>
-                                    <b>C</b> (GCC 5.4.0), <b>C++</b> (G++ 5.4.0), <b>C#</b> (Mono 4.2.1.0), <b>Rust</b> (Cargo 0.8.0), <b>Lua</b> (5.3.3)
-                                </p>
-                                <br>
-                                <div id="time" style="min-height: 600px; margin: 0 auto"></div>
-                                <div id="lines" style="min-height: 250px; margin: 0 auto"></div>
+
+                                <div id="specs" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Specifications</h6>
+                                        <p>
+                                            <b>CPU:</b> Intel i5 4440, <b>GPU:</b> XFX Radeon R9 280X Black Edition, <b>8GB</b> RAM 1600MHz
+                                        </p>
+                                        <p>
+                                            <b>Kernel:</b> Linux 4.4.0-47-generic, <b>Distro:</b> Ubuntu 16.04.1 LTS
+                                        </p>
+                                        <p>
+                                            <b>C</b> (GCC 5.4.0), <b>C++</b> (G++ 5.4.0), <b>C#</b> (Mono 4.2.1.0), <b>Rust</b> (Cargo 0.8.0), <b>Lua</b> (5.3.3), <b>PHP</b> (7.0.8)
+                                        </p>
+                                    </div><!--//code-block-->
+                                </div>
+
+                                <div id="compiled" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Compiled</h6>
+                                        <div id="time" style="min-height: 500px; margin: 0 auto"></div>
+                                    </div><!--//code-block-->
+                                </div>
+
+                                <div id="interpreted" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Interpreted</h6>
+                                        <div id="time-interpreted" style="min-height: 500px; margin: 0 auto"></div>
+                                    </div><!--//code-block-->
+                                </div>
+
+                                <div id="amount-lines" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Amount of Lines</h6>
+                                        <div id="lines" style="min-height: 250px; margin: 0 auto"></div>
+                                    </div><!--//code-block-->
+                                </div>
                             </section><!--//doc-section-->
 
                             <section id="code-section" class="doc-section">
@@ -220,6 +296,13 @@
                                             </div><!--//code-block-->
                                         </div>
 
+                                        <div id="php-code" class="section-block">
+                                            <div class="code-block">
+                                                <h6>PHP</h6>
+<pre><code class="language-php" id="samplephp"></code></pre>
+                                            </div><!--//code-block-->
+                                        </div>
+
 
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
@@ -230,7 +313,15 @@
                     <div class="doc-sidebar hidden-xs">
                         <nav id="doc-nav">
                             <ul id="doc-menu" class="nav doc-menu" data-spy="affix">
-                                <li><a class="scrollto" href="#benchmark-section">Benchmark</a></li>
+                                <li>
+                                    <a class="scrollto" href="#benchmark-section">Benchmark</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#specs">Specifications</a></li>
+                                        <li><a class="scrollto" href="#compiled">Compiled</a></li>
+                                        <li><a class="scrollto" href="#interpreted">Interpreted</a></li>
+                                        <li><a class="scrollto" href="#amount-lines">Amount of Lines</a></li>
+                                    </ul><!--//nav-->
+                                </li>
                                 <li>
                                     <a class="scrollto" href="#code-section">Codes</a>
                                     <ul class="nav doc-sub-menu">
@@ -239,6 +330,7 @@
                                         <li><a class="scrollto" href="#csharp-code">C#</a></li>
                                         <li><a class="scrollto" href="#rust-code">Rust</a></li>
                                         <li><a class="scrollto" href="#lua-code">Lua</a></li>
+                                        <li><a class="scrollto" href="#php-code">PHP</a></li>
                                     </ul><!--//nav-->
                                 </li>
                             </ul><!--//doc-menu-->
@@ -286,6 +378,12 @@
         $.get("https://raw.githubusercontent.com/johnfercher/samples/master/lua/exercises/matrix_multiplier.lua", function(data) {
             var html = Prism.highlight(data, Prism.languages.lua);
             $('#samplelua').html(html);
+        });
+    });
+    $(document).ready(function() {
+        $.get("https://raw.githubusercontent.com/johnfercher/samples/master/php/exercises/matrix_multiplier.php", function(data) {
+            var html = Prism.highlight(data, Prism.languages.php);
+            $('#samplephp').html(html);
         });
     });
     </script>
