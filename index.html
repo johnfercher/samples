@@ -92,6 +92,9 @@
                 name: 'C# (-optimize)',
                 data: [0.009713, 0.014402, 0.025943, 0.049341, 0.086626, 0.142170]
             }, {
+                name: 'JavaScript',
+                data: [0.037971, 0.041854, 0.051525, 0.066704, 0.092861, 0.131755]
+            }, {
                 name: 'Java',
                 data: [0.085830, 0.098826, 0.098922, 0.099914, 0.107047, 0.132297]
             }, {
@@ -118,7 +121,7 @@
                 text: 'https://github.com/johnfercher/samples'
             },
             xAxis: {
-                categories: ['C', 'C#', 'C++', 'Java', 'Rust', 'PHP', 'Lua'],
+                categories: ['C', 'C#', 'C++', 'Java', 'Rust', 'PHP', 'Lua', 'JavaScript'],
                 title: {
                     text: null
                 }
@@ -156,7 +159,7 @@
             },
             series: [{
                 name: 'Lines',
-                data: [105, 99, 98, 93, 82, 74, 70]
+                data: [105, 99, 98, 93, 82, 74, 70, 67]
             }]
         });
     });
@@ -186,7 +189,7 @@
                                             <b>Kernel:</b> Linux 4.4.0-47-generic, <b>Distro:</b> Ubuntu 16.04.1 LTS
                                         </p>
                                         <p>
-                                            <b>C</b> (GCC 5.4.0), <b>C++</b> (G++ 5.4.0), <b>C#</b> (Mono 4.2.1.0), <b>Rust</b> (Cargo 0.8.0), <b>Java</b> (9-internal), <b>Lua</b> (5.3.3), <b>PHP</b> (7.0.8)
+                                            <b>C</b> (GCC 5.4.0), <b>C++</b> (G++ 5.4.0), <b>C#</b> (Mono 4.2.1.0), <b>Rust</b> (Cargo 0.8.0), <b>JavaScript</b> (Node v4.2.6), <b>Java</b> (9-internal), <b>Lua</b> (5.3.3), <b>PHP</b> (7.0.8)
                                         </p>
                                     </div><!--//code-block-->
                                 </div>
@@ -251,6 +254,13 @@
                                             </div><!--//code-block-->
                                         </div>
 
+                                        <div id="javascript-code" class="section-block">
+                                            <div class="code-block">
+                                                <h6>JavaScript</h6>
+<pre><code class="language-javascript" id="samplejavascript"></code></pre>
+                                            </div><!--//code-block-->
+                                        </div>
+
                                         <div id="lua-code" class="section-block">
                                             <div class="code-block">
                                                 <h6>Lua</h6>
@@ -291,6 +301,7 @@
                                         <li><a class="scrollto" href="#csharp-code">C#</a></li>
                                         <li><a class="scrollto" href="#rust-code">Rust</a></li>
                                         <li><a class="scrollto" href="#java-code">Java</a></li>
+                                        <li><a class="scrollto" href="#javascript-code">JavaScript</a></li>
                                         <li><a class="scrollto" href="#lua-code">Lua</a></li>
                                         <li><a class="scrollto" href="#php-code">PHP</a></li>
                                     </ul><!--//nav-->
@@ -352,6 +363,12 @@
         $.get("https://raw.githubusercontent.com/johnfercher/samples/master/java/exercises/matrix_multiplier.java", function(data) {
             var html = Prism.highlight(data, Prism.languages.java);
             $('#samplejava').html(html);
+        });
+    });
+    $(document).ready(function() {
+        $.get("https://raw.githubusercontent.com/johnfercher/samples/master/javascript/exercises/matrix_multiplier.js", function(data) {
+            var html = Prism.highlight(data, Prism.languages.javascript);
+            $('#samplejavascript').html(html);
         });
     });
     </script>
