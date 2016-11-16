@@ -147,23 +147,23 @@ RUN_JAVA_MM () {
 
 
 RUN_MM () {
-    #echo "C";
-    #RUN_C_MM;
+    echo "C";
+    RUN_C_MM;
 
-    #echo "CPP";
-    #RUN_CPP_MM;
+    echo "CPP";
+    RUN_CPP_MM;
 
-    #echo "CSHARP";
-    #RUN_CSHARP_MM;
+    echo "CSHARP";
+    RUN_CSHARP_MM;
 
-    #echo "Rust"
-    #RUN_RUST_MM;
+    echo "Rust"
+    RUN_RUST_MM;
 
-    #echo "Lua";
-    #RUN_LUA_MM;
+    echo "Lua";
+    RUN_LUA_MM;
 
-    #echo "PHP";
-    #RUN_PHP_MM;
+    echo "PHP";
+    RUN_PHP_MM;
 
     echo "Java"
     RUN_JAVA_MM;
