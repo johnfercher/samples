@@ -132,25 +132,41 @@ RUN_PHP_MM () {
     echo `./benchmark/benchmark_opt0 php php/exercises/matrix_multiplier.php 250 250` >> data/mm_php.txt
 }
 
+RUN_JAVA_MM () {
+    rm data/mm_java.txt
+    echo "Java" >> data/mm_java.txt
+    cd java/exercises
+    echo `./../../benchmark/benchmark_opt0 java matrix_multiplier 50 50` >> ../../data/mm_java.txt
+    echo `./../../benchmark/benchmark_opt0 java matrix_multiplier 100 100` >> ../../data/mm_java.txt
+    echo `./../../benchmark/benchmark_opt0 java matrix_multiplier 150 150` >> ../../data/mm_java.txt
+    echo `./../../benchmark/benchmark_opt0 java matrix_multiplier 200 200` >> ../../data/mm_java.txt
+    echo `./../../benchmark/benchmark_opt0 java matrix_multiplier 250 250` >> ../../data/mm_java.txt
+    cd ..
+    cd ..
+}
+
 
 RUN_MM () {
-    echo "C";
-    RUN_C_MM;
+    #echo "C";
+    #RUN_C_MM;
 
-    echo "CPP";
-    RUN_CPP_MM;
+    #echo "CPP";
+    #RUN_CPP_MM;
 
-    echo "CSHARP";
-    RUN_CSHARP_MM;
+    #echo "CSHARP";
+    #RUN_CSHARP_MM;
 
-    echo "Rust"
-    RUN_RUST_MM;
+    #echo "Rust"
+    #RUN_RUST_MM;
 
-    echo "Lua";
-    RUN_LUA_MM;
+    #echo "Lua";
+    #RUN_LUA_MM;
 
-    echo "PHP";
-    RUN_PHP_MM;
+    #echo "PHP";
+    #RUN_PHP_MM;
+
+    echo "Java"
+    RUN_JAVA_MM;
 }
 
 RUN () {

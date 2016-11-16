@@ -5,3 +5,4 @@ a.out
 *target
 *.cargo
 *.lock
+*.class

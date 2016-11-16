@@ -43,6 +43,14 @@ COMPILE_CSHARP () {
     cd ..
 }
 
+COMPILE_JAVA () {
+    cd java/exercises/
+    javac matrix_multiplier.java
+    cd ..
+    cd ..
+}
+
+
 COMPILE_RUST () {
     cd rust/exercises/matrix_multiplier
     cargo build --release
@@ -62,6 +70,7 @@ COMPILE () {
     COMPILE_CPP;
     COMPILE_CSHARP;
     COMPILE_RUST;
+    COMPILE_JAVA;
     COMPILE_BENCHMARK;
 }
 
