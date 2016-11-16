@@ -112,7 +112,7 @@
                 text: 'https://github.com/johnfercher/samples'
             },
             xAxis: {
-                categories: ['C', 'C#', 'C++', 'Rust', 'PHP', 'Lua'],
+                categories: ['C', 'C#', 'C++', 'Java', 'Rust', 'PHP', 'Lua'],
                 title: {
                     text: null
                 }
@@ -150,7 +150,7 @@
             },
             series: [{
                 name: 'Lines',
-                data: [105, 99, 98, 82, 74, 70]
+                data: [105, 99, 98, 93, 82, 74, 70]
             }]
         });
     });
@@ -238,6 +238,13 @@
                                             </div><!--//code-block-->
                                         </div>
 
+                                        <div id="java-code" class="section-block">
+                                            <div class="code-block">
+                                                <h6>Java</h6>
+<pre><code class="language-java" id="samplejava"></code></pre>
+                                            </div><!--//code-block-->
+                                        </div>
+
                                         <div id="lua-code" class="section-block">
                                             <div class="code-block">
                                                 <h6>Lua</h6>
@@ -277,6 +284,7 @@
                                         <li><a class="scrollto" href="#cpp-code">C++</a></li>
                                         <li><a class="scrollto" href="#csharp-code">C#</a></li>
                                         <li><a class="scrollto" href="#rust-code">Rust</a></li>
+                                        <li><a class="scrollto" href="#java-code">Java</a></li>
                                         <li><a class="scrollto" href="#lua-code">Lua</a></li>
                                         <li><a class="scrollto" href="#php-code">PHP</a></li>
                                     </ul><!--//nav-->
@@ -332,6 +340,12 @@
         $.get("https://raw.githubusercontent.com/johnfercher/samples/master/php/exercises/matrix_multiplier.php", function(data) {
             var html = Prism.highlight(data, Prism.languages.php);
             $('#samplephp').html(html);
+        });
+    });
+    $(document).ready(function() {
+        $.get("https://raw.githubusercontent.com/johnfercher/samples/master/java/exercises/matrix_multiplier.java", function(data) {
+            var html = Prism.highlight(data, Prism.languages.java);
+            $('#samplejava').html(html);
         });
     });
     </script>
