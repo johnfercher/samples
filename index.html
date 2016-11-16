@@ -32,7 +32,7 @@
     $(function () {
         $('#time').highcharts({
             chart: {
-                type: 'area'
+                type: 'spline'
             },
             title: {
                 text: 'Time Spent: Multipliyng Two Matrices (Compiled)'
@@ -77,14 +77,14 @@
                 name: 'C#',
                 data: [0.009310, 0.013679, 0.025478, 0.047360, 0.083896]
             }, {
-                name: 'Rust (--release)',
+                name: 'Rust',
                 data: [0.001403, 0.002801, 0.006498, 0.013490, 0.029844]
             }, {
-                name: 'C++ (-O1)',
-                data: [0.001245, 0.002159, 0.004600, 0.009195, 0.016937]
+                name: 'C++',
+                data: [0.001711, 0.005054, 0.013950, 0.031449, 0.060572]
             }, {
-                name: 'C (-O1)',
-                data: [0.000763, 0.001717, 0.004298, 0.009167, 0.016917]
+                name: 'C',
+                data: [0.001262, 0.004666, 0.013607, 0.033632, 0.063888]
             }]
         });
     });
@@ -94,7 +94,7 @@
     $(function () {
         $('#time-interpreted').highcharts({
             chart: {
-                type: 'area'
+                type: 'spline'
             },
             title: {
                 text: 'Time Spent: Multipliyng Two Matrices (Interpreted)'
@@ -235,14 +235,14 @@
                                 <div id="compiled" class="section-block">
                                     <div class="code-block">
                                         <h6>Compiled</h6>
-                                        <div id="time" style="min-height: 500px; margin: 0 auto"></div>
+                                        <div id="time" style="min-height: 600px; margin: 0 auto"></div>
                                     </div><!--//code-block-->
                                 </div>
 
                                 <div id="interpreted" class="section-block">
                                     <div class="code-block">
                                         <h6>Interpreted</h6>
-                                        <div id="time-interpreted" style="min-height: 500px; margin: 0 auto"></div>
+                                        <div id="time-interpreted" style="min-height: 600px; margin: 0 auto"></div>
                                     </div><!--//code-block-->
                                 </div>
 
