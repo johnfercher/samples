@@ -102,6 +102,16 @@ RUN_CSHARP_MM () {
     echo `./benchmark/benchmark_opt0 ./csharp/exercises/matrix_multiplier_opt1 250 250 0` >> data/mm_csharp.txt
 }
 
+RUN_RUST_MM () {
+    rm data/mm_rust.txt
+    echo "RUST" >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 50 50 0` >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 100 100 0` >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 150 150 0` >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 200 200 0` >> data/mm_rust.txt
+    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 250 250 0` >> data/mm_rust.txt
+}
+
 RUN_LUA_MM () {
     rm data/mm_lua.txt
     echo "LUA" >> data/mm_lua.txt
@@ -112,15 +122,16 @@ RUN_LUA_MM () {
     echo `./benchmark/benchmark_opt0 lua lua/exercises/matrix_multiplier.lua 250 250` >> data/mm_lua.txt
 }
 
-RUN_RUST_MM () {
-    rm data/mm_rust.txt
-    echo "RUST" >> data/mm_rust.txt
-    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 50 50 0` >> data/mm_rust.txt
-    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 100 100 0` >> data/mm_rust.txt
-    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 150 150 0` >> data/mm_rust.txt
-    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 200 200 0` >> data/mm_rust.txt
-    echo `./benchmark/benchmark_opt0 ./rust/exercises/matrix_multiplier/target/release/matrix_multiplier 250 250 0` >> data/mm_rust.txt
+RUN_PHP_MM () {
+    rm data/mm_php.txt
+    echo "PHP" >> data/mm_php.txt
+    echo `./benchmark/benchmark_opt0 php php/exercises/matrix_multiplier.php 50 50` >> data/mm_php.txt
+    echo `./benchmark/benchmark_opt0 php php/exercises/matrix_multiplier.php 100 100` >> data/mm_php.txt
+    echo `./benchmark/benchmark_opt0 php php/exercises/matrix_multiplier.php 150 150` >> data/mm_php.txt
+    echo `./benchmark/benchmark_opt0 php php/exercises/matrix_multiplier.php 200 200` >> data/mm_php.txt
+    echo `./benchmark/benchmark_opt0 php php/exercises/matrix_multiplier.php 250 250` >> data/mm_php.txt
 }
+
 
 RUN_MM () {
     echo "C";
@@ -137,6 +148,9 @@ RUN_MM () {
 
     echo "Lua";
     RUN_LUA_MM;
+
+    echo "PHP";
+    RUN_PHP_MM;
 }
 
 RUN () {

@@ -16,7 +16,6 @@
 function alloc_matrix (rows, cols)
     local A = {}                                        -- create a table
 
-    -- initializes
     for i = 1, rows do                                  -- foreach cols
         A[i] = {}                                       -- add a table in the table, matrix -> array of array
         for j = 1, cols do                              
@@ -29,7 +28,6 @@ end
 
 -- function which prints a matrix
 function print_matrix (A)
-    -- initializes
     for i = 1, #A do                                    -- i = 1 to sizeof(A)
         for j = 1, #A[i] do                             -- j = 1 to sizeof(A[i])
             io.write(A[i][j] .. "\t")
@@ -38,9 +36,9 @@ function print_matrix (A)
     end
 end
 
--- function which multipliy two matrix
-function multipliy_matrix (A, B)
-    R = alloc_matrix(I, I);                             -- allocates a amtrix of response in the final shape
+-- function which multiply two matrix
+function multiply_matrix (A, B)
+    R = alloc_matrix(I, I);                             -- allocates a matrix of response in the final shape
 
     for i = 1, I do                                     -- multiply line of A with column of B
         for j = 1, I do                 
@@ -67,7 +65,7 @@ A = alloc_matrix(I, J)                                  -- allocates matrix A !!
 B = alloc_matrix(J, I)                                  -- allocates matrix B !! B[]j[i] !!
 --print_matrix(B)
 
-R = multipliy_matrix(A, B, I, J)                        -- the matrix A and B are multipliable
+R = multiply_matrix(A, B, I, J)                        -- the matrix A and B are multipliable
 --print_matrix(R)
 
 

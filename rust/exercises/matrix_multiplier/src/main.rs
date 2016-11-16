@@ -46,7 +46,8 @@ impl Matrix {
     }
 }
 
-fn multiply_matrix(a: &Matrix, b: &Matrix) -> Matrix {      // borrow two matrices and returns the multiplication between them
+// borrow two matrices and returns the multiplication between them
+fn multiply_matrix(a: &Matrix, b: &Matrix) -> Matrix {      
     let mut hold;
     let mut r = Matrix::new(a.rows, b.cols);                
     
