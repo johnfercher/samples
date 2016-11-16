@@ -13,6 +13,7 @@ A collection of samples of programs in various languages
 1. Rust (not completed) 
 1. Java (not completed)
 1. JavaScript (not completed)
+1. Shellscript (not completed)
 
 ## Benchmark
 
