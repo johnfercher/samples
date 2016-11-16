@@ -35,14 +35,14 @@
                 type: 'spline'
             },
             title: {
-                text: 'Time Spent: Multipliyng Two Matrices (Compiled)'
+                text: 'Time Spent: Multipliyng Two Matrices'
                 
             },
             subtitle: {
                 text: 'https://github.com/johnfercher/samples'
             },
             xAxis: {
-                categories: ['50x50', '100x100', '150x150', '200x200', '250x250'],
+                categories: ['50x50', '100x100', '150x150', '200x200', '250x250', '300x300'],
                 tickmarkPlacement: 'on',
                 title: {
                     enabled: false
@@ -75,72 +75,25 @@
             },
             series: [{
                 name: 'C#',
-                data: [0.009310, 0.013679, 0.025478, 0.047360, 0.083896]
+                data: [0.009713, 0.014402, 0.025943, 0.049341, 0.086626, 0.142170]
             }, {
                 name: 'Rust',
-                data: [0.001403, 0.002801, 0.006498, 0.013490, 0.029844]
+                data: [0.001894, 0.002924, 0.006662, 0.013625, 0.030267, 0.059541]
             }, {
                 name: 'C++',
-                data: [0.001711, 0.005054, 0.013950, 0.031449, 0.060572]
+                data: [0.001313, 0.002513, 0.005389, 0.010020, 0.018084, 0.030480]
             }, {
                 name: 'C',
-                data: [0.001262, 0.004666, 0.013607, 0.033632, 0.063888]
-            }]
-        });
-    });
-    </script>
-
-    <script type="text/javascript">
-    $(function () {
-        $('#time-interpreted').highcharts({
-            chart: {
-                type: 'spline'
-            },
-            title: {
-                text: 'Time Spent: Multipliyng Two Matrices (Interpreted)'
-                
-            },
-            subtitle: {
-                text: 'https://github.com/johnfercher/samples'
-            },
-            xAxis: {
-                categories: ['50x50', '100x100', '150x150', '200x200', '250x250'],
-                tickmarkPlacement: 'on',
-                title: {
-                    enabled: false
-                }
-            },
-            yAxis: {
-                title: {
-                    text: 'Seconds'
-                },
-                labels: {
-                    formatter: function () {
-                        return this.value / 1;
-                    }
-                }
-            },
-            tooltip: {
-                split: true,
-                valueSuffix: ' seconds'
-            },
-            plotOptions: {
-                area: {
-                    stacking: 'normal',
-                    lineColor: '#666666',
-                    lineWidth: 1,
-                    marker: {
-                        lineWidth: 1,
-                        lineColor: '#666666'
-                    }
-                }
-            },
-            series: [{
-                name: 'PHP',
-                data: [0.077282, 0.506611, 1.641281, 3.961451, 7.870904]
+                data: [0.000839, 0.001873, 0.004387, 0.009669, 0.018290, 0.031118]
+            }, {
+                name: 'Java',
+                data: [0.085830, 0.098826, 0.098922, 0.099914, 0.107047, 0.132297]
             }, {
                 name: 'Lua',
-                data: [0.009509, 0.063462, 0.215520, 0.500202, 0.967530]
+                data: [0.010184, 0.065839, 0.225936, 0.517031, 1.046514, 1.802317]
+            }, {
+                name: 'PHP',
+                data: [0.077282, 0.506611, 1.641281, 3.961451, 7.870904, 12.773384]
             }]
         });
     });
@@ -232,17 +185,13 @@
                                     </div><!--//code-block-->
                                 </div>
 
-                                <div id="compiled" class="section-block">
+                                <div id="amount-time" class="section-block">
                                     <div class="code-block">
-                                        <h6>Compiled</h6>
+                                        <h6>Time Spent</h6>
+                                        <p>
+                                            You can disable languanges, by click them.
+                                        </p>
                                         <div id="time" style="min-height: 600px; margin: 0 auto"></div>
-                                    </div><!--//code-block-->
-                                </div>
-
-                                <div id="interpreted" class="section-block">
-                                    <div class="code-block">
-                                        <h6>Interpreted</h6>
-                                        <div id="time-interpreted" style="min-height: 600px; margin: 0 auto"></div>
                                     </div><!--//code-block-->
                                 </div>
 
@@ -317,8 +266,7 @@
                                     <a class="scrollto" href="#benchmark-section">Benchmark</a>
                                     <ul class="nav doc-sub-menu">
                                         <li><a class="scrollto" href="#specs">Specifications</a></li>
-                                        <li><a class="scrollto" href="#compiled">Compiled</a></li>
-                                        <li><a class="scrollto" href="#interpreted">Interpreted</a></li>
+                                        <li><a class="scrollto" href="#amount-time">Time Spent</a></li>
                                         <li><a class="scrollto" href="#amount-lines">Amount of Lines</a></li>
                                     </ul><!--//nav-->
                                 </li>
