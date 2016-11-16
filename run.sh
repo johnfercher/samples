@@ -145,6 +145,17 @@ RUN_PHP_MM () {
     echo `./benchmark/benchmark_opt0 php php/exercises/matrix_multiplier.php 300 300` >> data/mm_php.txt
 }
 
+RUN_JAVASCRIPT_MM () {
+    rm data/mm_javascript.txt
+    echo "JavaScript" >> data/mm_javascript.txt
+    echo `./benchmark/benchmark_opt0 node javascript/exercises/matrix_multiplier.js 50 50` >> data/mm_javascript.txt
+    echo `./benchmark/benchmark_opt0 node javascript/exercises/matrix_multiplier.js 100 100` >> data/mm_javascript.txt
+    echo `./benchmark/benchmark_opt0 node javascript/exercises/matrix_multiplier.js 150 150` >> data/mm_javascript.txt
+    echo `./benchmark/benchmark_opt0 node javascript/exercises/matrix_multiplier.js 200 200` >> data/mm_javascript.txt
+    echo `./benchmark/benchmark_opt0 node javascript/exercises/matrix_multiplier.js 250 250` >> data/mm_javascript.txt
+    echo `./benchmark/benchmark_opt0 node javascript/exercises/matrix_multiplier.js 300 300` >> data/mm_javascript.txt
+}
+
 RUN_JAVA_MM () {
     rm data/mm_java.txt
     echo "Java" >> data/mm_java.txt
@@ -181,6 +192,9 @@ RUN_MM () {
 
     echo "Java"
     RUN_JAVA_MM;
+
+    echo "JavaScript"
+    RUN_JAVASCRIPT_MM
 }
 
 RUN () {
