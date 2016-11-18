@@ -109,8 +109,8 @@ multiply:
 
 
 exit_mult:
-	move $a1, $s5
-	jal print
+#	move $a1, $s5
+#	jal print
 	j exit
 
 
