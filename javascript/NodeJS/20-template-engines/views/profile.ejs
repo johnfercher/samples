@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lorem ipsum</title>
+    </head>
+    
+    <body>
+        <% include partials/nav.ejs %>
+        <h1><%= person %> </h1>
+        <p><strong>Age: <%= data.age %></strong></p>
+        <p><strong>Job: <%= data.job %></strong></p>
+        <h2>
+            <ul>
+                <% data.hobbies.forEach(function(item){ %>
+                    <li> <%= item %> </li> 
+                <% }); %>
+            </ul>
+        </h2>
+    </body>
+</html>
