@@ -6,3 +6,5 @@ a.out
 *.cargo
 *.lock
 *.class
+*.VC.opendb
+*.VC.db
