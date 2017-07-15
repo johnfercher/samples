@@ -23,6 +23,9 @@ new Vue({
     OnUpdateXY : function (event) {
       this.x = event.offsetX;
       this.y = event.offsetY;
+    },
+    OnClick : function () {
+      alert("Clickkk");
     }
   },
 });
