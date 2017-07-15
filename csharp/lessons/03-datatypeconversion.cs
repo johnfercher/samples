@@ -6,7 +6,7 @@ namespace Teste
   {
     static public void Main(string[] args)
     {
-      float b = 1234123.12f;
+      const float b = 1234123.12f;
       float a = (int)b;
       int bb = Convert.ToInt32(b);
       string s = "asd"+b.ToString();
