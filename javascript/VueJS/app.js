@@ -7,7 +7,9 @@ new Vue({
     websiteTag:"",
     age: 23,
     x: 0,
-    y: 0
+    y: 0,
+    a: 0,
+    b: 0
   },
   methods:{
     greet: function (msg) {
@@ -29,6 +31,17 @@ new Vue({
     },
     OnAgeCheck : function () {
       this.age = event.target.value;
+    },
+
+  },
+  computed:{
+    addToA : function () {
+      console.log("A");
+      return this.a + this.age;
+    },
+    addToB : function () {
+      console.log("B");
+      return this.b + this.age;
     }
   },
 });

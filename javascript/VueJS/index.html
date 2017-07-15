@@ -39,6 +39,15 @@
       <label>Age:</label>
       <input type="text" @keyup.alt.enter="OnAgeCheck"/>
       {{age}}
+      <br /><br />
+      <h1>Properties</h1>
+      <button v-on:click="a++">a++</button>
+      <button @click="b++">b++</button>
+      <p>A = {{a}}</p>
+      <p>B = {{b}}</p>
+      <p>A+B = {{a+b}}</p>
+      <p>Age + A = {{addToA}}</p>
+      <p>Age + B = {{addToB}}</p>
     </div>
 
     <script src="app.js"></script>
