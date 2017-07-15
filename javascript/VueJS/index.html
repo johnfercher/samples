@@ -22,7 +22,14 @@
       <h2>{{job}}</h2>
       <h3>{{greet('afternoon')}}</h3>
       <a v-bind:href="website" target="_blank">Facebook</a>
-      <br />
+      <br /><br />
+      <h1>Events</h1>
+      <button @click="OnAdd(1)">age++</button>
+      <button @click="OnSubtract(1)">age--</button>
+      <button @dblclick="OnAdd(10)">age += 10</button>
+      <button @dblclick="OnSubtract(10)">age -= 10</button>
+      <p>Age is {{age}}</p>
+      <div id="canvas" @mousemove="OnUpdateXY">{{x}}, {{y}}</div>
     </div>
 
     <script src="app.js"></script>
