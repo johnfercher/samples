@@ -31,6 +31,12 @@
       <p>Age is {{age}}</p>
       <div id="canvas" @mousemove="OnUpdateXY">{{x}}, {{y}}</div>
       <a @click.prevent="OnClick" href="www.facebook.com">facebook</a>
+      <br /><br />
+      <h1>Keyboard Events</h1>
+      <label>Name:</label>
+      <input type="text" @keyup.enter="OnNameCheck"/>
+      <label>Age:</label>
+      <input type="text" @keyup.alt.enter="OnAgeCheck"/>
     </div>
 
     <script src="app.js"></script>
