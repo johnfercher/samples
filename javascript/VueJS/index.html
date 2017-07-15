@@ -25,6 +25,18 @@
       <p v-else-if="success">success</p>
       <p v-show="error">error</p>
       <p v-show="success">success</p>
+      <br/><br/><br/>
+      <h1>Looping</h1>
+      <ul>
+        <li v-for="character in characters">{{character}}</li>
+      </ul>
+      <ul>
+        <li v-for="(ninja, index) in ninjas">{{index}}, {{ninja.name}}, {{ninja.age}}</li>
+      </ul>
+      <template v-for="(ninja, index) in ninjas">
+        <h3>{{index}}</h3>
+        <p v-for="(val,key) in ninja">{{key}}: {{val}}</p>
+      </template>
     </div>
 
     <script src="app.js"></script>
