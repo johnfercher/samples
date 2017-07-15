@@ -34,9 +34,11 @@
       <br /><br />
       <h1>Keyboard Events</h1>
       <label>Name:</label>
-      <input type="text" @keyup.enter="OnNameCheck"/>
+      <input type="text" v-model="name"/>
+      {{name}}
       <label>Age:</label>
       <input type="text" @keyup.alt.enter="OnAgeCheck"/>
+      {{age}}
     </div>
 
     <script src="app.js"></script>

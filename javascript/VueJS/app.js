@@ -27,11 +27,8 @@ new Vue({
     OnClick : function () {
       alert("Clickkk");
     },
-    OnNameCheck : function () {
-      console.log("name");
-    },
     OnAgeCheck : function () {
-      console.log("age");
+      this.age = event.target.value;
     }
   },
 });
