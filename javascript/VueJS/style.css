@@ -4,3 +4,11 @@
   text-align: center;
   border: solid red 1px;
 }
+
+.available span{
+  background-color: green;
+}
+
+.nearby span{
+  font-weight: bold;
+}
