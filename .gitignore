@@ -8,3 +8,4 @@ a.out
 *.class
 *.VC.opendb
 *.VC.db
+node_modules/*
