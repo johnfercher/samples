@@ -6,6 +6,7 @@
         <p v-show="ninja.show">{{ninja.nickname}}</p>
       </li>
     </ul>
+    <button @click="deleteNinja">Delete ninja</button>
   </div>
 </template>
 
@@ -21,6 +22,11 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods: {
+    deleteNinja : function () {
+      this.ninjas.pop();
     }
   }
 }

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <app-header></app-header>
+    <app-header v-bind:title="title"></app-header>
     <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
-    <app-footer></app-footer>
+    <app-footer v-bind:title="title"></app-footer>
   </div>
 </template>
 
@@ -30,7 +30,8 @@ export default {
         {name: "Ermac", nickname: "Cara da Rave", show: false},
         {name: "Cyrax", nickname: "Minion", show: false},
         {name: "Sektor", nickname: "Sith", show: false},
-      ]
+      ],
+      title: "Vue Ninjas Prop"
     }
   }
 }
