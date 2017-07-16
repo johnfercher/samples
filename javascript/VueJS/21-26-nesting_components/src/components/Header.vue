@@ -24,6 +24,26 @@ export default {
       this.title = "Vueee vuoea local";
       bus.$emit("titleChanged", "Vueee bus evento");
     }
+  },
+  // Lifecycle
+  beforeCreate () {
+    alert("beforeCreate");
+  },
+  created () {
+    // Database
+    alert("created");
+  },
+  beforeMount () {
+    alert("beforeMount");
+  },
+  mounted () {
+    alert("mounted");
+  },
+  beforeUpdate () {
+    alert("beforeUpdate");
+  },
+  updated () {
+    alert("updated");
   }
 }
 </script>
