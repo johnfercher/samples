@@ -4,7 +4,7 @@ import VueResource from 'vue-resource'
 
 Vue.use(VueResource);
 
-// Custom directives
+/* Custom directives Globaly
 Vue.directive("rainbow", {
   bind(el, binding, vnode){
     el.style.color = "#" + Math.random().toString().slice(2,8);
@@ -25,16 +25,16 @@ Vue.directive("theme", {
       el.style.padding = "20px";
     }
   }
-});
+});*;
 
-// Filters
+/* Filters Globaly
 Vue.filter("to-uppercase", function(value){
   return value.toUpperCase();
 });
 
 Vue.filter("snippet", function(value){
   return value.slice(0,100) + "...";
-});
+});*/
 
 new Vue({
   el: '#app',
