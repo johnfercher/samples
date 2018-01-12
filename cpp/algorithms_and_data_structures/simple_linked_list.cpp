@@ -29,6 +29,16 @@ private:
     deepSearch(actualNode->next, ++actualSize);
   }
 
+  std::optional<T> recursiveElementSearch(Node<T> *actualNode, int objectiveLevel, int actualLevel = 0){
+    if(actualNode == NULL)
+      return {};
+
+    if(actualLevel == objectiveLevel)
+      return actualNode->value;
+
+    return recursiveElementSearch(actualNode->next, objectiveLevel, ++actualLevel);
+  }
+
 public:
   LinkedList(){
     head = NULL;
@@ -54,10 +64,18 @@ public:
   }
 
   std::optional<T> peek(){
-    if(head == NULL)
-      return {};
+    return head == NULL ? {} : head->value;
+  }
 
-    return head->value;
+  std::optional<T> at(int index){
+    if(auto element = recursiveElementSearch(head, index))
+        return *element;
+
+    return {};
+  }
+
+  bool any(){
+    return head == NULL ? false : true;
   }
 
   int size(){
@@ -68,15 +86,16 @@ public:
 int main(){
   LinkedList<int> list;
 
+  cout << list.any() << endl;
+
   list.push(12);
   list.push(55);
   list.push(16);
 
-  //cout << list.size() << endl;
+  cout << list.any() << endl;
+  cout << list.at(3).value_or(0) << endl;
+
   cout << list.pop().value_or(0) << endl;
-  cout << list.size() << endl;
   cout << list.pop().value_or(0) << endl;
-  cout << list.size() << endl;
   cout << list.pop().value_or(0) << endl;
-  cout << list.size() << endl;
 }
