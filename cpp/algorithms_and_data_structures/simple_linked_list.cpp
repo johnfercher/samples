@@ -9,6 +9,8 @@ using namespace std;
     - Estrutura fundamental, pois todos os outros partem dele
     - Tamanho variavel**
     - Um nó aponta para o proximo, se o nó for o "primeiro" o mesmo é NULL
+    - Não é alocado sequencialmente
+    - Não serve para adição de elementos nas duas extremidades, pois é necessário navegar até o final da lista
 */
 
 template<class T>
@@ -103,17 +105,10 @@ public:
 int main(){
   LinkedList<int> list;
 
-  cout << list.any() << endl;
-
   list.push_back(12);
   list.push_back(55);
   list.push_back(16);
 
 
-  cout << list.any() << endl;
-  cout << list.at(3).value_or(0) << endl;
-
-  cout << list.pop_back().value_or(0) << endl;
-  cout << list.pop_back().value_or(0) << endl;
-  cout << list.pop_back().value_or(0) << endl;
+  cout << list.at(2).value_or(0) << endl;
 }
