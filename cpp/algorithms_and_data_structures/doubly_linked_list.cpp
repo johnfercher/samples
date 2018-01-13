@@ -84,7 +84,7 @@ public:
 
     return value;
   }
-  
+
   void show(){
     auto actual = head;
     while(true){
@@ -100,6 +100,27 @@ public:
   unsigned long long size(){
     return lenght;
   }
+
+  T* to_array(){
+    T *array = new T[lenght];
+    auto actual = head->next;
+
+    for(unsigned long long i = 0 ; i < lenght ; i++){
+      array[i] = actual->value;
+      actual = actual->next;
+    }
+
+    return array;
+  }
+
+  T at(unsigned long long index){
+    auto actual = head->next;
+
+    for(unsigned long long i = 0 ; i < index ; i++)
+      actual = actual->next;
+
+    return actual->value;
+  }
 };
 
 int main(){
@@ -111,10 +132,5 @@ int main(){
   doubly->push_front(10);
   doubly->push_front(9);
 
-  //cout << doubly->get_tail()->previous->value << endl;
-  //cout << doubly->pop_back() << endl;
-  cout << "removendo " << doubly->pop_back() << endl;
-  //doubly->show();
-  //cout << doubly->pop_back() << endl;
   doubly->show();
 }
