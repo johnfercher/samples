@@ -31,13 +31,12 @@ public:
 
   void push_front(T value){
     Node<T> *new_node = new Node<T>();
-    head->value = value;
     new_node->next = head;
     new_node->previous = tail;
 
     head->previous = new_node;
     head = new_node;
-
+    head->next->value = value;
     lenght++;
   }
 
@@ -52,6 +51,40 @@ public:
     lenght++;
   }
 
+  T peek_front(){
+    return head->next->value;
+  }
+
+  T peek_back(){
+    return tail->previous->value;
+  }
+
+  T pop_front(){
+    T value = head->next->value;
+
+    auto aux = head->next;
+    head->next = head->next->next;
+    head->next->previous = head;
+
+    delete aux;
+    lenght--;
+
+    return value;
+  }
+
+  T pop_back(){
+    T value = tail->previous->value;
+
+    auto aux = tail->previous;
+    tail->previous = tail->previous->previous;
+    tail->previous->next = tail;
+
+    delete aux;
+    lenght--;
+
+    return value;
+  }
+  
   void show(){
     auto actual = head;
     while(true){
@@ -78,5 +111,10 @@ int main(){
   doubly->push_front(10);
   doubly->push_front(9);
 
+  //cout << doubly->get_tail()->previous->value << endl;
+  //cout << doubly->pop_back() << endl;
+  cout << "removendo " << doubly->pop_back() << endl;
+  //doubly->show();
+  //cout << doubly->pop_back() << endl;
   doubly->show();
 }
