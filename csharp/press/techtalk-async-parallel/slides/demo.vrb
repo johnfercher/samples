@@ -1,0 +1,6 @@
+\frametitle{Problema paralelo}
+\begin{itemize}
+		\item \textbf{Em um jogo:} Uma thread é responsável por obter os comandos do Joystick e outras $N$ são responsáveis por controlar a renderização de objetos, comandos de adversários e etc;
+		\item \textbf{Em um robô}: Uma thread é responsável pela leitura de sensores e outras $N$ são responsáveis por controlar motores, realizar comunicação com outros robôs e etc;
+		\item \textbf{Em um algoritmo de reconhecimento facial:} Pode-se dividir uma imagem em quadrantes, onde N threads serão responsáveis por aplicar filtros nas secções;
+	\end{itemize}
