@@ -10,7 +10,7 @@ namespace Core
 
       for(int i = 0 ; i < 45 ; i++){
         System.Console.WriteLine($"({Fibonacci(i)})");
-        Thread.Sleep(50);        
+        Thread.Sleep(50);
       }
 
       return "something";

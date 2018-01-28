@@ -23,12 +23,6 @@ cd Files
 rm *.txt
 cd ../..
 
-cd AsyncTaskParallel
-rm *.exe
-cd Files
-rm *.txt
-cd ../..
-
 cd Sync
 rm *.exe
 cd Files
@@ -40,17 +34,4 @@ rm *.exe
 cd Files
 rm *.txt
 cd ../..
-
-
-
-cd AsyncTaskParallel
-rm *.exe
-cd Files
-rm *.txt
-cd ../..
-
-cd AsyncParallelFireAndForget
-rm *.exe
-cd Files
-rm *.txt
-cd ../..
+e

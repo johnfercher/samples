@@ -13,10 +13,6 @@ cd AsyncTaskAndDataParallelFireAndForgetSave
 make
 cd ..
 
-cd AsyncTaskParallel
-make
-cd ..
-
 cd Sync
 make
 cd ..

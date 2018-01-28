@@ -21,7 +21,7 @@
 
 
 \title{Programação Assíncrona e Paralelismo}
-\subtitle{Techtalk TODO: Pesquisar AKKA}
+%\subtitle{Techtalk TODO: Pesquisar AKKA}
 %\date{\today}
 \author{Johnathan Fercher}
 %\institute{Braspag}
@@ -62,20 +62,20 @@
 
 \section{Programação Síncrona e Assíncrona em C\#}
 
-\begin{frame}{Simples código síncrono}
-	\textbf{exemplo}
+\begin{frame}{Código síncrono}
+	\includegraphics[width=\textwidth]{imgs/00-sync.png}
 \end{frame}
 
-\begin{frame}{Simples código assíncrono}
-	\textbf{exemplo}
+\begin{frame}{Código assíncrono}
+	\includegraphics[width=\textwidth]{imgs/01-async.png}
 \end{frame}
 
-\begin{frame}{Transformando código síncronos em assíncronos}
-	\textbf{exemplo}
+\begin{frame}{Transformando código síncrono em assíncrono}
+	\includegraphics[width=\textwidth]{imgs/02-syncToAsync.png}
 \end{frame}
 
-\begin{frame}{Transformando código assíncronos em síncronos}
-	\textbf{exemplo}
+\begin{frame}{Transformando código assíncrono em síncrono}
+	\includegraphics[width=\textwidth]{imgs/03-asyncToSync.png}
 \end{frame}
 
 \begin{frame}{Exemplos para Benchmark}
@@ -117,8 +117,8 @@
 
 \begin{frame}{Vantagens da Programação Assíncrona}
 	\begin{itemize}
-		\item \textbf{Em aplicações que possuem front-end}: A principal vantagem é o aprimoramento da interação com a aplicação; 
-		\item \textbf{Em um servidor}: A principal vantagem é o aprimoramento da escalabilidade;
+		\item \textbf{Em aplicações que possuem front-end}: Aprimoramento da interação do usuário com a aplicação; 
+		\item \textbf{Em um servidor}: Aprimoramento da escalabilidade;
 	\end{itemize}
 \end{frame}
 
@@ -144,11 +144,43 @@
 \end{frame}
 
 \begin{frame}{Ganhos}
-	\vspace{0.5cm}
-	Redução de custos em relação à memória e redução do tempo de CPU desperdiçado; 
+	\begin{itemize}
+		\item Redução de custos em relação à memória;
+		\item Redução do tempo de CPU desperdiçado;
+	\end{itemize}
 \end{frame}
 
 \section{Paralelismo em C\#}
+
+\begin{frame}{Paralelismo X Concorrência}
+	\begin{itemize}
+		\item \textbf{Paralelismo:} Duas tarefas são executadas simultaneamente.
+		\begin{itemize}
+			\item Executadas em diferentes processadores;
+			\item Executadas em diferentes núcleos de um mesmo processador;
+		\end{itemize}
+		\vspace{0.2cm}
+		\item \textbf{Concorrência:} Duas tarefas estão em progresso ao mesmo tempo;
+		\begin{itemize}
+			\item Executadas de forma alternada em um mesmo processador;
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Tipos de Paralelismo}
+	\begin{itemize}
+		\item \textbf{Paralelismo de Dados:} A mesma instrução é executada em diferentes threads.
+		\begin{itemize}
+			\item Ex: Enquanto uma thread itera sobre a parte inicial de uma lista, outra itera sobre a parte final; 
+		\end{itemize}
+		\vspace{0.2cm}
+		\item \textbf{Paralelismo de Tarefas:} Diferentes instruções são executadas em várias threads;
+		\begin{itemize}
+			\item Ex: Enquanto uma thread valida um token, outra busca credenciais no banco;
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
 
 \begin{frame}{Exemplo para Benchmark}
 	\textbf{SyncDataParallel}
@@ -176,6 +208,7 @@
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
+	\textbf{Problemas com Async}
 \end{frame}
 
 
@@ -188,40 +221,7 @@
 	\end{exampleblock}
 \end{frame}
 
-\begin{frame}{Tipos de Paralelismo}
-	Paralelismo de Tarefas
-	
-	Paralelismo de Dados
-\end{frame}
-
-\begin{frame}{Exemplo para Benchmark}
-	\textbf{AsyncTaskParallel}
-\end{frame}
-
-\begin{frame}{Benchmark}
-	\begin{figure}
-		\begin{tikzpicture}
-		\begin{axis}[
-		mbarplot,
-		ymin=0, ymax=5.5,
-		%xlabel={Foo},
-		ylabel={Tempo de Execução},
-		width=0.9\textwidth,
-		height=6cm,
-		xticklabels={,,}
-		]
-		
-		\addplot plot coordinates {(0, 5.33539)};
-		\addplot plot coordinates {(0, 5.35828)};
-		\addplot plot coordinates {(0, 3.62243)};
-		\addplot plot coordinates {(0, 4.85521)};
-		
-		\legend{Sync (5.33s), Async (5.35s), SyncD (3.62s), AsyncT (4.85s)}
-		
-		\end{axis}
-		\end{tikzpicture}
-	\end{figure}
-\end{frame}
+\section{Programação Assíncrona e Paralela em C\#}
 
 \begin{frame}{Exemplo para Benchmark}
 	\textbf{AsyncTaskAndDataParallel}
@@ -243,10 +243,9 @@
 		\addplot plot coordinates {(0, 5.33539)};
 		\addplot plot coordinates {(0, 5.35828)};
 		\addplot plot coordinates {(0, 3.62243)};
-		\addplot plot coordinates {(0, 4.85521)};
 		\addplot plot coordinates {(0, 3.18459)};
 		
-		\legend{Sync (5.33s), Async (5.35s), SyncD (3.62s), AsyncT (4.85s), AsyncDT (3.18s)}
+		\legend{Sync (5.33s), Async (5.35s), SyncD (3.62s)), AsyncDT (3.18s)}
 		
 		\end{axis}
 		\end{tikzpicture}
@@ -254,7 +253,7 @@
 \end{frame}
 
 \begin{frame}{Exemplo para Benchmark}
-	\textbf{AsyncTaskAndDataParallel}
+	\textbf{AsyncTaskAndDataParallelFireAndForget}
 \end{frame}
 
 \begin{frame}{Benchmark}
@@ -273,43 +272,27 @@
 		\addplot plot coordinates {(0, 5.33539)};
 		\addplot plot coordinates {(0, 5.35828)};
 		\addplot plot coordinates {(0, 3.62243)};
-		\addplot plot coordinates {(0, 4.85521)};
 		\addplot plot coordinates {(0, 3.18459)};
 		\addplot plot coordinates {(0, 2.68165)};
 		
-		\legend{Sync (5.33s), Async (5.35s), SyncD (3.62s), AsyncT (4.85s), AsyncDT (3.18s), AsyncDTFF (2.68s)}
+		\legend{Sync (5.33s), Async (5.35s), SyncD (3.62s), AsyncDT (3.18s), AsyncDTFF (2.68s)}
 		
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
+	\textbf{QueueWork != Async sem Await}
 \end{frame}
 
-\begin{frame}{Problemas de Paralelismo}
+\section{Conclusões}
+
+\begin{frame}{Conclusões}
 	\begin{itemize}
-		\item Execução em ordem imprevisível;
-		\item Condição de corrida;
-		\item Execuções problemáticas;
-		\item Falhas e Exceções;
+		\item É possível criar métodos assíncronos e paralelos no WebAPI de forma simples e conveniente; 
+		\item Métodos assíncronos devem ser utilizados em APIs com finalidade de otimizar a utilização de recursos;
+		\item Paralelismo nunca fornece um ganho linear de performance e deve ser utilizado em problemas onde a quantidade de transformações de dados é grande;
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Técnicas para evitar problemas}
-	\begin{itemize}
-		\item Lock;
-		\item Mutex;
-		\item Semáforos;
-		\item Monitor;
-		\item Passagem de Mensagens;
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Técnicas para evitar problemas}
-	\begin{itemize}
-		\item Mestre e Escravo;
-		\item Escritor e Leitores;
-		\item 3 Monges;
-		\end{itemize}
-\end{frame}
 
 \begin{frame}[standout]
   Perguntas?
