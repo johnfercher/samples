@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  31 JAN 2018 00:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  31 JAN 2018 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1588,7 +1588,7 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 <imgs/00-sync.png, id=94, 869.49844pt x 158.84344pt>
 File: imgs/00-sync.png Graphic file (type png)
  <use imgs/00-sync.png>
-Package pdftex.def Info: imgs/00-sync.png used on input line 78.
+Package pdftex.def Info: imgs/00-sync.png used on input line 76.
 (pdftex.def)             Requested size: 243.4579pt x 44.47585pt.
 
 [9
@@ -1597,7 +1597,7 @@ Package pdftex.def Info: imgs/00-sync.png used on input line 78.
 File: imgs/01-async.png Graphic file (type png)
 
 <use imgs/01-async.png>
-Package pdftex.def Info: imgs/01-async.png used on input line 82.
+Package pdftex.def Info: imgs/01-async.png used on input line 80.
 (pdftex.def)             Requested size: 307.28987pt x 59.96553pt.
  [10
 
@@ -1606,7 +1606,7 @@ Package pdftex.def Info: imgs/01-async.png used on input line 82.
 File: imgs/02-syncToAsync.png Graphic file (type png)
 
 <use imgs/02-syncToAsync.png>
-Package pdftex.def Info: imgs/02-syncToAsync.png used on input line 86.
+Package pdftex.def Info: imgs/02-syncToAsync.png used on input line 84.
 (pdftex.def)             Requested size: 307.28987pt x 72.26498pt.
  [11
 
@@ -1615,102 +1615,124 @@ Package pdftex.def Info: imgs/02-syncToAsync.png used on input line 86.
 File: imgs/03-asyncToSync.png Graphic file (type png)
 
 <use imgs/03-asyncToSync.png>
-Package pdftex.def Info: imgs/03-asyncToSync.png used on input line 90.
+Package pdftex.def Info: imgs/03-asyncToSync.png used on input line 91.
 (pdftex.def)             Requested size: 269.90866pt x 45.4854pt.
  [12
 
- <./imgs/03-asyncToSync.png>] [13
+ <./imgs/03-asyncToSync.png>]
+<imgs/03-asyncToSync2.png, id=123, 1927.2pt x 1084.05pt>
+File: imgs/03-asyncToSync2.png Graphic file (type png)
+
+<use imgs/03-asyncToSync2.png>
+Package pdftex.def Info: imgs/03-asyncToSync2.png used on input line 98.
+(pdftex.def)             Requested size: 163.82454pt x 92.15129pt.
+ [13
+
+ <./imgs/03-asyncToSync2.png>]
+<imgs/03-asyncToSync3.png, id=130, 1927.2pt x 1084.05pt>
+File: imgs/03-asyncToSync3.png Graphic file (type png)
+
+<use imgs/03-asyncToSync3.png>
+Package pdftex.def Info: imgs/03-asyncToSync3.png used on input line 102.
+(pdftex.def)             Requested size: 163.82454pt x 92.15129pt.
+ [14
+
+ <./imgs/03-asyncToSync3.png>] [15
 
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 118.
+ng it (it is [0.0:0.0]) on input line 135.
 
  [warning /pgfplots/warning/approx empty range enlarged]
-[14
+[16
 
-] [15
+] [17
 
-] <imgs/sync1.png, id=140, 552.0625pt x 164.615pt>
+] <imgs/sync1.png, id=153, 552.0625pt x 164.615pt>
 File: imgs/sync1.png Graphic file (type png)
 
 <use imgs/sync1.png>
-Package pdftex.def Info: imgs/sync1.png used on input line 135.
-(pdftex.def)             Requested size: 307.28987pt x 91.63116pt.
- [16
-
- <./imgs/sync1.png>]
-<imgs/sync2.png, id=147, 552.0625pt x 164.615pt>
-File: imgs/sync2.png Graphic file (type png)
- <use imgs/sync2.png>
-Package pdftex.def Info: imgs/sync2.png used on input line 142.
-(pdftex.def)             Requested size: 307.28987pt x 91.63116pt.
- [17
-
- <./imgs/sync2.png>] <imgs/async.png, id=154, 552.0625pt x 164.615pt>
-File: imgs/async.png Graphic file (type png)
-
-<use imgs/async.png>
-Package pdftex.def Info: imgs/async.png used on input line 149.
+Package pdftex.def Info: imgs/sync1.png used on input line 154.
 (pdftex.def)             Requested size: 307.28987pt x 91.63116pt.
  [18
 
- <./imgs/async.png>] [19
+ <./imgs/sync1.png>]
+<imgs/sync2.png, id=160, 552.0625pt x 164.615pt>
+File: imgs/sync2.png Graphic file (type png)
+ <use imgs/sync2.png>
+Package pdftex.def Info: imgs/sync2.png used on input line 163.
+(pdftex.def)             Requested size: 307.28987pt x 91.63116pt.
+ [19
 
-] [20
+ <./imgs/sync2.png>] <imgs/async.png, id=168, 552.0625pt x 164.615pt>
+File: imgs/async.png Graphic file (type png)
+
+<use imgs/async.png>
+Package pdftex.def Info: imgs/async.png used on input line 172.
+(pdftex.def)             Requested size: 307.28987pt x 91.63116pt.
+ [20
+
+ <./imgs/async.png>] [21
+
+] [22
 
 ]
-<imgs/compare.jpg, id=173, 702.625pt x 250.9375pt>
+<imgs/compare.jpg, id=186, 702.625pt x 250.9375pt>
 File: imgs/compare.jpg Graphic file (type jpg)
  <use imgs/compare.jpg>
-Package pdftex.def Info: imgs/compare.jpg used on input line 175.
+Package pdftex.def Info: imgs/compare.jpg used on input line 191.
 (pdftex.def)             Requested size: 307.28987pt x 109.75041pt.
 
-[21
+[23
 
- <./imgs/compare.jpg>] [22
+ <./imgs/compare.jpg>] [24
 
-] [23
-
-] [24
-
-]
-
-Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 238.
-
- [warning /pgfplots/warning/approx empty range enlarged]
-[25
+] [25
 
 ] [26
 
-] [27
+]
+
+Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
+ng it (it is [0.0:0.0]) on input line 260.
+
+ [warning /pgfplots/warning/approx empty range enlarged]
+[27
 
 ] [28
 
-]
-
-Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 280.
-
- [warning /pgfplots/warning/approx empty range enlarged]
-[29
+] [29
 
 ] [30
 
+] [31
+
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 311.
+ng it (it is [0.0:0.0]) on input line 316.
 
  [warning /pgfplots/warning/approx empty range enlarged]
-[31
-
-] [32
+[32
 
 ] [33
 
-] [34
+]
+
+Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
+ng it (it is [0.0:0.0]) on input line 355.
+
+ [warning /pgfplots/warning/approx empty range enlarged]
+[34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
 
 ]
 \tf@nav=\write6
@@ -1722,11 +1744,11 @@ ng it (it is [0.0:0.0]) on input line 311.
 \tf@snm=\write8
 \openout8 = `demo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 381.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 381.
  (./demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 381.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 381.
 Package rerunfilecheck Info: File `demo.out' has not changed.
 (rerunfilecheck)             Checksum: 50C8CBB6634EC825394423DD2E6DB0E3;329.
 
@@ -1737,29 +1759,31 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 381.
  ) 
 Here is how much of TeX's memory you used:
- 32734 strings out of 493029
- 770914 string characters out of 6136234
- 941023 words of memory out of 5000000
- 35495 multiletter control sequences out of 15000+600000
- 20029 words of font info for 54 fonts, out of 8000000 for 9000
+ 32763 strings out of 493029
+ 771359 string characters out of 6136234
+ 943187 words of memory out of 5000000
+ 35513 multiletter control sequences out of 15000+600000
+ 20845 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,18n,88p,1726b,2117s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on demo.pdf (34 pages, 340463 bytes).
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfsx1440.pfb>
+Output written on demo.pdf (38 pages, 713610 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

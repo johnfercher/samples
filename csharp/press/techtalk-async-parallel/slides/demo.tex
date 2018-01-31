@@ -57,15 +57,13 @@
 		\vspace{0.2cm}
 		\item Operações de CRUD em banco de dados;
 		\vspace{0.2cm}
-		\item Quaisquer outras operações que demorem: \textbf{Treinamento de Inteligências Artificiais, Processamento de Imagens e Etc};
+		\item Quaisquer outras operações que demorem;
 	\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{Problema paralelo}
 	\begin{itemize}
 		\item \textbf{Em um jogo:} Uma thread é responsável por obter os comandos do Joystick e outras $N$ são responsáveis por controlar a renderização de objetos, comandos de adversários e etc;
-		\vspace{0.2cm}
-		\item \textbf{Em um robô}: Uma thread é responsável pela leitura de sensores e outras $N$ são responsáveis por controlar motores, realizar comunicação com outros robôs e etc;
 		\vspace{0.2cm}
 		\item \textbf{Em um algoritmo de reconhecimento facial:} Pode-se dividir uma imagem em quadrantes, onde N threads serão responsáveis por aplicar filtros nas secções;
 	\end{itemize}
@@ -87,12 +85,25 @@
 
 \begin{frame}{Transformando código assíncrono em síncrono}
 	\includegraphics[scale=0.285]{imgs/03-asyncToSync.png}
+	\vspace{0.5cm}
+	
+	\textbf{Nota Importante:} \textcolor{red}{Somente utilize Wait() se o escopo que utiliza o código assíncrono PRECISAR ser síncrono.}
+\end{frame}
+
+\begin{frame}{Transformando código assíncrono em síncrono}
+	\includegraphics[scale=0.085]{imgs/03-asyncToSync2.png}
+	\vspace{0.5cm}
+	
+	\textbf{Nota Importante:} \textcolor{red}{Jamais utilize Result no WebAPI.}
+\end{frame}
+
+\begin{frame}{Transformando código assíncrono em síncrono}
+	\includegraphics[scale=0.085]{imgs/03-asyncToSync3.png}
 \end{frame}
 
 \begin{frame}{Exemplos para Benchmark}
 	\textbf{Sync x Async}
 \end{frame}
-
 
 \begin{frame}{Benchmark}
 	\begin{figure}
@@ -115,6 +126,12 @@
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
+	\vspace{-0.5cm}
+	\scriptsize
+	\begin{itemize}
+		\item Sync: Síncrono;
+		\item Async: Assíncrono;
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Fui tapeado?}
@@ -129,6 +146,8 @@
 
 \begin{frame}{Uma requisição síncrona no WebAPI}
 	\includegraphics[width=\textwidth]{imgs/sync1}
+	\vspace{0.5cm}
+	
 	\begin{itemize}
 		\item Uma thread livre e outra thread bloqueada realizando \textbf{nada};
 	\end{itemize}
@@ -136,6 +155,8 @@
 
 \begin{frame}{Três requisições síncronas no WebAPI}
 	\includegraphics[width=\textwidth]{imgs/sync2}
+	\vspace{0.5cm}
+	
 	\begin{itemize}
 		\item Duas threads bloqueadas realizando \textbf{nada} e uma requisição em espera;
 	\end{itemize}
@@ -143,6 +164,8 @@
 
 \begin{frame}{Uma requisição assíncrona no WebAPI}
 	\includegraphics[width=\textwidth]{imgs/async}
+	\vspace{0.5cm}
+	
 	\begin{itemize}
 		\item Thread realiza uma requisição bloqueante e retorna para a espera;
 	\end{itemize}
@@ -160,16 +183,9 @@
 
 \begin{frame}{Paralelismo X Concorrência}
 	\begin{itemize}
-		\item \textbf{Paralelismo:} Duas tarefas são executadas simultaneamente.
-		\begin{itemize}
-			\item Executadas em diferentes processadores;
-			\item Executadas em diferentes núcleos de um mesmo processador;
-		\end{itemize}
+		\item \textbf{Paralelismo:} Duas tarefas são executadas simultaneamente em diferentes processadores ou núcleos;
 		\vspace{0.2cm}
-		\item \textbf{Concorrência:} Duas tarefas estão em progresso ao mesmo tempo;
-		\begin{itemize}
-			\item Executadas de forma alternada em um mesmo núcleo;
-		\end{itemize}
+		\item \textbf{Concorrência:} Duas tarefas estão em progresso ao mesmo tempo, de forma alternada em um processador ou núcleo;
 	\end{itemize}
 	\includegraphics[width=\textwidth]{imgs/compare}
 \end{frame}
@@ -234,9 +250,21 @@
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
-	\textbf{Problemas com Async}
+	\vspace{-0.5cm}
+	\scriptsize
+	\begin{itemize}
+		\item Sync: Síncrono;
+		\item Async: Assíncrono;
+		\item SyncD: Síncrono com Paralelismo de Dados;
+	\end{itemize}
 \end{frame}
 
+\begin{frame}{Nota Importante}
+	\textbf{Parallel em um método Assíncrono:} 
+	\vspace{0.3cm}
+	
+	\textcolor{red}{C\# não consegue realizar paralelismo com \textit{Parallel} dentro de métodos assíncronos :(}
+\end{frame}
 
 \begin{frame}{Perguntas Frequentes}
 	\begin{exampleblock}{Posso aplicar isso em qualquer problema?}
@@ -277,6 +305,14 @@
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
+	\vspace{-0.5cm}
+	\scriptsize
+	\begin{itemize}
+		\item Sync: Síncrono;
+		\item Async: Assíncrono;
+		\item SyncD: Síncrono com Paralelismo de Dados;
+		\item AsyncDT: Assíncrono com Paralelismo de Dados e de Tarefas;
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Exemplo para Benchmark}
@@ -307,7 +343,22 @@
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
-	\textbf{QueueWork != Async sem Await}
+	\vspace{-0.5cm}
+	\scriptsize
+	\begin{itemize}
+		\item Sync: Síncrono;
+		\item Async: Assíncrono;
+		\item SyncD: Síncrono com Paralelismo de Dados;
+		\item AsyncDT: Assíncrono com Paralelismo de Dados e Tarefas;
+		\item AsyncDTQS: Assíncrono com Paralelismo de Dados e Tarefas com Fila de Execução;
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Nota Importante}
+	\textbf{QueueWork != Async sem Await:} 
+	\vspace{0.3cm}
+	
+	\textcolor{red}{A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.}
 \end{frame}
 
 \section{Conclusões}
@@ -315,8 +366,10 @@
 \begin{frame}{Conclusões}
 	\begin{itemize}
 		\item É possível criar métodos assíncronos e paralelos no WebAPI de forma simples e conveniente; 
+		\vspace{0.2cm}
 		\item Métodos assíncronos devem ser utilizados em APIs com finalidade de otimizar a utilização de recursos;
-		\item Paralelismo nunca fornece um ganho linear de performance e deve ser utilizado em problemas onde a quantidade de transformações de dados é grande;
+		\vspace{0.2cm}
+		\item Paralelismo deve ser utilizado em problemas onde a quantidade de transformações de dados é grande;
 	\end{itemize}
 \end{frame}
 

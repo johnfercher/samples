@@ -20,6 +20,10 @@ namespace Sync.Controllers
             ResultRepository = new ResultRepository();
         }
 
+        public async Task<T> Execute(){
+          return await MethodAsync().ConfigureAwait(false);
+        }
+
         public IHttpActionResult Post([FromBody]string token)
         {
             var tokenValid = OAuthClient.IsTokenValid(token);
