@@ -74,7 +74,7 @@
 \section{Programação Síncrona e Assíncrona em C\#}
 
 \begin{frame}{Sintaxe de um código síncrono}
-	\includegraphics[width=\textwidth]{imgs/00-sync.png}
+	\includegraphics[scale=0.28]{imgs/00-sync.png}
 \end{frame}
 
 \begin{frame}{Sintaxe de um código assíncrono}
@@ -86,7 +86,7 @@
 \end{frame}
 
 \begin{frame}{Transformando código assíncrono em síncrono}
-	\includegraphics[width=\textwidth]{imgs/03-asyncToSync.png}
+	\includegraphics[scale=0.285]{imgs/03-asyncToSync.png}
 \end{frame}
 
 \begin{frame}{Exemplos para Benchmark}
@@ -171,6 +171,7 @@
 			\item Executadas de forma alternada em um mesmo núcleo;
 		\end{itemize}
 	\end{itemize}
+	\includegraphics[width=\textwidth]{imgs/compare}
 \end{frame}
 
 \begin{frame}{Paralelismo X Concorrência}
@@ -180,6 +181,14 @@
 			\item Executando 4 threads. Pode-se alocar 1 thread por núcleo;
 			\vspace{0.2cm}
 			\item Executadas 5 threads. Pelo menos 2 threads vão ser alternadas em um único núcleo;
+		\end{itemize}
+	\end{itemize}
+	\begin{itemize}
+		\item \textbf{Vantagens:}
+		\begin{itemize}
+			\item Execução Simultânea;
+			\vspace{0.2cm}
+			\item Execução Simultânea e aumento da frequência com que as tarefas são alocadas na CPU em um SO de tempo compartilhado;
 		\end{itemize}
 	\end{itemize}
 \end{frame}
