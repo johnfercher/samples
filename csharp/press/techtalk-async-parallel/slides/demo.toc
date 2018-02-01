@@ -2,5 +2,5 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Programa\IeC {\c c}\IeC {\~a}o S\IeC {\'\i }ncrona e Ass\IeC {\'\i }ncrona em C\#}{8}{0}{2}
 \beamer@sectionintoc {3}{Paralelismo em C\#}{22}{0}{3}
-\beamer@sectionintoc {4}{Programa\IeC {\c c}\IeC {\~a}o Ass\IeC {\'\i }ncrona e Paralela em C\#}{30}{0}{4}
-\beamer@sectionintoc {5}{Conclus\IeC {\~o}es}{36}{0}{5}
+\beamer@sectionintoc {4}{Programa\IeC {\c c}\IeC {\~a}o Ass\IeC {\'\i }ncrona e Paralela em C\#}{31}{0}{4}
+\beamer@sectionintoc {5}{Conclus\IeC {\~o}es}{37}{0}{5}
