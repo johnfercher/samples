@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  31 JAN 2018 21:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  1 FEB 2018 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1589,7 +1589,7 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 File: imgs/00-sync.png Graphic file (type png)
  <use imgs/00-sync.png>
 Package pdftex.def Info: imgs/00-sync.png used on input line 76.
-(pdftex.def)             Requested size: 243.4579pt x 44.47585pt.
+(pdftex.def)             Requested size: 234.76772pt x 42.88829pt.
 
 [9
 
@@ -1598,7 +1598,7 @@ File: imgs/01-async.png Graphic file (type png)
 
 <use imgs/01-async.png>
 Package pdftex.def Info: imgs/01-async.png used on input line 80.
-(pdftex.def)             Requested size: 307.28987pt x 59.96553pt.
+(pdftex.def)             Requested size: 284.36366pt x 55.49054pt.
  [10
 
  <./imgs/01-async.png>]
@@ -1607,7 +1607,7 @@ File: imgs/02-syncToAsync.png Graphic file (type png)
 
 <use imgs/02-syncToAsync.png>
 Package pdftex.def Info: imgs/02-syncToAsync.png used on input line 84.
-(pdftex.def)             Requested size: 307.28987pt x 72.26498pt.
+(pdftex.def)             Requested size: 287.81912pt x 67.68626pt.
  [11
 
  <./imgs/02-syncToAsync.png>]
@@ -1616,26 +1616,31 @@ File: imgs/03-asyncToSync.png Graphic file (type png)
 
 <use imgs/03-asyncToSync.png>
 Package pdftex.def Info: imgs/03-asyncToSync.png used on input line 91.
-(pdftex.def)             Requested size: 269.90866pt x 45.4854pt.
+(pdftex.def)             Requested size: 255.7037pt x 43.09155pt.
  [12
 
  <./imgs/03-asyncToSync.png>]
-<imgs/03-asyncToSync2.png, id=123, 1927.2pt x 1084.05pt>
+<imgs/03-asyncToSync2.png, id=123, 1212.02812pt x 193.47281pt>
 File: imgs/03-asyncToSync2.png Graphic file (type png)
 
 <use imgs/03-asyncToSync2.png>
 Package pdftex.def Info: imgs/03-asyncToSync2.png used on input line 98.
-(pdftex.def)             Requested size: 163.82454pt x 92.15129pt.
+(pdftex.def)             Requested size: 266.64702pt x 42.56415pt.
  [13
 
  <./imgs/03-asyncToSync2.png>]
-<imgs/03-asyncToSync3.png, id=130, 1927.2pt x 1084.05pt>
+<imgs/03-asyncToSync3.png, id=131, 1271.5003pt x 155.83218pt>
 File: imgs/03-asyncToSync3.png Graphic file (type png)
 
 <use imgs/03-asyncToSync3.png>
 Package pdftex.def Info: imgs/03-asyncToSync3.png used on input line 102.
-(pdftex.def)             Requested size: 163.82454pt x 92.15129pt.
- [14
+(pdftex.def)             Requested size: 343.30968pt x 42.07524pt.
+
+Overfull \hbox (36.0198pt too wide) in paragraph at lines 102--102
+[][]  
+ []
+
+[14
 
  <./imgs/03-asyncToSync3.png>] [15
 
@@ -1649,7 +1654,7 @@ ng it (it is [0.0:0.0]) on input line 135.
 
 ] [17
 
-] <imgs/sync1.png, id=153, 552.0625pt x 164.615pt>
+] <imgs/sync1.png, id=155, 552.0625pt x 164.615pt>
 File: imgs/sync1.png Graphic file (type png)
 
 <use imgs/sync1.png>
@@ -1658,14 +1663,14 @@ Package pdftex.def Info: imgs/sync1.png used on input line 154.
  [18
 
  <./imgs/sync1.png>]
-<imgs/sync2.png, id=160, 552.0625pt x 164.615pt>
+<imgs/sync2.png, id=162, 552.0625pt x 164.615pt>
 File: imgs/sync2.png Graphic file (type png)
  <use imgs/sync2.png>
 Package pdftex.def Info: imgs/sync2.png used on input line 163.
 (pdftex.def)             Requested size: 307.28987pt x 91.63116pt.
  [19
 
- <./imgs/sync2.png>] <imgs/async.png, id=168, 552.0625pt x 164.615pt>
+ <./imgs/sync2.png>] <imgs/async.png, id=170, 552.0625pt x 164.615pt>
 File: imgs/async.png Graphic file (type png)
 
 <use imgs/async.png>
@@ -1678,7 +1683,7 @@ Package pdftex.def Info: imgs/async.png used on input line 172.
 ] [22
 
 ]
-<imgs/compare.jpg, id=186, 702.625pt x 250.9375pt>
+<imgs/compare.jpg, id=188, 702.625pt x 250.9375pt>
 File: imgs/compare.jpg Graphic file (type jpg)
  <use imgs/compare.jpg>
 Package pdftex.def Info: imgs/compare.jpg used on input line 191.
@@ -1763,8 +1768,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 381.
  ) 
 Here is how much of TeX's memory you used:
  32763 strings out of 493029
- 771359 string characters out of 6136234
- 943187 words of memory out of 5000000
+ 771361 string characters out of 6136234
+ 943196 words of memory out of 5000000
  35513 multiletter control sequences out of 15000+600000
  20845 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1780,9 +1785,9 @@ type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfsx1440.pfb>
-Output written on demo.pdf (38 pages, 713610 bytes).
+Output written on demo.pdf (38 pages, 421920 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
+ 338 PDF objects out of 1000 (max. 8388607)
  258 compressed objects within 3 object streams
  82 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
