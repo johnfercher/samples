@@ -22,10 +22,10 @@
 
 \title{Programação Assíncrona e Paralelismo no WebAPI}
 %\subtitle{Techtalk TODO: Pesquisar AKKA}
-%\date{\today}
+\date{02/02/2018}
 \author{Johnathan Fercher}
 %\institute{Braspag}
-% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{imgs/logo.png}}
 
 \begin{document}
 \maketitle
@@ -45,7 +45,7 @@
 
 \begin{frame}[fragile]{Definições}
 	\begin{itemize}
-		\item \textbf{Programação Assíncrona} tem o propósito de possibilitar a execução de tarefas demoradas sem o bloqueio da execução;
+		\item \textbf{Programação Assíncrona} tem o propósito de liberar threads em operações bloqueantes;
 		\vspace{0.2cm}
 		\item \textbf{Programação Paralela} tem o propósito de possibilitar a execução de tarefas ao mesmo tempo;
 	\end{itemize}
@@ -57,7 +57,7 @@
 		\vspace{0.2cm}
 		\item Operações de CRUD em banco de dados;
 		\vspace{0.2cm}
-		\item Quaisquer outras operações que demorem;
+		\item Quaisquer outras operações de I/O;
 	\end{itemize}
 \end{frame}
 
@@ -73,14 +73,34 @@
 
 \begin{frame}{Sintaxe de um código síncrono}
 	\includegraphics[scale=0.27]{imgs/00-sync.png}
+	\vspace{0.5cm}
+	
+	\small
+	\begin{itemize}
+		\item 1 - Ao chamar \textbf{Method()}, a execução é movida para dentro da função.
+		\item 2 - Dentro de \textbf{Method()}, quando ocorre uma chamada bloqueante, a linguagem realiza um espera ocupada até que a operação de I/O acabe;
+		\item 3 - Quando a operação de I/O acaba, a execução retorna para \textbf{Execute()};
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Sintaxe de um código assíncrono}
 	\includegraphics[scale=0.27]{imgs/01-async.png}
+	\vspace{0.1cm}
+	
+	\small
+	\begin{itemize}
+		\item 1 - Ao chamar \textbf{MethodAsync()}, a execução é movida para dentro da função.
+		\item 2 - Dentro de \textbf{MethodAsync()}, quando ocorre uma chamada bloqueante, a execução retorna para \textbf{Execute()};
+		\item 3 - Paralelamente, \textbf{Execute()} pode realizar trabalho enquanto a chamada assíncrona espera a realização de operações de I/O;
+		\item 4 - Quando a operação assíncrona acaba, um evento é emitido e a linguagem sabe obter o resultado do método;
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Transformando código síncrono em assíncrono}
-	\includegraphics[scale=0.27]{imgs/02-syncToAsync.png}
+\begin{frame}{Forçando execução assíncrona de um método síncrono}
+	\includegraphics[scale=0.27]{imgs/02-syncToAsync.png}	
+	\vspace{0.5cm}
+	
+	\textbf{Nota Importante:} \textcolor{red}{Não existe benefício de escalabilidade para essa transformação.}
 \end{frame}
 
 \begin{frame}{Transformando código assíncrono em síncrono}
@@ -88,13 +108,17 @@
 	\vspace{0.5cm}
 	
 	\textbf{Nota Importante:} \textcolor{red}{Somente utilize Wait() se o escopo que utiliza o código assíncrono PRECISAR ser síncrono.}
+	\vspace{0.2cm}
+	
+	\textbf{Ex:} Startup de aplicações;
+	
 \end{frame}
 
 \begin{frame}{Transformando código assíncrono em síncrono}
 	\includegraphics[scale=0.22]{imgs/03-asyncToSync2.png}
 	\vspace{0.5cm}
 	
-	\textbf{Nota Importante:} \textcolor{red}{Jamais utilize Result no WebAPI.}
+	\textbf{Nota Importante:} \textcolor{red}{Jamais utilize Result no WebAPI. Perigo de deadlock.}
 \end{frame}
 
 \begin{frame}{Transformando código assíncrono em síncrono}
@@ -144,6 +168,8 @@
 	\end{exampleblock}
 \end{frame}
 
+\section{Requisições no WebAPI}
+
 \begin{frame}{Uma requisição síncrona no WebAPI}
 	\includegraphics[width=\textwidth]{imgs/sync1}
 	\vspace{0.5cm}
@@ -176,10 +202,27 @@
 		\item Redução de custos em relação à memória;
 		\vspace{0.2cm}
 		\item Redução do tempo de CPU desperdiçado;
+		\vspace{0.2cm}
+		\item \textbf{Ganhos de performance} dependendo do problema;
 	\end{itemize}
 \end{frame}
 
-\section{Paralelismo em C\#}
+\begin{frame}{Task.Run}
+	\includegraphics[scale=0.27]{imgs/02-syncToAsync.png}	
+	\vspace{0.1cm}
+	
+	\begin{alertblock}{Por que Task.Run() não ajuda na escalabilidade?}
+		\begin{itemize}
+			\item 1 - Ao chamar \textbf{await Task.Run()}, a execução é movida para dentro da função.
+			\item 2 - Dentro de \textbf{MethodAsync()}, quando ocorre uma chamada bloqueante, a execução retorna;
+			\item 3 - Paralelamente, \textbf{Execute()} pode realizar trabalho enquanto a chamada assíncrona espera a realização de operações de I/O;
+			\item \textcolor{red}{4 - Em outra Task, MethodAsync() realiza chamada esperada};
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+
+\section{Paralelismo x Concorrência}
 
 \begin{frame}{Paralelismo X Concorrência}
 	\begin{itemize}
@@ -223,6 +266,7 @@
 	\end{itemize}
 \end{frame}
 
+\section{Paralelismo de Dados no C\#}
 
 \begin{frame}{Exemplo para Benchmark}
 	\textbf{SyncDataParallel}
@@ -259,13 +303,6 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Nota Importante}
-	\textbf{Parallel em um método Assíncrono:} 
-	\vspace{0.3cm}
-	
-	\textcolor{red}{C\# não consegue realizar paralelismo com \textit{Parallel} dentro de métodos assíncronos :(}
-\end{frame}
-
 \begin{frame}{Perguntas Frequentes}
 	\begin{exampleblock}{Posso aplicar isso em qualquer problema?}
 		Depende da quantidade de transformação de dados envolvida.
@@ -278,7 +315,7 @@
 	\end{exampleblock}
 \end{frame}
 
-\section{Programação Assíncrona e Paralela em C\#}
+\section{Paralelismo de Tarefas em C\#}
 
 \begin{frame}{Exemplo para Benchmark}
 	\textbf{AsyncTaskAndDataParallel}
@@ -316,6 +353,12 @@
 		\item AsyncDT: Assíncrono com Paralelismo de Dados e de Tarefas;
 	\end{itemize}
 \end{frame}
+
+\begin{frame}{E se...}
+	\textbf{Paralelismo de dados dentro de paralelismo de tarefas...}
+\end{frame}
+
+\section{Um Último Hack}
 
 \begin{frame}{Exemplo para Benchmark}
 	\textbf{AsyncTaskAndDataParallelQueueSave}
@@ -371,13 +414,15 @@
 		\vspace{0.2cm}
 		\item Métodos assíncronos devem ser utilizados em APIs com finalidade de otimizar a utilização de recursos;
 		\vspace{0.2cm}
-		\item Paralelismo deve ser utilizado em problemas onde a quantidade de transformações de dados é grande;
+		\item É possível realizar paralelismo com métodos assíncronos;
+		\vspace{0.2cm}
+		\item Paralelismo de dados deve ser utilizado em problemas onde a quantidade de transformações de dados é grande;
 	\end{itemize}
 \end{frame}
 
 
 \begin{frame}[standout]
-  Perguntas?
+  Obrigado
 \end{frame}
 
 \end{document}
