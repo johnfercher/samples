@@ -19,6 +19,8 @@
 \usepackage{multicol}
 \usepackage{chronology}
 
+\usepackage[]{algorithm2e}
+
 \definecolor{done}{rgb}{0.36, 0.72, 0.36}
 \definecolor{doing}{rgb}{1.0, 0.8, 0.0}
 \definecolor{scheduled}{rgb}{0.25, 0.54, 0.79}
@@ -186,31 +188,65 @@
 	\end{itemize}
 \end{frame}
 
-\section{Hands-On Rust}
+\section{Melhores regras do Velocity}
 
-\begin{frame}{Sistema de contagem de votos}
-	Voto: 
+\begin{frame}{Velocity}
+	Regras de repetição:
 	\begin{itemize}
-		\item Number: Option<u8>;
-		\item Age: u8;
-		\item State: state\_type;
-		\item Gender: gender\_type;
+		\item 5 repetições de um \textbf{Cpf} em 10 minutos;
+		\item 10 repetições de um \textbf{Cartão} em 2 dias;
+		\item 2 repetições de um \textbf{Ip} em 5 minutos;
 	\end{itemize}
+
+	\begin{chronology}[5]{1}{10}{80ex}[\textwidth]
+		\event{1}{\textbf{1 min:} 127.0.0.1}
+		\event{4}{\textbf{4 min:} 127.0.0.1}
+		\event{7}{\textbf{7 min:} 127.0.0.1}
+		\event{8}{\textcolor{red}{\textbf{8 min:} 127.0.0.1}}
+	\end{chronology}
 \end{frame}
 
-\begin{frame}{Sistema de contagem de votos}
-	\begin{enumerate}
-		\item Criar um projeto utilizando cargo;
-		\item Instalar o crate (votes\_generator) do github;
-		\item Criar uma classe que remove dados duplicados;
-		\item Criar uma classe que computa o vencedor;
-		\begin{enumerate}
-			\item For loop;
-			\item Filter;
-		\end{enumerate}
-		\item Instalar o crate (group\_by) do cargo;
-		\item Criar um método que computa o vencedor com agrupamento;
-	\end{enumerate}
+\begin{frame}{Algoritmo}
+	\begin{algorithm}[H]
+		var transactions = List<Transaction>()\;
+		var quarantine = new DateTime()\;
+		\vspace{0.2cm}
+		\For{transaction \textbf{in} transactions}{
+			\eIf{quarantine\_is\_active(quarantine, transaction)}{
+				block(transaction)\;
+				update(quarantine)\;
+			}{
+				\If{extrapolate\_rule(transaction)}{
+					block(transaction)\;
+					update(quarantine)\;
+				}	
+			}
+		}
+	\end{algorithm}
+\end{frame}
+
+\begin{frame}{Benchmark}
+	\begin{figure}
+		\begin{tikzpicture}
+		\begin{axis}[
+		mbarplot,
+		ymin=0, ymax=30.0,
+		%xlabel={Foo},
+		ylabel={\scriptsize Tempo de Execução},
+		width=0.9\textwidth,
+		height=8cm,
+		xticklabels={,,}
+		]
+		
+		\addplot plot coordinates {(0, 30.0)};
+		\addplot plot coordinates {(0, 10.0)};
+		\addplot plot coordinates {(0, 3.0)};
+		
+		\legend{R (30m), Python (10m), Rust (3m)}
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 \end{frame}
 
 \section{Material de estudo}

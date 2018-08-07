@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Quem usa? E para que?}{11}{0}{2}
-\beamer@sectionintoc {3}{Hands-On Rust}{22}{0}{3}
-\beamer@sectionintoc {4}{Material de estudo}{25}{0}{4}
+\beamer@sectionintoc {3}{Melhores regras do Velocity}{22}{0}{3}
+\beamer@sectionintoc {4}{Material de estudo}{26}{0}{4}
