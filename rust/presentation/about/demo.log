@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.18)  6 AUG 2018 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.18)  16 AUG 2018 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1759,7 +1759,7 @@ enefit from \pgfplotsset{compat=1.15} (current compat level: 1.9).
 
 \c@lstlisting=\count369
 (./demo.nav)
-<imgs/logo.png, id=29, 776.9025pt x 602.25pt>
+<imgs/logo.png, id=33, 776.9025pt x 602.25pt>
 File: imgs/logo.png Graphic file (type png)
 <use imgs/logo.png>
 Package pdftex.def Info: imgs/logo.png  used on input line 44.
@@ -1797,7 +1797,7 @@ thkerncmss.
 [3
 
 ]
-<imgs/rust.png, id=61, 1027.84pt x 1027.84pt>
+<imgs/rust.png, id=67, 1027.84pt x 1027.84pt>
 File: imgs/rust.png Graphic file (type png)
 <use imgs/rust.png>
 Package pdftex.def Info: imgs/rust.png  used on input line 58.
@@ -1807,32 +1807,28 @@ Package pdftex.def Info: imgs/rust.png  used on input line 58.
  <./imgs/rust.png>] [5
 
 ]
-<imgs/clock-rate-history.png, id=74, 1486.55376pt x 934.49126pt>
-File: imgs/clock-rate-history.png Graphic file (type png)
-<use imgs/clock-rate-history.png>
-Package pdftex.def Info: imgs/clock-rate-history.png  used on input line 72.
-(pdftex.def)             Requested size: 341.43306pt x 214.62903pt.
+<imgs/cores-history.png, id=80, 1117.46516pt x 715.09264pt>
+File: imgs/cores-history.png Graphic file (type png)
+<use imgs/cores-history.png>
+Package pdftex.def Info: imgs/cores-history.png  used on input line 72.
+(pdftex.def)             Requested size: 355.65944pt x 227.59041pt.
 
-Overfull \vbox (31.92262pt too high) detected at line 72
+Overfull \vbox (44.884pt too high) detected at line 72
  []
 
 [6
 
- <./imgs/clock-rate-history.png>]
-<imgs/cores-history.png, id=81, 1117.46516pt x 715.09264pt>
-File: imgs/cores-history.png Graphic file (type png)
-<use imgs/cores-history.png>
-Package pdftex.def Info: imgs/cores-history.png  used on input line 78.
-(pdftex.def)             Requested size: 355.65944pt x 227.59041pt.
+ <./imgs/cores-history.png>] [7
 
-Overfull \vbox (44.884pt too high) detected at line 78
- []
+]
+<imgs/bug.png, id=93, 1104.125pt x 287.0725pt>
+File: imgs/bug.png Graphic file (type png)
+<use imgs/bug.png>
+Package pdftex.def Info: imgs/bug.png  used on input line 86.
+(pdftex.def)             Requested size: 355.65944pt x 92.46956pt.
+ [8
 
-[7
-
- <./imgs/cores-history.png>] [8
-
-] [9
+ <./imgs/bug.png>] [9
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmss on input line 109
@@ -1849,7 +1845,7 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 ] [11
 
 ]
-<imgs/dropbox.png, id=110, 1284.8pt x 350.30875pt>
+<imgs/dropbox.png, id=116, 1284.8pt x 350.30875pt>
 File: imgs/dropbox.png Graphic file (type png)
 <use imgs/dropbox.png>
 Package pdftex.def Info: imgs/dropbox.png  used on input line 119.
@@ -1857,7 +1853,7 @@ Package pdftex.def Info: imgs/dropbox.png  used on input line 119.
  [12
 
  <./imgs/dropbox.png>]
-<imgs/canonical.jpeg, id=117, 637.38126pt x 108.405pt>
+<imgs/canonical.jpeg, id=123, 637.38126pt x 108.405pt>
 File: imgs/canonical.jpeg Graphic file (type jpg)
 <use imgs/canonical.jpeg>
 Package pdftex.def Info: imgs/canonical.jpeg  used on input line 127.
@@ -1865,7 +1861,7 @@ Package pdftex.def Info: imgs/canonical.jpeg  used on input line 127.
  [13
 
  <./imgs/canonical.jpeg>]
-<imgs/smartthings.png, id=124, 1282.7925pt x 255.95625pt>
+<imgs/smartthings.png, id=130, 1282.7925pt x 255.95625pt>
 File: imgs/smartthings.png Graphic file (type png)
 <use imgs/smartthings.png>
 Package pdftex.def Info: imgs/smartthings.png  used on input line 135.
@@ -1873,7 +1869,7 @@ Package pdftex.def Info: imgs/smartthings.png  used on input line 135.
  [14
 
  <./imgs/smartthings.png>]
-<imgs/mozilla.png, id=131, 1206.80649pt x 487.95064pt>
+<imgs/mozilla.png, id=137, 1206.80649pt x 487.95064pt>
 File: imgs/mozilla.png Graphic file (type png)
 <use imgs/mozilla.png>
 Package pdftex.def Info: imgs/mozilla.png  used on input line 143.
@@ -1881,7 +1877,7 @@ Package pdftex.def Info: imgs/mozilla.png  used on input line 143.
  [15
 
  <./imgs/mozilla.png>]
-<imgs/coursera.png, id=138, 1700.3525pt x 341.275pt>
+<imgs/coursera.png, id=144, 1700.3525pt x 341.275pt>
 File: imgs/coursera.png Graphic file (type png)
 <use imgs/coursera.png>
 Package pdftex.def Info: imgs/coursera.png  used on input line 151.
@@ -1889,7 +1885,7 @@ Package pdftex.def Info: imgs/coursera.png  used on input line 151.
  [16
 
  <./imgs/coursera.png>]
-<imgs/chef.png, id=145, 1087.06125pt x 1163.34625pt>
+<imgs/chef.png, id=151, 1087.06125pt x 1163.34625pt>
 File: imgs/chef.png Graphic file (type png)
 <use imgs/chef.png>
 Package pdftex.def Info: imgs/chef.png  used on input line 159.
@@ -1897,7 +1893,7 @@ Package pdftex.def Info: imgs/chef.png  used on input line 159.
  [17
 
  <./imgs/chef.png>]
-<imgs/atlassian.png, id=152, 200.75pt x 36.135pt>
+<imgs/atlassian.png, id=158, 200.75pt x 36.135pt>
 File: imgs/atlassian.png Graphic file (type png)
 <use imgs/atlassian.png>
 Package pdftex.def Info: imgs/atlassian.png  used on input line 167.
@@ -1905,7 +1901,7 @@ Package pdftex.def Info: imgs/atlassian.png  used on input line 167.
  [18
 
  <./imgs/atlassian.png>]
-<imgs/npm.jpeg, id=159, 401.5pt x 164.615pt>
+<imgs/npm.jpeg, id=165, 401.5pt x 164.615pt>
 File: imgs/npm.jpeg Graphic file (type jpg)
 <use imgs/npm.jpeg>
 Package pdftex.def Info: imgs/npm.jpeg  used on input line 175.
@@ -1913,7 +1909,7 @@ Package pdftex.def Info: imgs/npm.jpeg  used on input line 175.
  [19
 
  <./imgs/npm.jpeg>]
-<imgs/habitat.png, id=166, 803.0pt x 351.3125pt>
+<imgs/habitat.png, id=172, 803.0pt x 351.3125pt>
 File: imgs/habitat.png Graphic file (type png)
 <use imgs/habitat.png>
 Package pdftex.def Info: imgs/habitat.png  used on input line 183.
@@ -1939,63 +1935,81 @@ ng it (it is [0.0:0.0]) on input line 250.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (18.18353pt too high) detected at line 250
+Overfull \vbox (18.18303pt too high) detected at line 250
  []
 
 [25
 
-] [26
-
 ]
-<imgs/rust-by-example.png, id=208, 1490.56876pt x 538.01pt>
-File: imgs/rust-by-example.png Graphic file (type png)
-<use imgs/rust-by-example.png>
-Package pdftex.def Info: imgs/rust-by-example.png  used on input line 256.
-(pdftex.def)             Requested size: 426.79134pt x 154.04044pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 256--256
-[][]  
+Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
+ng it (it is [0.0:0.0]) on input line 274.
+
+ [warning /pgfplots/warning/approx empty range enlarged]
+
+Overfull \vbox (18.18303pt too high) detected at line 274
  []
 
-[27
+[26
 
- <./imgs/rust-by-example.png>]
-<imgs/casa-do-codigo-rust.jpg, id=215, 337.26pt x 481.8pt>
-File: imgs/casa-do-codigo-rust.jpg Graphic file (type jpg)
-<use imgs/casa-do-codigo-rust.jpg>
-Package pdftex.def Info: imgs/casa-do-codigo-rust.jpg  used on input line 262.
-(pdftex.def)             Requested size: 142.26378pt x 203.23682pt.
+] [27
 
-Overfull \vbox (20.53041pt too high) detected at line 262
+]
+<imgs/rust-by-example.png, id=219, 1490.56876pt x 538.01pt>
+File: imgs/rust-by-example.png Graphic file (type png)
+<use imgs/rust-by-example.png>
+Package pdftex.def Info: imgs/rust-by-example.png  used on input line 280.
+(pdftex.def)             Requested size: 426.79134pt x 154.04044pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 280--280
+[][]  
  []
 
 [28
 
- <./imgs/casa-do-codigo-rust.jpg>]
-<imgs/programming-rust.jpg, id=221, 1204.5pt x 632.3625pt>
-File: imgs/programming-rust.jpg Graphic file (type jpg)
-<use imgs/programming-rust.jpg>
-Package pdftex.def Info: imgs/programming-rust.jpg  used on input line 268.
-(pdftex.def)             Requested size: 369.88582pt x 194.18738pt.
+ <./imgs/rust-by-example.png>]
+<imgs/casa-do-codigo-rust.jpg, id=225, 337.26pt x 481.8pt>
+File: imgs/casa-do-codigo-rust.jpg Graphic file (type jpg)
+<use imgs/casa-do-codigo-rust.jpg>
+Package pdftex.def Info: imgs/casa-do-codigo-rust.jpg  used on input line 286.
+(pdftex.def)             Requested size: 142.26378pt x 203.23682pt.
 
-Overfull \vbox (11.48097pt too high) detected at line 268
+Overfull \vbox (20.53041pt too high) detected at line 286
  []
 
 [29
 
+ <./imgs/casa-do-codigo-rust.jpg>]
+<imgs/programming-rust.jpg, id=231, 1204.5pt x 632.3625pt>
+File: imgs/programming-rust.jpg Graphic file (type jpg)
+<use imgs/programming-rust.jpg>
+Package pdftex.def Info: imgs/programming-rust.jpg  used on input line 292.
+(pdftex.def)             Requested size: 369.88582pt x 194.18738pt.
+
+Overfull \vbox (11.48097pt too high) detected at line 292
+ []
+
+[30
+
  <./imgs/programming-rust.jpg>]
-<imgs/hands-on-functional-programming-in-rust.jpg, id=227, 325.215pt x 401.5pt>
+<imgs/hands-on-functional-programming-in-rust.jpg, id=237, 325.215pt x 401.5pt>
 
 File: imgs/hands-on-functional-programming-in-rust.jpg Graphic file (type jpg)
 <use imgs/hands-on-functional-programming-in-rust.jpg>
 Package pdftex.def Info: imgs/hands-on-functional-programming-in-rust.jpg  used
- on input line 274.
+ on input line 298.
 (pdftex.def)             Requested size: 142.26378pt x 175.63744pt.
- [30
+ [31
 
- <./imgs/hands-on-functional-programming-in-rust.jpg>] [31
+ <./imgs/hands-on-functional-programming-in-rust.jpg>]
+<imgs/rustacean.png, id=244, 1204.5pt x 803.0pt>
+File: imgs/rustacean.png Graphic file (type png)
+<use imgs/rustacean.png>
+Package pdftex.def Info: imgs/rustacean.png  used on input line 306.
+(pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
+ [32
 
-]
+ <./imgs/rustacean.png>]
 \tf@nav=\write6
 \openout6 = `demo.nav'.
 
@@ -2005,39 +2019,48 @@ Package pdftex.def Info: imgs/hands-on-functional-programming-in-rust.jpg  used
 \tf@snm=\write8
 \openout8 = `demo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
  (./demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
-Package rerunfilecheck Info: File `demo.out' has not changed.
-(rerunfilecheck)             Checksum: A19D71DC99B418BEE12D3CA160C275F7;222.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
 
+
+Package rerunfilecheck Warning: File `demo.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `demo.out':
+(rerunfilecheck)             Before: 4AC9429CB9061E8637FB1474410B193A;295
+(rerunfilecheck)             After:  308FF08F94278C2BF75A8D4C1EA4F50B;229.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 42414 strings out of 492982
- 972451 string characters out of 6134896
- 1136890 words of memory out of 5000000
- 45185 multiletter control sequences out of 15000+600000
+ 42438 strings out of 492982
+ 972710 string characters out of 6134896
+ 1139482 words of memory out of 5000000
+ 45205 multiletter control sequences out of 15000+600000
  550605 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,18n,98p,10417b,2127s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfso1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfsx1440.pfb>
-Output written on demo.pdf (31 pages, 928111 bytes).
+pdfTeX warning (dest): name{Outline0.5} has been referenced but does not exis
+t, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfso1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfsx1440.pfb>
+Output written on demo.pdf (32 pages, 935152 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

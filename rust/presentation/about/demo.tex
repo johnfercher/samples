@@ -59,16 +59,10 @@
 
 \begin{frame}{Motivação}
 	\begin{quote}
-		\hspace{0.5cm}"O poder de processamento dobra a cada 18 meses."
+		\hspace{0.5cm}"O clock dos processadores dobra a cada 18 meses."
 		
 		\hspace{8.2cm}Lei de Moore, 1965.
 	\end{quote}
-\end{frame}
-
-\begin{frame}{Motivação}
-	\begin{center}
-		\includegraphics[width=12cm]{imgs/clock-rate-history.png}
-	\end{center}
 \end{frame}
 
 \begin{frame}{Motivação}
@@ -83,6 +77,12 @@
 		
 		\hspace{8.2cm}Steve Jobs, Apple.
 	\end{quote}
+\end{frame}
+
+\begin{frame}{Motivação}
+	\begin{center}
+		\includegraphics[width=12.5cm]{imgs/bug.png}
+	\end{center}
 \end{frame}
 
 \begin{frame}{História}
@@ -188,7 +188,7 @@
 	\end{itemize}
 \end{frame}
 
-\section{Melhores regras do Velocity}
+\section{Sugestões de Regras do Velocity}
 
 \begin{frame}{Velocity}
 	Regras de repetição:
@@ -225,12 +225,12 @@
 	\end{algorithm}
 \end{frame}
 
-\begin{frame}{Benchmark}
+\begin{frame}{Benchmark (v1.0)}
 	\begin{figure}
 		\begin{tikzpicture}
 		\begin{axis}[
 		mbarplot,
-		ymin=0, ymax=30.0,
+		ymin=0, ymax=200.0,
 		%xlabel={Foo},
 		ylabel={\scriptsize Tempo de Execução},
 		width=0.9\textwidth,
@@ -238,11 +238,35 @@
 		xticklabels={,,}
 		]
 		
-		\addplot plot coordinates {(0, 30.0)};
+		%\addplot plot coordinates {(0, 30.0)};
+		\addplot plot coordinates {(0, 300.0)};
 		\addplot plot coordinates {(0, 10.0)};
-		\addplot plot coordinates {(0, 3.0)};
 		
-		\legend{R (30m), Python (10m), Rust (3m)}
+		\legend{C\# (300m), Rust (10m)}
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Benchmark (v2.0)}
+	\begin{figure}
+		\begin{tikzpicture}
+		\begin{axis}[
+		mbarplot,
+		ymin=0, ymax=200.0,
+		%xlabel={Foo},
+		ylabel={\scriptsize Tempo de Execução},
+		width=0.9\textwidth,
+		height=8cm,
+		xticklabels={,,}
+		]
+		
+		%\addplot plot coordinates {(0, 30.0)};
+		\addplot plot coordinates {(0, 200.0)};
+		\addplot plot coordinates {(0, 76.0)};
+		
+		\legend{Python (200s), Rust (76s)}
 		
 		\end{axis}
 		\end{tikzpicture}
@@ -274,7 +298,11 @@
 \end{frame}
 
 \begin{frame}[standout]
-  Obrigado
+	\begin{center}
+		\includegraphics[width=2.5cm]{imgs/rustacean.png}
+	\end{center}
+  	Obrigado
+  		
 \end{frame}
 
 \end{document}
