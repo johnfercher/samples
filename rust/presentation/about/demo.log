@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.18)  17 AUG 2018 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.18)  18 AUG 2018 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1963,94 +1963,108 @@ ng it (it is [0.0:0.0]) on input line 293.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (18.18303pt too high) detected at line 293
+Overfull \vbox (11.83131pt too high) detected at line 293
  []
 
 [28
 
-] [29
+]
+
+Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
+ng it (it is [0.0:0.0]) on input line 322.
+
+ [warning /pgfplots/warning/approx empty range enlarged]
+
+Overfull \vbox (11.83476pt too high) detected at line 322
+ []
+
+[29
 
 ] [30
 
+] [31
+
+] [32
+
 ]
-<imgs/rust-by-example.png, id=236, 1490.56876pt x 538.01pt>
+<imgs/rust-by-example.png, id=247, 1490.56876pt x 538.01pt>
 File: imgs/rust-by-example.png Graphic file (type png)
 <use imgs/rust-by-example.png>
-Package pdftex.def Info: imgs/rust-by-example.png  used on input line 301.
+Package pdftex.def Info: imgs/rust-by-example.png  used on input line 342.
 (pdftex.def)             Requested size: 426.79134pt x 154.04044pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 301--301
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 342--342
 [][]  
- []
-
-[31
-
- <./imgs/rust-by-example.png>]
-<imgs/casa-do-codigo-rust.jpg, id=244, 337.26pt x 481.8pt>
-File: imgs/casa-do-codigo-rust.jpg Graphic file (type jpg)
-<use imgs/casa-do-codigo-rust.jpg>
-Package pdftex.def Info: imgs/casa-do-codigo-rust.jpg  used on input line 307.
-(pdftex.def)             Requested size: 142.26378pt x 203.23682pt.
-
-Overfull \vbox (20.53041pt too high) detected at line 307
- []
-
-[32
-
- <./imgs/casa-do-codigo-rust.jpg>]
-<imgs/programming-rust.jpg, id=250, 1204.5pt x 632.3625pt>
-File: imgs/programming-rust.jpg Graphic file (type jpg)
-<use imgs/programming-rust.jpg>
-Package pdftex.def Info: imgs/programming-rust.jpg  used on input line 313.
-(pdftex.def)             Requested size: 369.88582pt x 194.18738pt.
-
-Overfull \vbox (11.48097pt too high) detected at line 313
  []
 
 [33
 
+ <./imgs/rust-by-example.png>]
+<imgs/casa-do-codigo-rust.jpg, id=254, 337.26pt x 481.8pt>
+File: imgs/casa-do-codigo-rust.jpg Graphic file (type jpg)
+<use imgs/casa-do-codigo-rust.jpg>
+Package pdftex.def Info: imgs/casa-do-codigo-rust.jpg  used on input line 348.
+(pdftex.def)             Requested size: 142.26378pt x 203.23682pt.
+
+Overfull \vbox (20.53041pt too high) detected at line 348
+ []
+
+[34
+
+ <./imgs/casa-do-codigo-rust.jpg>]
+<imgs/programming-rust.jpg, id=260, 1204.5pt x 632.3625pt>
+File: imgs/programming-rust.jpg Graphic file (type jpg)
+<use imgs/programming-rust.jpg>
+Package pdftex.def Info: imgs/programming-rust.jpg  used on input line 354.
+(pdftex.def)             Requested size: 369.88582pt x 194.18738pt.
+
+Overfull \vbox (11.48097pt too high) detected at line 354
+ []
+
+[35
+
  <./imgs/programming-rust.jpg>]
-<imgs/hands-on-functional-programming-in-rust.jpg, id=256, 325.215pt x 401.5pt>
+<imgs/hands-on-functional-programming-in-rust.jpg, id=266, 325.215pt x 401.5pt>
 
 File: imgs/hands-on-functional-programming-in-rust.jpg Graphic file (type jpg)
 <use imgs/hands-on-functional-programming-in-rust.jpg>
 Package pdftex.def Info: imgs/hands-on-functional-programming-in-rust.jpg  used
- on input line 319.
+ on input line 360.
 (pdftex.def)             Requested size: 142.26378pt x 175.63744pt.
- [34
+ [36
 
  <./imgs/hands-on-functional-programming-in-rust.jpg>]
-<imgs/rustfest.png, id=262, 461.17162pt x 461.17162pt>
+<imgs/rustfest.png, id=272, 461.17162pt x 461.17162pt>
 File: imgs/rustfest.png Graphic file (type png)
 <use imgs/rustfest.png>
-Package pdftex.def Info: imgs/rustfest.png  used on input line 327.
+Package pdftex.def Info: imgs/rustfest.png  used on input line 368.
 (pdftex.def)             Requested size: 113.81102pt x 113.80783pt.
-<imgs/rustconf.png, id=263, 803.0pt x 590.205pt>
+<imgs/rustconf.png, id=273, 803.0pt x 590.205pt>
 File: imgs/rustconf.png Graphic file (type png)
 <use imgs/rustconf.png>
-Package pdftex.def Info: imgs/rustconf.png  used on input line 327.
+Package pdftex.def Info: imgs/rustconf.png  used on input line 368.
 (pdftex.def)             Requested size: 142.26378pt x 104.55724pt.
- [35
+ [37
 
  <./imgs/rustfest.png> <./imgs/rustconf.png>]
-<imgs/redox.jpg, id=271, 1204.5pt x 677.53125pt>
+<imgs/redox.jpg, id=282, 1204.5pt x 677.53125pt>
 File: imgs/redox.jpg Graphic file (type jpg)
 <use imgs/redox.jpg>
-Package pdftex.def Info: imgs/redox.jpg  used on input line 333.
+Package pdftex.def Info: imgs/redox.jpg  used on input line 374.
 (pdftex.def)             Requested size: 369.88582pt x 208.05789pt.
 
-Overfull \vbox (25.35149pt too high) detected at line 333
+Overfull \vbox (25.35149pt too high) detected at line 374
  []
 
-[36
+[38
 
  <./imgs/redox.jpg>]
-<imgs/rustacean.png, id=277, 1204.5pt x 803.0pt>
+<imgs/rustacean.png, id=288, 1204.5pt x 803.0pt>
 File: imgs/rustacean.png Graphic file (type png)
 <use imgs/rustacean.png>
-Package pdftex.def Info: imgs/rustacean.png  used on input line 341.
+Package pdftex.def Info: imgs/rustacean.png  used on input line 382.
 (pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
- [37
+ [39
 
  <./imgs/rustacean.png>]
 \tf@nav=\write6
@@ -2062,11 +2076,11 @@ Package pdftex.def Info: imgs/rustacean.png  used on input line 341.
 \tf@snm=\write8
 \openout8 = `demo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
  (./demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 343.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
 Package rerunfilecheck Info: File `demo.out' has not changed.
 (rerunfilecheck)             Checksum: C52EA6D7AB1945D67AE34F58D9D5F121;275.
 
@@ -2075,10 +2089,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 42476 strings out of 492982
- 973230 string characters out of 6134896
- 1139653 words of memory out of 5000000
- 45229 multiletter control sequences out of 15000+600000
+ 42533 strings out of 492982
+ 974199 string characters out of 6134896
+ 1161693 words of memory out of 5000000
+ 45282 multiletter control sequences out of 15000+600000
  550605 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,18n,98p,10417b,2127s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2091,10 +2105,10 @@ ype1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/
 share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfsx1440.pfb>
-Output written on demo.pdf (37 pages, 1715505 bytes).
+Output written on demo.pdf (39 pages, 1725886 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 352 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 84 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
