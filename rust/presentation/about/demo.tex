@@ -292,35 +292,6 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Benchmark Rust (v2.0)}
-	\begin{figure}
-		\begin{tikzpicture}
-		\begin{axis}[
-		mbarplot,
-		ymin=0, ymax=222.0,
-		%xlabel={Foo},
-		ylabel={\scriptsize Tempo de Execução},
-		width=0.9\textwidth,
-		height=8cm,
-		xticklabels={,,}
-		]
-		
-		\addplot plot coordinates {(0, 222.0)};
-		\addplot plot coordinates {(0, 121.0)};
-		\addplot plot coordinates {(0, 88.0)};
-		\addplot plot coordinates {(0, 74.0)};
-		\addplot plot coordinates {(0, 68.0)};
-		\addplot plot coordinates {(0, 66.0)};
-		\addplot plot coordinates {(0, 66.0)};
-		\addplot plot coordinates {(0, 65.0)};
-		
-		\legend{1 thread (222s), 2 threads (121s), 3 threads (88s), 4 threads (74s), 5 threads (68s), 6 threads (66s), 7 threads (66s), 8 threads (65s)}
-		
-		\end{axis}
-		\end{tikzpicture}
-	\end{figure}
-\end{frame}
-
 \begin{frame}{Sobre os Benchmarks}	
 	\textbf{Hardware: I7 8770 (6 núcleos + 6 threads), 8GB RAM DDR4, SSD;}
 	
@@ -328,7 +299,7 @@
 		\item V2.0 utiliza agrupamento e programação funcional;
 		\item O algoritmo em Python não era exatamente o Velocity;
 		\item Numpy por baixo dos panos é C, C++ e Fortran;
-		\item Python estava utilizando somente 1 núcleo e Rust estava utilizando 8 núcleos;		
+		\item Python estava utilizando somente 1 núcleo e Rust estava utilizando 6 núcleos;		
 		\item Rust iria ter resultados cada vez melhores com mais núcleos;
 	\end{itemize}
 \end{frame}

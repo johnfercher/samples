@@ -65,34 +65,32 @@
 \headcommand {\beamer@framepages {28}{28}}
 \headcommand {\slideentry {3}{0}{6}{29/29}{}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {3}{0}{7}{30/30}{}{0}}
+\headcommand {\beamer@sectionpages {24}{29}}
+\headcommand {\beamer@subsectionpages {24}{29}}
+\headcommand {\sectionentry {4}{Hands-On}{30}{Hands-On}{0}}
+\headcommand {\slideentry {4}{0}{1}{30/30}{}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\beamer@sectionpages {24}{30}}
-\headcommand {\beamer@subsectionpages {24}{30}}
-\headcommand {\sectionentry {4}{Hands-On}{31}{Hands-On}{0}}
-\headcommand {\slideentry {4}{0}{1}{31/31}{}{0}}
+\headcommand {\beamer@sectionpages {30}{30}}
+\headcommand {\beamer@subsectionpages {30}{30}}
+\headcommand {\sectionentry {5}{Material Complementar}{31}{Material Complementar}{0}}
+\headcommand {\slideentry {5}{0}{1}{31/31}{}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\beamer@sectionpages {31}{31}}
-\headcommand {\beamer@subsectionpages {31}{31}}
-\headcommand {\sectionentry {5}{Material Complementar}{32}{Material Complementar}{0}}
-\headcommand {\slideentry {5}{0}{1}{32/32}{}{0}}
+\headcommand {\slideentry {5}{0}{2}{32/32}{}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {5}{0}{2}{33/33}{}{0}}
+\headcommand {\slideentry {5}{0}{3}{33/33}{}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {5}{0}{3}{34/34}{}{0}}
+\headcommand {\slideentry {5}{0}{4}{34/34}{}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {5}{0}{4}{35/35}{}{0}}
+\headcommand {\slideentry {5}{0}{5}{35/35}{}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {5}{0}{5}{36/36}{}{0}}
+\headcommand {\slideentry {5}{0}{6}{36/36}{}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {5}{0}{6}{37/37}{}{0}}
+\headcommand {\slideentry {5}{0}{7}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {5}{0}{7}{38/38}{}{0}}
+\headcommand {\slideentry {5}{0}{8}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {5}{0}{8}{39/39}{}{0}}
-\headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@partpages {1}{39}}
-\headcommand {\beamer@subsectionpages {32}{39}}
-\headcommand {\beamer@sectionpages {32}{39}}
-\headcommand {\beamer@documentpages {39}}
-\headcommand {\gdef \inserttotalframenumber {32}}
+\headcommand {\beamer@partpages {1}{38}}
+\headcommand {\beamer@subsectionpages {31}{38}}
+\headcommand {\beamer@sectionpages {31}{38}}
+\headcommand {\beamer@documentpages {38}}
+\headcommand {\gdef \inserttotalframenumber {31}}
