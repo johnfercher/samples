@@ -50,11 +50,22 @@
 
 \section{Introdução}
 \begin{frame}{Introdução}
-	\begin{center}
-		\includegraphics[width=2.5cm]{imgs/rust.png}
-	\end{center}
-
-	Uma linguagem de programação de sistemas que roda incrivelmente rápido, previne falhas de segmentação, e garente segurança entre threads.
+	\begin{multicols}{2}		
+		\begin{center}
+			\includegraphics[width=5cm]{imgs/rust3d.png}
+		\end{center}
+		\footnotesize
+		\begin{itemize}
+			\item Programming Language;
+			\item Memory and thread-safe;
+			\item Rust $\rightarrow$ LLVM $\rightarrow$ C $\rightarrow$ EXE;
+			\item C-Bindings;
+			\item Object-Oriented and Functional;
+			\item Unit-tests and Package Manager;
+			\item Interfaces and Generics;
+			\item Without Garbage Collector;
+		\end{itemize}	
+	\end{multicols}
 \end{frame}
 
 \begin{frame}{Motivação}
@@ -87,20 +98,19 @@
 \end{frame}
 
 \begin{frame}{Motivação}
-	\begin{center}
-		\includegraphics[width=12.5cm]{imgs/bug.png}
-	\end{center}
+Problemas:
+\begin{itemize}
+	\item \textcolor{red}{Data races};
+	\item Deadlock;
+	\item \textcolor{red}{Use After Free};
+	\item \textcolor{red}{Double Free};
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Motivação}
-	Problemas:
-	\begin{itemize}
-		\item \textcolor{red}{Data races};
-		\item Race conditions;
-		\item Deadlock;
-		\item \textcolor{red}{Use After Free};
-		\item \textcolor{red}{Double Free};
-	\end{itemize}
+	\begin{center}
+		\includegraphics[width=12.5cm]{imgs/bug.png}
+	\end{center}
 \end{frame}
 
 \begin{frame}{História}
@@ -283,9 +293,9 @@
 		
 		%\addplot plot coordinates {(0, 30.0)};
 		\addplot plot coordinates {(0, 68.0)};
-		\addplot plot coordinates {(0, 65.0)};
+		\addplot plot coordinates {(0, 44.0)};
 		
-		\legend{Python (68s), Rust (65s)}
+		\legend{Python (68s), Rust (44s)}
 		
 		\end{axis}
 		\end{tikzpicture}
@@ -304,7 +314,7 @@
 	\end{itemize}
 \end{frame}
 
-\section{Hands-On}
+\section{Mostre-me o código}
 
 \section{Material Complementar}
 
