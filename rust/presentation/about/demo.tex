@@ -207,17 +207,24 @@ Problemas:
 	\begin{center}
 		\includegraphics[width=3.5cm]{imgs/habitat.png}	
 		
-		"Habitat is automation that travels with the app. Rust aid us to remove bottlenecks."
+		"Rust aid us to remove bottlenecks."
 	\end{center}
 \end{frame}
 
 \begin{frame}{Quem usa? E para que?}
 	\begin{itemize}
-		\item No site oficial da linguagem há mais 123 empresas que deixaram claro que utilizam Rust;
+		\item No site oficial da linguagem há mais 123 empresas que deixaram claro que utilizam Rust em produção;
 	\end{itemize}
 \end{frame}
 
 \section{Sugestões de regras do Velocity}
+
+\begin{frame}{Provas de Conceito}
+	\begin{center}
+		\includegraphics[width=9.0cm]{imgs/battle.png}	
+	\end{center}
+\end{frame}
+
 
 \begin{frame}{Velocity}
 	Regras de repetição:
@@ -252,12 +259,6 @@ Problemas:
 			}
 		}
 	\end{algorithm}
-\end{frame}
-
-\begin{frame}{Provas de Conceito}
-	\begin{center}
-		\includegraphics[width=8.0cm]{imgs/battle.png}	
-	\end{center}
 \end{frame}
 
 \begin{frame}{Sobre os Benchmarks V1.0}	
@@ -380,7 +381,7 @@ Problemas:
 		\begin{tikzpicture}
 		\begin{axis}[
 		mbarplot,
-		ymin=0, ymax=68.0,
+		ymin=0, ymax=56.0,
 		%xlabel={Foo},
 		ylabel={\scriptsize Tempo de Execução},
 		width=0.9\textwidth,
@@ -389,10 +390,10 @@ Problemas:
 		]
 		
 		%\addplot plot coordinates {(0, 30.0)};
-		\addplot+[orange] plot coordinates {(0, 68.0)};
+		\addplot+[orange] plot coordinates {(0, 56.0)};
 		\addplot+[black] plot coordinates {(0, 44.0)};
 		
-		\legend{Python (68s), Rust (44s)}
+		\legend{Python (56s), Rust (44s)}
 		
 		\end{axis}
 		\end{tikzpicture}
@@ -425,7 +426,7 @@ Problemas:
 
 \section{Mostre-me o código}
 
-\section{Material complementar}
+\section{Curiosidades}
 
 \begin{frame}{Curiosidades}
 	\begin{itemize}
@@ -453,6 +454,8 @@ Problemas:
 	\includegraphics[width=13.0cm]{imgs/redox.jpg}	
 	\end{center}
 \end{frame}
+
+\section{Material de estudos}
 
 \begin{frame}{Rust by Example}
 	\includegraphics[width=15.0cm]{imgs/rust-by-example.png}	

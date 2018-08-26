@@ -84,7 +84,7 @@
 \headcommand {\beamer@framepages {36}{36}}
 \headcommand {\beamer@sectionpages {36}{36}}
 \headcommand {\beamer@subsectionpages {36}{36}}
-\headcommand {\sectionentry {5}{Material complementar}{37}{Material complementar}{0}}
+\headcommand {\sectionentry {5}{Curiosidades}{37}{Curiosidades}{0}}
 \headcommand {\slideentry {5}{0}{1}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
 \headcommand {\slideentry {5}{0}{2}{38/38}{}{0}}
@@ -93,20 +93,25 @@
 \headcommand {\beamer@framepages {39}{39}}
 \headcommand {\slideentry {5}{0}{4}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {5}{0}{5}{41/41}{}{0}}
+\headcommand {\beamer@sectionpages {37}{40}}
+\headcommand {\beamer@subsectionpages {37}{40}}
+\headcommand {\sectionentry {6}{Material de estudos}{41}{Material de estudos}{0}}
+\headcommand {\slideentry {6}{0}{1}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {5}{0}{6}{42/42}{}{0}}
+\headcommand {\slideentry {6}{0}{2}{42/42}{}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {5}{0}{7}{43/43}{}{0}}
+\headcommand {\slideentry {6}{0}{3}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {5}{0}{8}{44/44}{}{0}}
+\headcommand {\slideentry {6}{0}{4}{44/44}{}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {5}{0}{9}{45/45}{}{0}}
+\headcommand {\slideentry {6}{0}{5}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {5}{0}{10}{46/46}{}{0}}
+\headcommand {\slideentry {6}{0}{6}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@partpages {1}{46}}
-\headcommand {\beamer@subsectionpages {37}{46}}
-\headcommand {\beamer@sectionpages {37}{46}}
-\headcommand {\beamer@documentpages {46}}
+\headcommand {\slideentry {6}{0}{7}{47/47}{}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\beamer@partpages {1}{47}}
+\headcommand {\beamer@subsectionpages {41}{47}}
+\headcommand {\beamer@sectionpages {41}{47}}
+\headcommand {\beamer@documentpages {47}}
 \headcommand {\gdef \inserttotalframenumber {39}}
