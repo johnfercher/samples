@@ -109,7 +109,7 @@ Problemas:
 
 \begin{frame}{Motivação}
 	\begin{center}
-		\includegraphics[width=12.5cm]{imgs/bug.png}
+		\includegraphics[width=13.5cm]{imgs/bug.png}
 	\end{center}
 \end{frame}
 
@@ -217,7 +217,7 @@ Problemas:
 	\end{itemize}
 \end{frame}
 
-\section{Sugestões de Regras do Velocity}
+\section{Sugestões de regras do Velocity}
 
 \begin{frame}{Velocity}
 	Regras de repetição:
@@ -254,6 +254,46 @@ Problemas:
 	\end{algorithm}
 \end{frame}
 
+\begin{frame}{Provas de Conceito}
+	\begin{center}
+		\includegraphics[width=8.0cm]{imgs/battle.png}	
+	\end{center}
+\end{frame}
+
+\begin{frame}{Sobre os Benchmarks V1.0}	
+	\textbf{Hardware: I7 8770 (6 núcleos + 6 threads), 8GB RAM DDR4, SSD;}
+	
+	\begin{itemize}
+		\item Todas as versões representam o Velocity de forma exata;
+		\item Não é utilizado agrupamento e nem programação funcional;
+		\item C\# e Rust paralelisam o processamento;
+		\item C\# e Rust realmente processaram 640 regras, o tempo de R é uma estimativa;
+		\item R executou no banco SQL de monitoria;
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Benchmark (v1.0)}
+	\begin{figure}
+		\begin{tikzpicture}
+		\begin{axis}[
+		mbarplot,
+		ymin=0, ymax=10.0,
+		%xlabel={Foo},
+		ylabel={\scriptsize Tempo de Execução},
+		width=0.9\textwidth,
+		height=8cm,
+		xticklabels={,,}
+		]
+		
+		\addplot+[black] plot coordinates {(0, 10.0)};
+		
+		\legend{Rust (10m)}
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
 \begin{frame}{Benchmark (v1.0)}
 	\begin{figure}
 		\begin{tikzpicture}
@@ -268,14 +308,71 @@ Problemas:
 		]
 		
 		%\addplot plot coordinates {(0, 30.0)};
-		\addplot plot coordinates {(0, 300.0)};
-		\addplot plot coordinates {(0, 10.0)};
+		\addplot+[purple] plot coordinates {(0, 300.0)};
+		\addplot+[black] plot coordinates {(0, 10.0)};
 		
 		\legend{C\# (300m), Rust (10m)}
 		
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
+\end{frame}
+
+\begin{frame}{Benchmark (v1.0)}
+	\begin{figure}
+		\begin{tikzpicture}
+		\begin{axis}[
+		mbarplot,
+		ymin=0, ymax=1280.0,
+		%xlabel={Foo},
+		ylabel={\scriptsize Tempo de Execução},
+		width=0.9\textwidth,
+		height=8cm,
+		xticklabels={,,}
+		]
+		
+		\addplot+[gray] plot coordinates {(0, 1280.0)};
+		\addplot+[purple] plot coordinates {(0, 300.0)};
+		\addplot+[black] plot coordinates {(0, 10.0)};
+		
+		\legend{R (1280m), C\# (300m), Rust (10m)}
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Sobre os Benchmarks V2.0}	
+	\textbf{Hardware: I7 8770 (6 núcleos + 6 threads), 8GB RAM DDR4, SSD;}
+	
+	\begin{itemize}
+		\item Todos os algoritmos utilizam agrupamento;
+		\item Rust e Python utilizam programação funcional;
+		\item Somente a versão em Rust simula exatamente o Velocity;
+		\item Python utiliza a lib Numpy, que é feita em C, C++ e Fortran;
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Benchmark (v2.0)}
+\begin{figure}
+	\begin{tikzpicture}
+	\begin{axis}[
+	mbarplot,
+	ymin=0, ymax=44.0,
+	%xlabel={Foo},
+	ylabel={\scriptsize Tempo de Execução},
+	width=0.9\textwidth,
+	height=8cm,
+	xticklabels={,,}
+	]
+	
+	\addplot+[black] plot coordinates {(0, 44.0)};
+	
+	\legend{Rust (44s)}
+	
+	\end{axis}
+	\end{tikzpicture}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Benchmark (v2.0)}
@@ -292,8 +389,8 @@ Problemas:
 		]
 		
 		%\addplot plot coordinates {(0, 30.0)};
-		\addplot plot coordinates {(0, 68.0)};
-		\addplot plot coordinates {(0, 44.0)};
+		\addplot+[orange] plot coordinates {(0, 68.0)};
+		\addplot+[black] plot coordinates {(0, 44.0)};
 		
 		\legend{Python (68s), Rust (44s)}
 		
@@ -302,21 +399,60 @@ Problemas:
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Sobre os Benchmarks}	
-	\textbf{Hardware: I7 8770 (6 núcleos + 6 threads), 8GB RAM DDR4, SSD;}
-	
-	\begin{itemize}
-		\item V2.0 utiliza agrupamento e programação funcional;
-		\item O algoritmo em Python não era exatamente o Velocity;
-		\item Numpy por baixo dos panos é C, C++ e Fortran;
-		\item Python estava utilizando somente 1 núcleo e Rust estava utilizando 6 núcleos;		
-		\item Rust iria ter resultados cada vez melhores com mais núcleos;
-	\end{itemize}
+\begin{frame}{Benchmark (v2.0)}
+	\begin{figure}
+		\begin{tikzpicture}
+		\begin{axis}[
+		mbarplot,
+		ymin=0, ymax=1800.0,
+		%xlabel={Foo},
+		ylabel={\scriptsize Tempo de Execução},
+		width=0.9\textwidth,
+		height=8cm,
+		xticklabels={,,}
+		]
+		
+		\addplot+[gray] plot coordinates {(0, 1800.0)};
+		\addplot+[orange] plot coordinates {(0, 68.0)};
+		\addplot+[black] plot coordinates {(0, 44.0)};
+		
+		\legend{SQL (1800s), Python (68s), Rust (44s)}
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 \end{frame}
 
 \section{Mostre-me o código}
 
-\section{Material Complementar}
+\section{Material complementar}
+
+\begin{frame}{Curiosidades}
+	\begin{itemize}
+		\item Em apenas 3 anos o gerenciador de pacotes de Rust ultrapassou os gerenciadores de R e Haskell;
+		\item Em 2017 a Red Hat começou a dar suporte para Rust;
+		\item Rust possui uma imagem oficial no Docker Hub;
+		\item Em 2017 todas as IDEs da IntelliJ passaram a dar suporte para Rust;
+		\item Amazon e Google estão contratando desenvolvedores Rust;
+		\item Facebook e Github fazem parte dos Gold Sponsors da RustConf;
+		\item Intel encoraja a utilização de Rust;
+		\item Rust possui interoperabilidade com C, C++, Swift, Python e Node.JS;
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Eventos}
+	\begin{center}
+		\includegraphics[width=4.0cm]{imgs/rustfest.png}
+		\hspace{1cm}	
+		\includegraphics[width=5.0cm]{imgs/rustconf.png}	
+	\end{center}
+\end{frame}
+
+\begin{frame}{Sistema Operacional}
+	\begin{center}
+	\includegraphics[width=13.0cm]{imgs/redox.jpg}	
+	\end{center}
+\end{frame}
 
 \begin{frame}{Rust by Example}
 	\includegraphics[width=15.0cm]{imgs/rust-by-example.png}	
@@ -330,27 +466,20 @@ Problemas:
 
 \begin{frame}{Programming Rust}
 	\begin{center}
-		\includegraphics[width=13.0cm]{imgs/programming-rust.jpg}	
+		\includegraphics[width=12.0cm]{imgs/programming-rust.jpg}	
 	\end{center}
+	Livro mais popular do Safari Ebooks no mês de seu lançamento em Outubro de 2017
 \end{frame}
 
-\begin{frame}{Programming Rust}
+\begin{frame}{Hands-On Functional Programming in Rust}
 	\begin{center}
 		\includegraphics[width=5.0cm]{imgs/hands-on-functional-programming-in-rust.jpg}	
 	\end{center}
 \end{frame}
 
-\begin{frame}{Eventos}
+\begin{frame}{Rust Fundamentals}
 	\begin{center}
-		\includegraphics[width=4.0cm]{imgs/rustfest.png}
-		\hspace{1cm}	
-		\includegraphics[width=5.0cm]{imgs/rustconf.png}	
-	\end{center}
-\end{frame}
-
-\begin{frame}{Sistema Operacional}
-	\begin{center}
-		\includegraphics[width=13.0cm]{imgs/redox.jpg}	
+		\includegraphics[width=13.0cm]{imgs/pluralsight.png}	
 	\end{center}
 \end{frame}
 

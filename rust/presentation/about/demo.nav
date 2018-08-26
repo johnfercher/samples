@@ -52,7 +52,7 @@
 \headcommand {\beamer@framepages {23}{23}}
 \headcommand {\beamer@sectionpages {13}{23}}
 \headcommand {\beamer@subsectionpages {13}{23}}
-\headcommand {\sectionentry {3}{Sugest\IeC {\~o}es de Regras do Velocity}{24}{Sugest\IeC {\~o}es de Regras do Velocity}{0}}
+\headcommand {\sectionentry {3}{Sugest\IeC {\~o}es de regras do Velocity}{24}{Sugest\IeC {\~o}es de regras do Velocity}{0}}
 \headcommand {\slideentry {3}{0}{1}{24/24}{}{0}}
 \headcommand {\beamer@framepages {24}{24}}
 \headcommand {\slideentry {3}{0}{2}{25/25}{}{0}}
@@ -65,32 +65,48 @@
 \headcommand {\beamer@framepages {28}{28}}
 \headcommand {\slideentry {3}{0}{6}{29/29}{}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\beamer@sectionpages {24}{29}}
-\headcommand {\beamer@subsectionpages {24}{29}}
-\headcommand {\sectionentry {4}{Mostre-me o c\IeC {\'o}digo}{30}{Mostre-me o c\IeC {\'o}digo}{0}}
-\headcommand {\slideentry {4}{0}{1}{30/30}{}{0}}
+\headcommand {\slideentry {3}{0}{7}{30/30}{}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\beamer@sectionpages {30}{30}}
-\headcommand {\beamer@subsectionpages {30}{30}}
-\headcommand {\sectionentry {5}{Material Complementar}{31}{Material Complementar}{0}}
-\headcommand {\slideentry {5}{0}{1}{31/31}{}{0}}
+\headcommand {\slideentry {3}{0}{8}{31/31}{}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {5}{0}{2}{32/32}{}{0}}
+\headcommand {\slideentry {3}{0}{9}{32/32}{}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {5}{0}{3}{33/33}{}{0}}
+\headcommand {\slideentry {3}{0}{10}{33/33}{}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {5}{0}{4}{34/34}{}{0}}
+\headcommand {\slideentry {3}{0}{11}{34/34}{}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {5}{0}{5}{35/35}{}{0}}
+\headcommand {\slideentry {3}{0}{12}{35/35}{}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {5}{0}{6}{36/36}{}{0}}
+\headcommand {\beamer@sectionpages {24}{35}}
+\headcommand {\beamer@subsectionpages {24}{35}}
+\headcommand {\sectionentry {4}{Mostre-me o c\IeC {\'o}digo}{36}{Mostre-me o c\IeC {\'o}digo}{0}}
+\headcommand {\slideentry {4}{0}{1}{36/36}{}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {5}{0}{7}{37/37}{}{0}}
+\headcommand {\beamer@sectionpages {36}{36}}
+\headcommand {\beamer@subsectionpages {36}{36}}
+\headcommand {\sectionentry {5}{Material complementar}{37}{Material complementar}{0}}
+\headcommand {\slideentry {5}{0}{1}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {5}{0}{8}{38/38}{}{0}}
+\headcommand {\slideentry {5}{0}{2}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\beamer@partpages {1}{38}}
-\headcommand {\beamer@subsectionpages {31}{38}}
-\headcommand {\beamer@sectionpages {31}{38}}
-\headcommand {\beamer@documentpages {38}}
-\headcommand {\gdef \inserttotalframenumber {31}}
+\headcommand {\slideentry {5}{0}{3}{39/39}{}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {5}{0}{4}{40/40}{}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {5}{0}{5}{41/41}{}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\slideentry {5}{0}{6}{42/42}{}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {5}{0}{7}{43/43}{}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {5}{0}{8}{44/44}{}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {5}{0}{9}{45/45}{}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {5}{0}{10}{46/46}{}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\beamer@partpages {1}{46}}
+\headcommand {\beamer@subsectionpages {37}{46}}
+\headcommand {\beamer@sectionpages {37}{46}}
+\headcommand {\beamer@documentpages {46}}
+\headcommand {\gdef \inserttotalframenumber {39}}
