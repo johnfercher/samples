@@ -349,31 +349,55 @@ Problemas:
 	\begin{itemize}
 		\item Todos os algoritmos utilizam agrupamento;
 		\item Rust e Python utilizam programação funcional;
-		\item Somente a versão em Rust simula exatamente o Velocity;
+		\item Duas versões do algoritmo: Original e Recursivo;
 		\item Python utiliza a lib Numpy, que é feita em C, C++ e Fortran;
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Benchmark (v2.0)}
-\begin{figure}
-	\begin{tikzpicture}
-	\begin{axis}[
-	mbarplot,
-	ymin=0, ymax=44.0,
-	%xlabel={Foo},
-	ylabel={\scriptsize Tempo de Execução},
-	width=0.9\textwidth,
-	height=8cm,
-	xticklabels={,,}
-	]
-	
-	\addplot+[black] plot coordinates {(0, 44.0)};
-	
-	\legend{Rust (44s)}
-	
-	\end{axis}
-	\end{tikzpicture}
-\end{figure}
+	\begin{figure}
+		\begin{tikzpicture}
+		\begin{axis}[
+		mbarplot,
+		ymin=0, ymax=35.0,
+		%xlabel={Foo},
+		ylabel={\scriptsize Tempo de Execução},
+		width=0.9\textwidth,
+		height=8cm,
+		xticklabels={,,}
+		]
+		
+		\addplot+[black] plot coordinates {(0, 35.0)};
+		
+		\legend{Rust Recursivo (35s)}
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Benchmark (v2.0)}
+	\begin{figure}
+		\begin{tikzpicture}
+		\begin{axis}[
+		mbarplot,
+		ymin=0, ymax=44.0,
+		%xlabel={Foo},
+		ylabel={\scriptsize Tempo de Execução},
+		width=0.9\textwidth,
+		height=8cm,
+		xticklabels={,,}
+		]
+		
+		\addplot+[purple] plot coordinates {(0, 44.0)};
+		\addplot+[black] plot coordinates {(0, 35.0)};
+		
+		\legend{Rust Original (44s), Rust Recursivo (35s)}
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
 \end{frame}
 
 \begin{frame}{Benchmark (v2.0)}
@@ -391,9 +415,10 @@ Problemas:
 		
 		%\addplot plot coordinates {(0, 30.0)};
 		\addplot+[orange] plot coordinates {(0, 56.0)};
-		\addplot+[black] plot coordinates {(0, 44.0)};
+		\addplot+[purple] plot coordinates {(0, 44.0)};
+		\addplot+[black] plot coordinates {(0, 35.0)};
 		
-		\legend{Python (56s), Rust (44s)}
+		\legend{Python Recursivo (56s), Rust Original (44s), Rust Recursivo (35s)}
 		
 		\end{axis}
 		\end{tikzpicture}
@@ -415,9 +440,10 @@ Problemas:
 		
 		\addplot+[gray] plot coordinates {(0, 1800.0)};
 		\addplot+[orange] plot coordinates {(0, 68.0)};
-		\addplot+[black] plot coordinates {(0, 44.0)};
+		\addplot+[purple] plot coordinates {(0, 44.0)};
+		\addplot+[black] plot coordinates {(0, 35.0)};
 		
-		\legend{SQL (1800s), Python (68s), Rust (44s)}
+		\legend{SQL Original (1800s), Python Recursivo (68s), Rust Original (44s), Rust Recursivo (35s)}
 		
 		\end{axis}
 		\end{tikzpicture}

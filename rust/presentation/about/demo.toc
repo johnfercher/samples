@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Quem usa? E para que?}{13}{0}{2}
 \beamer@sectionintoc {3}{Sugest\IeC {\~o}es de regras do Velocity}{24}{0}{3}
-\beamer@sectionintoc {4}{Mostre-me o c\IeC {\'o}digo}{36}{0}{4}
-\beamer@sectionintoc {5}{Curiosidades}{37}{0}{5}
-\beamer@sectionintoc {6}{Material de estudos}{41}{0}{6}
+\beamer@sectionintoc {4}{Mostre-me o c\IeC {\'o}digo}{37}{0}{4}
+\beamer@sectionintoc {5}{Curiosidades}{38}{0}{5}
+\beamer@sectionintoc {6}{Material de estudos}{42}{0}{6}
