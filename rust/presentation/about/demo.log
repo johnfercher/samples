@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.18)  29 AUG 2018 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.18)  29 AUG 2018 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2090,70 +2090,108 @@ Overfull \vbox (25.35149pt too high) detected at line 502
 
 [44
 
- <./imgs/redox.jpg>] [45
+ <./imgs/redox.jpg>]
+<imgs/stackoverflow-wanted.png, id=327, 1281.78876pt x 761.84625pt>
+File: imgs/stackoverflow-wanted.png Graphic file (type png)
+<use imgs/stackoverflow-wanted.png>
+Package pdftex.def Info: imgs/stackoverflow-wanted.png  used on input line 508.
 
-]
-<imgs/rust-by-example.png, id=332, 1490.56876pt x 538.01pt>
-File: imgs/rust-by-example.png Graphic file (type png)
-<use imgs/rust-by-example.png>
-Package pdftex.def Info: imgs/rust-by-example.png  used on input line 508.
-(pdftex.def)             Requested size: 426.79134pt x 154.04044pt.
+(pdftex.def)             Requested size: 341.43306pt x 202.93452pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 508--508
-[][]  
+Overfull \vbox (20.22812pt too high) detected at line 508
+ []
+
+[45
+
+ <./imgs/stackoverflow-wanted.png>]
+<imgs/stackoverflow-dreaded.png, id=334, 1282.7925pt x 761.84625pt>
+File: imgs/stackoverflow-dreaded.png Graphic file (type png)
+<use imgs/stackoverflow-dreaded.png>
+Package pdftex.def Info: imgs/stackoverflow-dreaded.png  used on input line 514
+.
+(pdftex.def)             Requested size: 341.43306pt x 202.77177pt.
+
+Overfull \vbox (20.06537pt too high) detected at line 514
  []
 
 [46
 
- <./imgs/rust-by-example.png>]
-<imgs/casa-do-codigo-rust.jpg, id=339, 337.26pt x 481.8pt>
-File: imgs/casa-do-codigo-rust.jpg Graphic file (type jpg)
-<use imgs/casa-do-codigo-rust.jpg>
-Package pdftex.def Info: imgs/casa-do-codigo-rust.jpg  used on input line 514.
-(pdftex.def)             Requested size: 142.26378pt x 203.23682pt.
+ <./imgs/stackoverflow-dreaded.png>]
+<imgs/stackoverflow-loved.png, id=341, 1275.76625pt x 761.84625pt>
+File: imgs/stackoverflow-loved.png Graphic file (type png)
+<use imgs/stackoverflow-loved.png>
+Package pdftex.def Info: imgs/stackoverflow-loved.png  used on input line 520.
+(pdftex.def)             Requested size: 341.43306pt x 203.88776pt.
 
-Overfull \vbox (20.53041pt too high) detected at line 514
+Overfull \vbox (21.18135pt too high) detected at line 520
  []
 
 [47
 
- <./imgs/casa-do-codigo-rust.jpg>]
-<imgs/programming-rust.jpg, id=345, 1204.5pt x 632.3625pt>
-File: imgs/programming-rust.jpg Graphic file (type jpg)
-<use imgs/programming-rust.jpg>
-Package pdftex.def Info: imgs/programming-rust.jpg  used on input line 521.
-(pdftex.def)             Requested size: 341.43306pt x 179.25063pt.
+ <./imgs/stackoverflow-loved.png>] [48
 
-Overfull \vbox (19.78778pt too high) detected at line 521
+]
+<imgs/rust-by-example.png, id=353, 1490.56876pt x 538.01pt>
+File: imgs/rust-by-example.png Graphic file (type png)
+<use imgs/rust-by-example.png>
+Package pdftex.def Info: imgs/rust-by-example.png  used on input line 526.
+(pdftex.def)             Requested size: 426.79134pt x 154.04044pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 526--526
+[][]  
  []
 
-[48
+[49
+
+ <./imgs/rust-by-example.png>]
+<imgs/casa-do-codigo-rust.jpg, id=361, 337.26pt x 481.8pt>
+File: imgs/casa-do-codigo-rust.jpg Graphic file (type jpg)
+<use imgs/casa-do-codigo-rust.jpg>
+Package pdftex.def Info: imgs/casa-do-codigo-rust.jpg  used on input line 532.
+(pdftex.def)             Requested size: 142.26378pt x 203.23682pt.
+
+Overfull \vbox (20.53041pt too high) detected at line 532
+ []
+
+[50
+
+ <./imgs/casa-do-codigo-rust.jpg>]
+<imgs/programming-rust.jpg, id=367, 1204.5pt x 632.3625pt>
+File: imgs/programming-rust.jpg Graphic file (type jpg)
+<use imgs/programming-rust.jpg>
+Package pdftex.def Info: imgs/programming-rust.jpg  used on input line 539.
+(pdftex.def)             Requested size: 341.43306pt x 179.25063pt.
+
+Overfull \vbox (19.78778pt too high) detected at line 539
+ []
+
+[51
 
  <./imgs/programming-rust.jpg>]
-<imgs/hands-on-functional-programming-in-rust.jpg, id=351, 325.215pt x 401.5pt>
+<imgs/hands-on-functional-programming-in-rust.jpg, id=373, 325.215pt x 401.5pt>
 
 File: imgs/hands-on-functional-programming-in-rust.jpg Graphic file (type jpg)
 <use imgs/hands-on-functional-programming-in-rust.jpg>
 Package pdftex.def Info: imgs/hands-on-functional-programming-in-rust.jpg  used
- on input line 527.
+ on input line 545.
 (pdftex.def)             Requested size: 142.26378pt x 175.63744pt.
- [49
+ [52
 
  <./imgs/hands-on-functional-programming-in-rust.jpg>]
-<imgs/pluralsight.png, id=358, 1409.265pt x 639.38875pt>
+<imgs/pluralsight.png, id=379, 1409.265pt x 639.38875pt>
 File: imgs/pluralsight.png Graphic file (type png)
 <use imgs/pluralsight.png>
-Package pdftex.def Info: imgs/pluralsight.png  used on input line 533.
+Package pdftex.def Info: imgs/pluralsight.png  used on input line 551.
 (pdftex.def)             Requested size: 369.88582pt x 167.81766pt.
- [50
+ [53
 
  <./imgs/pluralsight.png>]
-<imgs/rustacean.png, id=365, 1204.5pt x 803.0pt>
+<imgs/rustacean.png, id=386, 1204.5pt x 803.0pt>
 File: imgs/rustacean.png Graphic file (type png)
 <use imgs/rustacean.png>
-Package pdftex.def Info: imgs/rustacean.png  used on input line 541.
+Package pdftex.def Info: imgs/rustacean.png  used on input line 559.
 (pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
- [51
+ [54
 
  <./imgs/rustacean.png>]
 \tf@nav=\write6
@@ -2165,12 +2203,12 @@ Package pdftex.def Info: imgs/rustacean.png  used on input line 541.
 \tf@snm=\write8
 \openout8 = `demo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 543.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 543.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 561.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 561.
 
 (./demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 543.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 543.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 561.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 561.
 Package rerunfilecheck Info: File `demo.out' has not changed.
 (rerunfilecheck)             Checksum: 2388879C17E83731C038A5C5B8916F7F;333.
 
@@ -2179,10 +2217,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 42631 strings out of 492982
- 975560 string characters out of 6134896
- 1150035 words of memory out of 5000000
- 45352 multiletter control sequences out of 15000+600000
+ 42658 strings out of 492982
+ 976148 string characters out of 6134896
+ 1150140 words of memory out of 5000000
+ 45370 multiletter control sequences out of 15000+600000
  550605 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,18n,102p,10417b,2150s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2197,10 +2235,10 @@ onts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm
 </usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfsx1440.pfb>
-Output written on demo.pdf (51 pages, 2739520 bytes).
+Output written on demo.pdf (54 pages, 2850483 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 109 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 335 compressed objects within 4 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
