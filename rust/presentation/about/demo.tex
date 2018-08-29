@@ -38,7 +38,7 @@
 \date{}
 \author{Johnathan Fercher}
 %\institute{Braspag}
-\titlegraphic{\hfill\includegraphics[height=2.0cm]{imgs/logo.png}}
+\titlegraphic{\hfill\includegraphics[height=1.1cm]{imgs/logo.png}}
 
 \begin{document}
 \maketitle
@@ -58,7 +58,7 @@
 		\begin{itemize}
 			\item Programming Language;
 			\item Memory and thread-safe;
-			\item Rust $\rightarrow$ LLVM $\rightarrow$ C $\rightarrow$ EXE;
+			\item Rust $\rightarrow$ LLVM $\rightarrow$ EXE;
 			\item C-Bindings;
 			\item Object-Oriented and Functional;
 			\item Unit-tests and Package Manager;
@@ -207,7 +207,15 @@ Problemas:
 	\begin{center}
 		\includegraphics[width=3.5cm]{imgs/habitat.png}	
 		
-		"Rust aid us to remove bottlenecks."
+		"Using Rust instead of C/C++ to let you build, deploy and manage packages."
+	\end{center}
+\end{frame}
+
+\begin{frame}{Quem usa? E para que?}
+	\begin{center}
+		\includegraphics[width=3.8cm]{imgs/logo.png}	
+		
+		"Extracting anti-fraud insights by analyzing millions of transactions from hundreds of e-commerces."
 	\end{center}
 \end{frame}
 
@@ -244,7 +252,7 @@ Problemas:
 
 \begin{frame}{Algoritmo}
 	\begin{algorithm}[H]
-		var transactions = List<Transaction>()\;
+		var transactions = new List<Transaction>()\;
 		var quarantine = new DateTime()\;
 		\vspace{0.2cm}
 		\For{transaction \textbf{in} transactions}{
@@ -456,15 +464,27 @@ Problemas:
 
 \begin{frame}{Curiosidades}
 	\begin{itemize}
-		\item Em apenas 3 anos o gerenciador de pacotes de Rust ultrapassou os gerenciadores de R e Haskell;
+		\item Em apenas 3 anos o gerenciador de pacotes de Rust ultrapassou os gerenciadores de R e Haskell em número de pacotes;
 		\item Em 2017 a Red Hat começou a dar suporte para Rust;
 		\item Rust possui uma imagem oficial no Docker Hub;
 		\item Em 2017 todas as IDEs da IntelliJ passaram a dar suporte para Rust;
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Curiosidades}
+	\begin{itemize}
 		\item Amazon e Google estão contratando desenvolvedores Rust;
 		\item Facebook e Github fazem parte dos Gold Sponsors da RustConf;
 		\item Intel encoraja a utilização de Rust;
-		\item Rust possui interoperabilidade com C, C++, Swift, Python e Node.JS;
+		\item Rust possui interoperabilidade com C, C++, C\#, Swift, Python e Node.JS;
+		\item Rust possui um gerador automático de APIs para bibliotecas C e C++;
 	\end{itemize}
+\end{frame}
+
+\begin{frame}{Rust Playground}
+	\begin{center}
+		\includegraphics[width=12.0cm]{imgs/playground.png}	
+	\end{center}
 \end{frame}
 
 \begin{frame}{Eventos}

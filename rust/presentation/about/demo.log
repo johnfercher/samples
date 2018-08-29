@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.18)  27 AUG 2018 01:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.18)  29 AUG 2018 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1759,13 +1759,13 @@ enefit from \pgfplotsset{compat=1.15} (current compat level: 1.9).
 
 \c@lstlisting=\count369
 (./demo.nav)
-<imgs/logo.png, id=37, 776.9025pt x 602.25pt>
+<imgs/logo.png, id=37, 333.245pt x 149.55875pt>
 File: imgs/logo.png Graphic file (type png)
 <use imgs/logo.png>
 Package pdftex.def Info: imgs/logo.png  used on input line 44.
-(pdftex.def)             Requested size: 73.40344pt x 56.9055pt.
+(pdftex.def)             Requested size: 69.73434pt x 31.2982pt.
 
-Overfull \vbox (78.66554pt too high) detected at line 44
+Overfull \vbox (53.05824pt too high) detected at line 44
  []
 
 
@@ -1929,49 +1929,44 @@ Package pdftex.def Info: imgs/habitat.png  used on input line 212.
 (pdftex.def)             Requested size: 99.58464pt x 43.5655pt.
  [22
 
- <./imgs/habitat.png>] [23
+ <./imgs/habitat.png>]
+File: imgs/logo.png Graphic file (type png)
+<use imgs/logo.png>
+Package pdftex.def Info: imgs/logo.png  used on input line 220.
+(pdftex.def)             Requested size: 108.12054pt x 48.52385pt.
+ [23
 
 ] [24
 
 ]
-<imgs/battle.png, id=210, 791.95876pt x 433.62pt>
-File: imgs/battle.png Graphic file (type png)
-<use imgs/battle.png>
-Package pdftex.def Info: imgs/battle.png  used on input line 226.
-(pdftex.def)             Requested size: 256.0748pt x 140.21025pt.
-
 [25
 
- <./imgs/battle.png>] [26
+]
+<imgs/battle.png, id=216, 791.95876pt x 433.62pt>
+File: imgs/battle.png Graphic file (type png)
+<use imgs/battle.png>
+Package pdftex.def Info: imgs/battle.png  used on input line 234.
+(pdftex.def)             Requested size: 256.0748pt x 140.21025pt.
+ [26
+
+ <./imgs/battle.png>] [27
 
 ]
-Overfull \vbox (24.30292pt too high) detected at line 262
+Overfull \vbox (24.30292pt too high) detected at line 270
  []
 
-[27
+[28
 
-] [28
+] [29
 
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 296.
+ng it (it is [0.0:0.0]) on input line 304.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (18.18512pt too high) detected at line 296
- []
-
-[29
-
-]
-
-Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 320.
-
- [warning /pgfplots/warning/approx empty range enlarged]
-
-Overfull \vbox (18.18303pt too high) detected at line 320
+Overfull \vbox (18.18512pt too high) detected at line 304
  []
 
 [30
@@ -1979,37 +1974,37 @@ Overfull \vbox (18.18303pt too high) detected at line 320
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 344.
+ng it (it is [0.0:0.0]) on input line 328.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (11.83592pt too high) detected at line 344
+Overfull \vbox (18.18303pt too high) detected at line 328
  []
 
 [31
 
-] [32
-
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 377.
+ng it (it is [0.0:0.0]) on input line 352.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (18.18443pt too high) detected at line 377
+Overfull \vbox (11.83592pt too high) detected at line 352
  []
 
-[33
+[32
+
+] [33
 
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 401.
+ng it (it is [0.0:0.0]) on input line 385.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (11.83119pt too high) detected at line 401
+Overfull \vbox (18.18443pt too high) detected at line 385
  []
 
 [34
@@ -2017,11 +2012,11 @@ Overfull \vbox (11.83119pt too high) detected at line 401
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 426.
+ng it (it is [0.0:0.0]) on input line 409.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (11.83589pt too high) detected at line 426
+Overfull \vbox (11.83119pt too high) detected at line 409
  []
 
 [35
@@ -2029,110 +2024,136 @@ Overfull \vbox (11.83589pt too high) detected at line 426
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 451.
+ng it (it is [0.0:0.0]) on input line 434.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (11.83492pt too high) detected at line 451
+Overfull \vbox (11.83589pt too high) detected at line 434
  []
 
 [36
 
-] [37
+]
+
+Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
+ng it (it is [0.0:0.0]) on input line 459.
+
+ [warning /pgfplots/warning/approx empty range enlarged]
+
+Overfull \vbox (11.83492pt too high) detected at line 459
+ []
+
+[37
 
 ] [38
 
 ] [39
 
+] [40
+
+] [41
+
 ]
-<imgs/rustfest.png, id=293, 461.17162pt x 461.17162pt>
+<imgs/playground.png, id=303, 1022.82124pt x 563.10374pt>
+File: imgs/playground.png Graphic file (type png)
+<use imgs/playground.png>
+Package pdftex.def Info: imgs/playground.png  used on input line 488.
+(pdftex.def)             Requested size: 341.43306pt x 187.97287pt.
+
+Overfull \vbox (5.26646pt too high) detected at line 488
+ []
+
+[42
+
+ <./imgs/playground.png>]
+<imgs/rustfest.png, id=310, 461.17162pt x 461.17162pt>
 File: imgs/rustfest.png Graphic file (type png)
 <use imgs/rustfest.png>
-Package pdftex.def Info: imgs/rustfest.png  used on input line 476.
+Package pdftex.def Info: imgs/rustfest.png  used on input line 496.
 (pdftex.def)             Requested size: 113.81102pt x 113.80783pt.
-<imgs/rustconf.png, id=294, 803.0pt x 590.205pt>
+<imgs/rustconf.png, id=311, 803.0pt x 590.205pt>
 File: imgs/rustconf.png Graphic file (type png)
 <use imgs/rustconf.png>
-Package pdftex.def Info: imgs/rustconf.png  used on input line 476.
+Package pdftex.def Info: imgs/rustconf.png  used on input line 496.
 (pdftex.def)             Requested size: 142.26378pt x 104.55724pt.
- [40
+ [43
 
  <./imgs/rustfest.png> <./imgs/rustconf.png>]
-<imgs/redox.jpg, id=302, 1204.5pt x 677.53125pt>
+<imgs/redox.jpg, id=321, 1204.5pt x 677.53125pt>
 File: imgs/redox.jpg Graphic file (type jpg)
 <use imgs/redox.jpg>
-Package pdftex.def Info: imgs/redox.jpg  used on input line 482.
+Package pdftex.def Info: imgs/redox.jpg  used on input line 502.
 (pdftex.def)             Requested size: 369.88582pt x 208.05789pt.
 
-Overfull \vbox (25.35149pt too high) detected at line 482
- []
-
-[41
-
- <./imgs/redox.jpg>] [42
-
-]
-<imgs/rust-by-example.png, id=314, 1490.56876pt x 538.01pt>
-File: imgs/rust-by-example.png Graphic file (type png)
-<use imgs/rust-by-example.png>
-Package pdftex.def Info: imgs/rust-by-example.png  used on input line 488.
-(pdftex.def)             Requested size: 426.79134pt x 154.04044pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 488--488
-[][]  
- []
-
-[43
-
- <./imgs/rust-by-example.png>]
-<imgs/casa-do-codigo-rust.jpg, id=322, 337.26pt x 481.8pt>
-File: imgs/casa-do-codigo-rust.jpg Graphic file (type jpg)
-<use imgs/casa-do-codigo-rust.jpg>
-Package pdftex.def Info: imgs/casa-do-codigo-rust.jpg  used on input line 494.
-(pdftex.def)             Requested size: 142.26378pt x 203.23682pt.
-
-Overfull \vbox (20.53041pt too high) detected at line 494
+Overfull \vbox (25.35149pt too high) detected at line 502
  []
 
 [44
 
- <./imgs/casa-do-codigo-rust.jpg>]
-<imgs/programming-rust.jpg, id=328, 1204.5pt x 632.3625pt>
-File: imgs/programming-rust.jpg Graphic file (type jpg)
-<use imgs/programming-rust.jpg>
-Package pdftex.def Info: imgs/programming-rust.jpg  used on input line 501.
-(pdftex.def)             Requested size: 341.43306pt x 179.25063pt.
+ <./imgs/redox.jpg>] [45
 
-Overfull \vbox (19.78778pt too high) detected at line 501
+]
+<imgs/rust-by-example.png, id=332, 1490.56876pt x 538.01pt>
+File: imgs/rust-by-example.png Graphic file (type png)
+<use imgs/rust-by-example.png>
+Package pdftex.def Info: imgs/rust-by-example.png  used on input line 508.
+(pdftex.def)             Requested size: 426.79134pt x 154.04044pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 508--508
+[][]  
  []
 
-[45
+[46
+
+ <./imgs/rust-by-example.png>]
+<imgs/casa-do-codigo-rust.jpg, id=339, 337.26pt x 481.8pt>
+File: imgs/casa-do-codigo-rust.jpg Graphic file (type jpg)
+<use imgs/casa-do-codigo-rust.jpg>
+Package pdftex.def Info: imgs/casa-do-codigo-rust.jpg  used on input line 514.
+(pdftex.def)             Requested size: 142.26378pt x 203.23682pt.
+
+Overfull \vbox (20.53041pt too high) detected at line 514
+ []
+
+[47
+
+ <./imgs/casa-do-codigo-rust.jpg>]
+<imgs/programming-rust.jpg, id=345, 1204.5pt x 632.3625pt>
+File: imgs/programming-rust.jpg Graphic file (type jpg)
+<use imgs/programming-rust.jpg>
+Package pdftex.def Info: imgs/programming-rust.jpg  used on input line 521.
+(pdftex.def)             Requested size: 341.43306pt x 179.25063pt.
+
+Overfull \vbox (19.78778pt too high) detected at line 521
+ []
+
+[48
 
  <./imgs/programming-rust.jpg>]
-<imgs/hands-on-functional-programming-in-rust.jpg, id=334, 325.215pt x 401.5pt>
+<imgs/hands-on-functional-programming-in-rust.jpg, id=351, 325.215pt x 401.5pt>
 
 File: imgs/hands-on-functional-programming-in-rust.jpg Graphic file (type jpg)
 <use imgs/hands-on-functional-programming-in-rust.jpg>
 Package pdftex.def Info: imgs/hands-on-functional-programming-in-rust.jpg  used
- on input line 507.
+ on input line 527.
 (pdftex.def)             Requested size: 142.26378pt x 175.63744pt.
- [46
+ [49
 
  <./imgs/hands-on-functional-programming-in-rust.jpg>]
-<imgs/pluralsight.png, id=340, 1409.265pt x 639.38875pt>
+<imgs/pluralsight.png, id=358, 1409.265pt x 639.38875pt>
 File: imgs/pluralsight.png Graphic file (type png)
 <use imgs/pluralsight.png>
-Package pdftex.def Info: imgs/pluralsight.png  used on input line 513.
+Package pdftex.def Info: imgs/pluralsight.png  used on input line 533.
 (pdftex.def)             Requested size: 369.88582pt x 167.81766pt.
- [47
+ [50
 
  <./imgs/pluralsight.png>]
-<imgs/rustacean.png, id=347, 1204.5pt x 803.0pt>
+<imgs/rustacean.png, id=365, 1204.5pt x 803.0pt>
 File: imgs/rustacean.png Graphic file (type png)
 <use imgs/rustacean.png>
-Package pdftex.def Info: imgs/rustacean.png  used on input line 521.
+Package pdftex.def Info: imgs/rustacean.png  used on input line 541.
 (pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
- [48
+ [51
 
  <./imgs/rustacean.png>]
 \tf@nav=\write6
@@ -2144,12 +2165,12 @@ Package pdftex.def Info: imgs/rustacean.png  used on input line 521.
 \tf@snm=\write8
 \openout8 = `demo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 523.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 523.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 543.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 543.
 
 (./demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 523.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 523.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 543.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 543.
 Package rerunfilecheck Info: File `demo.out' has not changed.
 (rerunfilecheck)             Checksum: 2388879C17E83731C038A5C5B8916F7F;333.
 
@@ -2158,10 +2179,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 42614 strings out of 492982
- 975340 string characters out of 6134896
- 1149914 words of memory out of 5000000
- 45342 multiletter control sequences out of 15000+600000
+ 42631 strings out of 492982
+ 975560 string characters out of 6134896
+ 1150035 words of memory out of 5000000
+ 45352 multiletter control sequences out of 15000+600000
  550605 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,18n,102p,10417b,2150s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2176,10 +2197,10 @@ onts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm
 </usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfsx1440.pfb>
-Output written on demo.pdf (48 pages, 2742062 bytes).
+Output written on demo.pdf (51 pages, 2739520 bytes).
 PDF statistics:
- 421 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
- 211 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 441 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 109 named destinations out of 1000 (max. 500000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
