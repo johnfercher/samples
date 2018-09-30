@@ -367,7 +367,7 @@ Problemas:
 		\begin{tikzpicture}
 		\begin{axis}[
 		mbarplot,
-		ymin=0, ymax=35.0,
+		ymin=0, ymax=5.0,
 		%xlabel={Foo},
 		ylabel={\scriptsize Tempo de Execução},
 		width=0.9\textwidth,
@@ -375,38 +375,15 @@ Problemas:
 		xticklabels={,,}
 		]
 		
-		\addplot+[black] plot coordinates {(0, 35.0)};
+		\addplot+[black] plot coordinates {(0, 5.0)};
 		
-		\legend{Rust Recursivo (35s)}
+		\legend{Rust Recursivo (5s)}
 		
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
 \end{frame}
 
-
-\begin{frame}{Benchmark (v2.0)}
-	\begin{figure}
-		\begin{tikzpicture}
-		\begin{axis}[
-		mbarplot,
-		ymin=0, ymax=44.0,
-		%xlabel={Foo},
-		ylabel={\scriptsize Tempo de Execução},
-		width=0.9\textwidth,
-		height=8cm,
-		xticklabels={,,}
-		]
-		
-		\addplot+[purple] plot coordinates {(0, 44.0)};
-		\addplot+[black] plot coordinates {(0, 35.0)};
-		
-		\legend{Rust Original (44s), Rust Recursivo (35s)}
-		
-		\end{axis}
-		\end{tikzpicture}
-	\end{figure}
-\end{frame}
 
 \begin{frame}{Benchmark (v2.0)}
 	\begin{figure}
@@ -423,10 +400,9 @@ Problemas:
 		
 		%\addplot plot coordinates {(0, 30.0)};
 		\addplot+[orange] plot coordinates {(0, 56.0)};
-		\addplot+[purple] plot coordinates {(0, 44.0)};
-		\addplot+[black] plot coordinates {(0, 35.0)};
+		\addplot+[black] plot coordinates {(0, 5.0)};
 		
-		\legend{Python Recursivo (56s), Rust Original (44s), Rust Recursivo (35s)}
+		\legend{Python Recursivo (56s), Rust Original (5s)}
 		
 		\end{axis}
 		\end{tikzpicture}
@@ -447,11 +423,10 @@ Problemas:
 		]
 		
 		\addplot+[gray] plot coordinates {(0, 1800.0)};
-		\addplot+[orange] plot coordinates {(0, 68.0)};
-		\addplot+[purple] plot coordinates {(0, 44.0)};
-		\addplot+[black] plot coordinates {(0, 35.0)};
+		\addplot+[orange] plot coordinates {(0, 56.0)};
+		\addplot+[black] plot coordinates {(0, 5.0)};
 		
-		\legend{SQL Original (1800s), Python Recursivo (68s), Rust Original (44s), Rust Recursivo (35s)}
+		\legend{SQL Original (1800s), Python Recursivo (56s), Rust Original (5s)}
 		
 		\end{axis}
 		\end{tikzpicture}
