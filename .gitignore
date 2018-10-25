@@ -9,3 +9,4 @@ a.out
 *.VC.opendb
 *.VC.db
 node_modules/*
+*.pyc
