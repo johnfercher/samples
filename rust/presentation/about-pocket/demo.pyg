@@ -1,0 +1,30 @@
+
+\section{Material de estudo}
+
+\begin{frame}{Rust by Example}
+	\includegraphics[width=15.0cm]{imgs/rust-by-example.png}
+\end{frame}
+
+\begin{frame}{Rust - Concorrência e alta performance com segurança}
+	\begin{center}
+		\includegraphics[width=5.0cm]{imgs/casa-do-codigo-rust.jpg}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Programming Rust}
+	\begin{center}
+		\includegraphics[width=13.0cm]{imgs/programming-rust.jpg}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Programming Rust}
+	\begin{center}
+		\includegraphics[width=5.0cm]{imgs/hands-on-functional-programming-in-rust.jpg}
+	\end{center}
+\end{frame}
+
+\begin{frame}[standout]
+  Obrigado
+\end{frame}
+
+\end{document}
