@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  9 NOV 2018 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.11)  9 NOV 2018 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1800,20 +1800,16 @@ thkerncmss.
 <imgs/bottleneck.png, id=61, 602.25pt x 316.18124pt>
 File: imgs/bottleneck.png Graphic file (type png)
 <use imgs/bottleneck.png>
-Package pdftex.def Info: imgs/bottleneck.png  used on input line 65.
+Package pdftex.def Info: imgs/bottleneck.png  used on input line 64.
 (pdftex.def)             Requested size: 199.16928pt x 104.56206pt.
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 65.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 64.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 65.
+LaTeX Font Info:    No file OMScmss.fd. on input line 64.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 65.
-
-
-Overfull \vbox (3.27426pt too high) detected at line 65
- []
+(Font)              for symbol `textbullet' on input line 64.
 
 [4
 
@@ -1821,277 +1817,281 @@ Overfull \vbox (3.27426pt too high) detected at line 65
 
 ] [6
 
+] [7
+
+] [8
+
 ]
-<imgs/rust3d.png, id=79, 762.85pt x 542.025pt>
+<imgs/rust3d.png, id=90, 762.85pt x 542.025pt>
 File: imgs/rust3d.png Graphic file (type png)
 <use imgs/rust3d.png>
-Package pdftex.def Info: imgs/rust3d.png  used on input line 98.
+Package pdftex.def Info: imgs/rust3d.png  used on input line 117.
 (pdftex.def)             Requested size: 142.26378pt x 101.0753pt.
- [7
+ [9
 
- <./imgs/rust3d.png>] [8
+ <./imgs/rust3d.png>] [10
 
 ]
-<imgs/cores-history.png, id=95, 1117.46516pt x 715.09264pt>
+<imgs/choque_de_cultura_05.jpg, id=105, 225.84375pt x 225.84375pt>
+File: imgs/choque_de_cultura_05.jpg Graphic file (type jpg)
+<use imgs/choque_de_cultura_05.jpg>
+Package pdftex.def Info: imgs/choque_de_cultura_05.jpg  used on input line 131.
+
+(pdftex.def)             Requested size: 113.81102pt x 113.81412pt.
+
+[11
+
+ <./imgs/choque_de_cultura_05.jpg>]
+<imgs/cores-history.png, id=111, 1117.46516pt x 715.09264pt>
 File: imgs/cores-history.png Graphic file (type png)
 <use imgs/cores-history.png>
-Package pdftex.def Info: imgs/cores-history.png  used on input line 112.
+Package pdftex.def Info: imgs/cores-history.png  used on input line 137.
 (pdftex.def)             Requested size: 355.65944pt x 227.59041pt.
 
-Overfull \vbox (44.884pt too high) detected at line 112
+Overfull \vbox (44.884pt too high) detected at line 137
  []
 
-[9
+[12
 
- <./imgs/cores-history.png>] [10
+ <./imgs/cores-history.png>] [13
 
 ]
-<imgs/bug.png, id=107, 1064.97874pt x 285.065pt>
+<imgs/bug.png, id=124, 1064.97874pt x 285.065pt>
 File: imgs/bug.png Graphic file (type png)
 <use imgs/bug.png>
-Package pdftex.def Info: imgs/bug.png  used on input line 126.
+Package pdftex.def Info: imgs/bug.png  used on input line 151.
 (pdftex.def)             Requested size: 384.1122pt x 102.8147pt.
- [11
+ [14
 
- <./imgs/bug.png>] [12
+ <./imgs/bug.png>] [15
 
-] [13
-
-] [14
+] [16
 
 ]
-<imgs/dropbox.png, id=130, 1284.8pt x 350.30875pt>
-File: imgs/dropbox.png Graphic file (type png)
-<use imgs/dropbox.png>
-Package pdftex.def Info: imgs/dropbox.png  used on input line 160.
-(pdftex.def)             Requested size: 128.0374pt x 34.90997pt.
+<imgs/rfc.png, id=141, 785.93625pt x 513.92pt>
+File: imgs/rfc.png Graphic file (type png)
+<use imgs/rfc.png>
+Package pdftex.def Info: imgs/rfc.png  used on input line 181.
+(pdftex.def)             Requested size: 284.52756pt x 186.054pt.
 
-[15
+Overfull \vbox (3.3476pt too high) detected at line 181
+ []
 
- <./imgs/dropbox.png>]
-<imgs/canonical.jpeg, id=137, 637.38126pt x 108.405pt>
-File: imgs/canonical.jpeg Graphic file (type jpg)
-<use imgs/canonical.jpeg>
-Package pdftex.def Info: imgs/canonical.jpeg  used on input line 168.
-(pdftex.def)             Requested size: 128.0374pt x 21.77655pt.
- [16
+[17
 
- <./imgs/canonical.jpeg>]
-<imgs/smartthings.png, id=143, 1282.7925pt x 255.95625pt>
-File: imgs/smartthings.png Graphic file (type png)
-<use imgs/smartthings.png>
-Package pdftex.def Info: imgs/smartthings.png  used on input line 176.
-(pdftex.def)             Requested size: 128.0374pt x 25.54634pt.
- [17
+ <./imgs/rfc.png>] [18
 
- <./imgs/smartthings.png>]
-<imgs/mozilla.png, id=150, 1206.80649pt x 487.95064pt>
-File: imgs/mozilla.png Graphic file (type png)
-<use imgs/mozilla.png>
-Package pdftex.def Info: imgs/mozilla.png  used on input line 184.
-(pdftex.def)             Requested size: 128.0374pt x 51.76868pt.
- [18
+] [19
 
- <./imgs/mozilla.png>]
-<imgs/coursera.png, id=157, 1700.3525pt x 341.275pt>
-File: imgs/coursera.png Graphic file (type png)
-<use imgs/coursera.png>
-Package pdftex.def Info: imgs/coursera.png  used on input line 192.
-(pdftex.def)             Requested size: 128.0374pt x 25.69345pt.
- [19
-
- <./imgs/coursera.png>]
-<imgs/atlassian.png, id=165, 200.75pt x 36.135pt>
-File: imgs/atlassian.png Graphic file (type png)
-<use imgs/atlassian.png>
-Package pdftex.def Info: imgs/atlassian.png  used on input line 200.
-(pdftex.def)             Requested size: 128.0374pt x 23.048pt.
- [20
-
- <./imgs/atlassian.png>]
-<imgs/npm.jpeg, id=172, 401.5pt x 164.615pt>
-File: imgs/npm.jpeg Graphic file (type jpg)
-<use imgs/npm.jpeg>
-Package pdftex.def Info: imgs/npm.jpeg  used on input line 208.
-(pdftex.def)             Requested size: 85.35826pt x 34.99718pt.
- [21
-
- <./imgs/npm.jpeg>] [22
-
-] [23
+] [20
 
 ]
-<imgs/hello_world.png, id=189, 807.015pt x 146.5475pt>
+<imgs/hello_world.png, id=165, 807.015pt x 146.5475pt>
 File: imgs/hello_world.png Graphic file (type png)
 <use imgs/hello_world.png>
-Package pdftex.def Info: imgs/hello_world.png  used on input line 228.
+Package pdftex.def Info: imgs/hello_world.png  used on input line 207.
 (pdftex.def)             Requested size: 170.71652pt x 30.99948pt.
- [24
+ [21
 
  <./imgs/hello_world.png>]
-<imgs/mut_x_imut.png, id=196, 747.79375pt x 251.94125pt>
+<imgs/mut_x_imut.png, id=172, 747.79375pt x 251.94125pt>
 File: imgs/mut_x_imut.png Graphic file (type png)
 <use imgs/mut_x_imut.png>
-Package pdftex.def Info: imgs/mut_x_imut.png  used on input line 232.
+Package pdftex.def Info: imgs/mut_x_imut.png  used on input line 211.
 (pdftex.def)             Requested size: 156.49014pt x 52.72084pt.
- [25
+ [22
 
  <./imgs/mut_x_imut.png>]
-<imgs/owership_borrowing.png, id=204, 1223.57124pt x 786.94pt>
-File: imgs/owership_borrowing.png Graphic file (type png)
-<use imgs/owership_borrowing.png>
-Package pdftex.def Info: imgs/owership_borrowing.png  used on input line 236.
-(pdftex.def)             Requested size: 256.0748pt x 164.6859pt.
- [26
-
- <./imgs/owership_borrowing.png>]
-<imgs/thread_safe.png, id=211, 1097.09875pt x 681.54625pt>
+<imgs/thread_safe.png, id=179, 1097.09875pt x 681.54625pt>
 File: imgs/thread_safe.png Graphic file (type png)
 <use imgs/thread_safe.png>
-Package pdftex.def Info: imgs/thread_safe.png  used on input line 240.
+Package pdftex.def Info: imgs/thread_safe.png  used on input line 219.
 (pdftex.def)             Requested size: 241.84842pt x 150.24222pt.
- [27
+ [23
 
  <./imgs/thread_safe.png>]
-<imgs/filter_list.png, id=218, 874.26625pt x 837.1275pt>
+<imgs/filter_list.png, id=186, 874.26625pt x 837.1275pt>
 File: imgs/filter_list.png Graphic file (type png)
 <use imgs/filter_list.png>
-Package pdftex.def Info: imgs/filter_list.png  used on input line 244.
+Package pdftex.def Info: imgs/filter_list.png  used on input line 223.
 (pdftex.def)             Requested size: 193.47882pt x 185.25436pt.
- [28
+ [24
 
  <./imgs/filter_list.png>]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 268.
+ng it (it is [0.0:0.0]) on input line 247.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (13.1792pt too high) detected at line 268
+Overfull \vbox (13.1792pt too high) detected at line 247
  []
 
-[29
+[25
 
 ]
-<imgs/limit_threds.png, id=231, 1000.73875pt x 495.8525pt>
+<imgs/limit_threds.png, id=200, 1000.73875pt x 495.8525pt>
 File: imgs/limit_threds.png Graphic file (type png)
 <use imgs/limit_threds.png>
-Package pdftex.def Info: imgs/limit_threds.png  used on input line 272.
+Package pdftex.def Info: imgs/limit_threds.png  used on input line 251.
 (pdftex.def)             Requested size: 213.39566pt x 105.72853pt.
- [30
+ [26
 
  <./imgs/limit_threds.png>]
-<imgs/cargo.png, id=238, 1392.20125pt x 345.29pt>
+<imgs/choque_de_cultura_04.jpg, id=207, 702.625pt x 398.48875pt>
+File: imgs/choque_de_cultura_04.jpg Graphic file (type jpg)
+<use imgs/choque_de_cultura_04.jpg>
+Package pdftex.def Info: imgs/choque_de_cultura_04.jpg  used on input line 257.
+
+(pdftex.def)             Requested size: 284.52756pt x 161.36882pt.
+ [27
+
+ <./imgs/choque_de_cultura_04.jpg>]
+<imgs/cargo.png, id=213, 1392.20125pt x 345.29pt>
 File: imgs/cargo.png Graphic file (type png)
 <use imgs/cargo.png>
-Package pdftex.def Info: imgs/cargo.png  used on input line 278.
+Package pdftex.def Info: imgs/cargo.png  used on input line 264.
 (pdftex.def)             Requested size: 284.52756pt x 70.56361pt.
- [31
+
+[28
 
  <./imgs/cargo.png>]
-<imgs/unit_tests.png, id=246, 1049.9225pt x 349.305pt>
+<imgs/unit_tests.png, id=220, 1049.9225pt x 349.305pt>
 File: imgs/unit_tests.png Graphic file (type png)
 <use imgs/unit_tests.png>
-Package pdftex.def Info: imgs/unit_tests.png  used on input line 282.
+Package pdftex.def Info: imgs/unit_tests.png  used on input line 268.
 (pdftex.def)             Requested size: 227.62204pt x 75.72804pt.
- [32
+ [29
 
  <./imgs/unit_tests.png>]
-<imgs/ide.png, id=253, 882.29625pt x 589.20125pt>
+<imgs/ide.png, id=227, 882.29625pt x 589.20125pt>
 File: imgs/ide.png Graphic file (type png)
 <use imgs/ide.png>
-Package pdftex.def Info: imgs/ide.png  used on input line 288.
+Package pdftex.def Info: imgs/ide.png  used on input line 274.
 (pdftex.def)             Requested size: 312.9803pt x 209.01056pt.
 
-Overfull \vbox (26.30415pt too high) detected at line 288
+Overfull \vbox (26.30415pt too high) detected at line 274
  []
 
-[33
+[30
 
  <./imgs/ide.png>]
-<imgs/dockerfile1.png, id=260, 813.0375pt x 453.695pt>
+<imgs/dockerfile1.png, id=234, 813.0375pt x 453.695pt>
 File: imgs/dockerfile1.png Graphic file (type png)
 <use imgs/dockerfile1.png>
-Package pdftex.def Info: imgs/dockerfile1.png  used on input line 294.
+Package pdftex.def Info: imgs/dockerfile1.png  used on input line 280.
 (pdftex.def)             Requested size: 312.9803pt x 174.64888pt.
- [34
+ [31
 
  <./imgs/dockerfile1.png>]
-<imgs/dockerfile2.png, id=267, 813.0375pt x 270.00874pt>
+<imgs/dockerfile2.png, id=242, 813.0375pt x 270.00874pt>
 File: imgs/dockerfile2.png Graphic file (type png)
 <use imgs/dockerfile2.png>
-Package pdftex.def Info: imgs/dockerfile2.png  used on input line 300.
+Package pdftex.def Info: imgs/dockerfile2.png  used on input line 286.
 (pdftex.def)             Requested size: 312.9803pt x 103.93925pt.
- [35
+ [32
 
  <./imgs/dockerfile2.png>]
-<imgs/dockerfile3.png, id=274, 894.34125pt x 415.5525pt>
+<imgs/dockerfile3.png, id=249, 894.34125pt x 415.5525pt>
 File: imgs/dockerfile3.png Graphic file (type png)
 <use imgs/dockerfile3.png>
-Package pdftex.def Info: imgs/dockerfile3.png  used on input line 306.
+Package pdftex.def Info: imgs/dockerfile3.png  used on input line 292.
 (pdftex.def)             Requested size: 341.43306pt x 158.64713pt.
- [36
+ [33
 
- <./imgs/dockerfile3.png>] [37
+ <./imgs/dockerfile3.png>] [34
 
-] [38
+] [35
 
 ]
-<imgs/battle.png, id=293, 791.95876pt x 433.62pt>
+<imgs/battle.png, id=267, 791.95876pt x 433.62pt>
 File: imgs/battle.png Graphic file (type png)
 <use imgs/battle.png>
-Package pdftex.def Info: imgs/battle.png  used on input line 330.
+Package pdftex.def Info: imgs/battle.png  used on input line 316.
 (pdftex.def)             Requested size: 256.0748pt x 140.21025pt.
- [39
+ [36
 
- <./imgs/battle.png>] [40
+ <./imgs/battle.png>] [37
 
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 361.
+ng it (it is [0.0:0.0]) on input line 347.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (18.18512pt too high) detected at line 361
+Overfull \vbox (11.83592pt too high) detected at line 347
+ []
+
+[38
+
+]
+
+Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
+ng it (it is [0.0:0.0]) on input line 370.
+
+ [warning /pgfplots/warning/approx empty range enlarged]
+
+Overfull \vbox (11.83592pt too high) detected at line 370
+ []
+
+[39
+
+]
+
+Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
+ng it (it is [0.0:0.0]) on input line 394.
+
+ [warning /pgfplots/warning/approx empty range enlarged]
+
+Overfull \vbox (11.83592pt too high) detected at line 394
+ []
+
+[40
+
+]
+<imgs/bench1zoom.png, id=295, 1256.695pt x 778.91pt>
+File: imgs/bench1zoom.png Graphic file (type png)
+<use imgs/bench1zoom.png>
+Package pdftex.def Info: imgs/bench1zoom.png  used on input line 400.
+(pdftex.def)             Requested size: 364.19536pt x 225.7236pt.
+
+Overfull \vbox (43.0172pt too high) detected at line 400
  []
 
 [41
 
+ <./imgs/bench1zoom.png>]
+<imgs/choque_de_cultura_01.jpg, id=302, 702.625pt x 394.47375pt>
+File: imgs/choque_de_cultura_01.jpg Graphic file (type jpg)
+<use imgs/choque_de_cultura_01.jpg>
+Package pdftex.def Info: imgs/choque_de_cultura_01.jpg  used on input line 406.
+
+(pdftex.def)             Requested size: 284.52756pt x 159.74294pt.
+ [42
+
+ <./imgs/choque_de_cultura_01.jpg>] [43
+
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 385.
+ng it (it is [0.0:0.0]) on input line 438.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (18.18303pt too high) detected at line 385
+Overfull \vbox (11.83492pt too high) detected at line 438
  []
 
-[42
+[44
 
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 409.
+ng it (it is [0.0:0.0]) on input line 461.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (11.83592pt too high) detected at line 409
- []
-
-[43
-
-] [44
-
-]
-
-Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 441.
-
- [warning /pgfplots/warning/approx empty range enlarged]
-
-Overfull \vbox (18.18056pt too high) detected at line 441
+Overfull \vbox (11.83492pt too high) detected at line 461
  []
 
 [45
@@ -2099,36 +2099,46 @@ Overfull \vbox (18.18056pt too high) detected at line 441
 ]
 
 Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 465.
+ng it (it is [0.0:0.0]) on input line 485.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
-Overfull \vbox (11.8312pt too high) detected at line 465
+Overfull \vbox (11.83492pt too high) detected at line 485
  []
 
 [46
 
 ]
+<imgs/bench2zoom.png, id=330, 1277.77374pt x 779.91376pt>
+File: imgs/bench2zoom.png Graphic file (type png)
+<use imgs/bench2zoom.png>
+Package pdftex.def Info: imgs/bench2zoom.png  used on input line 491.
+(pdftex.def)             Requested size: 364.19536pt x 222.28963pt.
 
-Package pgfplots Warning: Axis range for axis x is approximately empty; enlargi
-ng it (it is [0.0:0.0]) on input line 489.
-
- [warning /pgfplots/warning/approx empty range enlarged]
-
-Overfull \vbox (11.83492pt too high) detected at line 489
+Overfull \vbox (39.58322pt too high) detected at line 491
  []
 
 [47
 
-] [48
+ <./imgs/bench2zoom.png>]
+<imgs/choque_de_cultura_02.jpg, id=337, 702.625pt x 394.47375pt>
+File: imgs/choque_de_cultura_02.jpg Graphic file (type jpg)
+<use imgs/choque_de_cultura_02.jpg>
+Package pdftex.def Info: imgs/choque_de_cultura_02.jpg  used on input line 497.
+
+(pdftex.def)             Requested size: 284.52756pt x 159.74294pt.
+ [48
+
+ <./imgs/choque_de_cultura_02.jpg>] [49
 
 ]
-<imgs/rustacean.png, id=347, 1204.5pt x 803.0pt>
+<imgs/rustacean.png, id=349, 1204.5pt x 803.0pt>
 File: imgs/rustacean.png Graphic file (type png)
 <use imgs/rustacean.png>
-Package pdftex.def Info: imgs/rustacean.png  used on input line 505.
+Package pdftex.def Info: imgs/rustacean.png  used on input line 513.
 (pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
- [49
+
+[50
 
  <./imgs/rustacean.png>]
 \tf@nav=\write6
@@ -2140,24 +2150,24 @@ Package pdftex.def Info: imgs/rustacean.png  used on input line 505.
 \tf@snm=\write8
 \openout8 = `demo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 507.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 507.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
  (./demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 507.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 507.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 515.
 Package rerunfilecheck Info: File `demo.out' has not changed.
-(rerunfilecheck)             Checksum: 54CF5ECBE181A086718E3328F97CD717;226.
+(rerunfilecheck)             Checksum: 7EDFD0F679ACE0EBA5162A39A398BC92;232.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 42633 strings out of 492982
- 975982 string characters out of 6134895
- 1146137 words of memory out of 5000000
- 45361 multiletter control sequences out of 15000+600000
- 549776 words of font info for 69 fonts, out of 8000000 for 9000
+ 42645 strings out of 492982
+ 976292 string characters out of 6134895
+ 1145888 words of memory out of 5000000
+ 45371 multiletter control sequences out of 15000+600000
+ 553003 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,18n,102p,10417b,2150s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -2170,10 +2180,10 @@ onts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb>
 </usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfsx1440.pfb>
-Output written on demo.pdf (49 pages, 1732980 bytes).
+Output written on demo.pdf (50 pages, 1628227 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
- 103 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 301 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

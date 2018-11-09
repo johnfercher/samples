@@ -58,7 +58,6 @@
 		\item Um gargalo é a parte menos eficiente de um sistema:
 		\begin{itemize}
 			\item 90\% de um trajeto é feito a 110 km/h e 10\% é feito a 20 km/h;
-			\item 100 pessoas precisam de atendimento médico por dia, porém apenas 10 são atendidas;
 			\item Um caixa 24 horas dentro de uma loja que fecha;
 		\end{itemize}
 	\end{itemize}		
@@ -71,10 +70,30 @@
 	\end{itemize}	
 \end{frame}
 
-\begin{frame}{Gargalos}		
+\begin{frame}[noframenumbering]{Gargalos}	
 	\begin{itemize}
-		\item IO-Bound $\rightarrow$ Async Programming;
-		\item CPU-Bound $\rightarrow$ Algorithms, Parallel Programming, Programming Languages;
+		\item CPU-Bound:
+		\begin{itemize}
+			\item Utiliza todo o processamento, porém, ainda demora;
+		\end{itemize}
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}[noframenumbering]{Gargalos}		
+	\begin{itemize}
+		\item CPU-Bound:
+		\begin{itemize}
+			\item $\rightarrow$ Algorithms, Parallel Programming, Programming Languages;
+		\end{itemize}
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}[noframenumbering]{Gargalos}		
+	\begin{itemize}
+		\item CPU-Bound:
+		\begin{itemize}
+			\item $\rightarrow$ Algorithms, \textcolor{blue}{Parallel Programming}, \textcolor{blue}{Programming Languages};
+		\end{itemize}
 	\end{itemize}	
 \end{frame}
 
@@ -103,6 +122,12 @@
 		
 		\hspace{8.2cm}Lei de Moore, 1965.
 	\end{quote}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Motivação (Acha que isso ainda funciona?)}
+	\begin{center}
+		\includegraphics[width=4.0cm]{imgs/choque_de_cultura_05.jpg}	
+	\end{center}
 \end{frame}
 
 \begin{frame}{Motivação}
@@ -149,67 +174,21 @@
 	\end{itemize}
 \end{frame}
 
-\section{Quem usa? E para que?}
-
-\begin{frame}{Quem usa? E para que?}
+\begin{frame}{Desenvolvimento}
 	\begin{center}
-		\includegraphics[width=4.5cm]{imgs/dropbox.png}	
-		
-		"Optimizing cloud file-storage."
+		\includegraphics[width=10.0cm]{imgs/rfc.png}
 	\end{center}
 \end{frame}
 
-\begin{frame}[noframenumbering]{Quem usa? E para que?}
-	\begin{center}
-		\includegraphics[width=4.5cm]{imgs/canonical.jpeg}	
-		
-		"Everything from server monitoring to middleware!"
-	\end{center}
-\end{frame}
 
-\begin{frame}[noframenumbering]{Quem usa? E para que?}
-	\begin{center}
-		\includegraphics[width=4.5cm]{imgs/smartthings.png}	
-		
-		"Developing memory-safe embedded applications on our SmartThings Hub and supporting services in the cloud."
-	\end{center}
-\end{frame}
+\section{Quem usa em produção?}
 
-\begin{frame}[noframenumbering]{Quem usa? E para que?}
-	\begin{center}
-		\includegraphics[width=4.5cm]{imgs/mozilla.png}	
-		
-		"Building the Servo browser engine, integrating into Firefox, other projects."
-	\end{center}
-\end{frame}
-
-\begin{frame}[noframenumbering]{Quem usa? E para que?}
-	\begin{center}
-		\includegraphics[width=4.5cm]{imgs/coursera.png}	
-		
-		"Programming Assignments in secured Docker containers."
-	\end{center}
-\end{frame}
-
-\begin{frame}[noframenumbering]{Quem usa? E para que?}
-	\begin{center}
-		\includegraphics[width=4.5cm]{imgs/atlassian.png}	
-		
-		"We use Rust in a service for analyzing petabytes of source code."
-	\end{center}
-\end{frame}
-
-\begin{frame}[noframenumbering]{Quem usa? E para que?}
-	\begin{center}
-		\includegraphics[width=3.0cm]{imgs/npm.jpeg}	
-		
-		"Replacing C and rewriting performance-critical bottlenecks in the registry service architecture."
-	\end{center}
-\end{frame}
-
-\begin{frame}{Quem usa? E para que?}
+\begin{frame}{Quem usa em produção?}
 	\begin{itemize}
-		\item No site oficial da linguagem há mais 123 empresas que deixaram claro que utilizam Rust em produção;
+		\item Friends of Rust · The Rust Programming Language:
+		\begin{itemize}
+			\item https://www.rust-lang.org/pt-BR/friends.html
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
@@ -231,9 +210,9 @@
 	\includegraphics[width=5.5cm]{imgs/mut_x_imut.png}	
 \end{frame}
 
-\begin{frame}{Ownership + Borrowing}
-	\includegraphics[width=9cm]{imgs/owership_borrowing.png}	
-\end{frame}
+%\begin{frame}{Ownership + Borrowing}
+%	\includegraphics[width=9cm]{imgs/owership_borrowing.png}	
+%\end{frame}
 
 \begin{frame}{Thread-safe}
 	\includegraphics[width=8.5cm]{imgs/thread_safe.png}	
@@ -257,8 +236,8 @@
 		]
 		
 		\addplot+[gray] plot coordinates {(0, 7233.0)};
-		\addplot+[purple] plot coordinates {(0, 6916.0)};
-		\addplot+[black] plot coordinates {(0, 2073.0)};
+		\addplot+[black] plot coordinates {(0, 6916.0)};
+		\addplot+[purple] plot coordinates {(0, 2073.0)};
 		
 		\legend{ForLoop (7233s), Iterator (6916s), ParallelIterator (2073s)}
 		
@@ -270,6 +249,13 @@
 \begin{frame}{Limitando o Paralelismo}
 	\includegraphics[width=7.5cm]{imgs/limit_threds.png}	
 \end{frame}
+
+\begin{frame}[noframenumbering]{Rust para paralelismo...}
+	\begin{center}
+		\includegraphics[width=10.0cm]{imgs/choque_de_cultura_04.jpg}	
+	\end{center}
+\end{frame}
+
 
 \begin{frame}{Gerenciador de pacotes}
 	Cargo.TOML
@@ -343,7 +329,7 @@
 		\begin{tikzpicture}
 		\begin{axis}[
 		mbarplot,
-		ymin=0, ymax=10.0,
+		ymin=0, ymax=1280.0,
 		%xlabel={Foo},
 		ylabel={\scriptsize Tempo de Execução},
 		width=0.9\textwidth,
@@ -351,33 +337,9 @@
 		xticklabels={,,}
 		]
 		
-		\addplot+[black] plot coordinates {(0, 10.0)};
+		\addplot+[gray] plot coordinates {(0, 1280.0)};
 		
-		\legend{Rust (10m)}
-		
-		\end{axis}
-		\end{tikzpicture}
-	\end{figure}
-\end{frame}
-
-\begin{frame}[noframenumbering]{Benchmark (v1.0)}
-	\begin{figure}
-		\begin{tikzpicture}
-		\begin{axis}[
-		mbarplot,
-		ymin=0, ymax=200.0,
-		%xlabel={Foo},
-		ylabel={\scriptsize Tempo de Execução},
-		width=0.9\textwidth,
-		height=8cm,
-		xticklabels={,,}
-		]
-		
-		%\addplot plot coordinates {(0, 30.0)};
-		\addplot+[purple] plot coordinates {(0, 300.0)};
-		\addplot+[black] plot coordinates {(0, 10.0)};
-		
-		\legend{C\# (300m), Rust (10m)}
+		\legend{R (1280m)}
 		
 		\end{axis}
 		\end{tikzpicture}
@@ -398,14 +360,49 @@
 		]
 		
 		\addplot+[gray] plot coordinates {(0, 1280.0)};
-		\addplot+[purple] plot coordinates {(0, 300.0)};
-		\addplot+[black] plot coordinates {(0, 10.0)};
+		\addplot+[black] plot coordinates {(0, 300.0)};
+		
+		\legend{R (1280m), C\# (300m)}
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Benchmark (v1.0)}
+	\begin{figure}
+		\begin{tikzpicture}
+		\begin{axis}[
+		mbarplot,
+		ymin=0, ymax=1280.0,
+		%xlabel={Foo},
+		ylabel={\scriptsize Tempo de Execução},
+		width=0.9\textwidth,
+		height=8cm,
+		xticklabels={,,}
+		]
+		
+		\addplot+[gray] plot coordinates {(0, 1280.0)};
+		\addplot+[black] plot coordinates {(0, 300.0)};
+		\addplot+[purple] plot coordinates {(0, 10.0)};
 		
 		\legend{R (1280m), C\# (300m), Rust (10m)}
 		
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Benchmark (v1.0)}
+	\begin{center}
+		\includegraphics[width=12.8cm]{imgs/bench1zoom.png}	
+	\end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Benchmark (v1.0)}
+	\begin{center}
+		\includegraphics[width=10.0cm]{imgs/choque_de_cultura_01.jpg}	
+	\end{center}
 \end{frame}
 
 \begin{frame}{Sobre os Benchmarks V2.0}	
@@ -423,7 +420,7 @@
 		\begin{tikzpicture}
 		\begin{axis}[
 		mbarplot,
-		ymin=0, ymax=5.0,
+		ymin=0, ymax=1800.0,
 		%xlabel={Foo},
 		ylabel={\scriptsize Tempo de Execução},
 		width=0.9\textwidth,
@@ -431,33 +428,9 @@
 		xticklabels={,,}
 		]
 		
-		\addplot+[black] plot coordinates {(0, 5.0)};
+		\addplot+[gray] plot coordinates {(0, 1800.0)};
 		
-		\legend{Rust (5s)}
-		
-		\end{axis}
-		\end{tikzpicture}
-	\end{figure}
-\end{frame}
-
-
-\begin{frame}[noframenumbering]{Benchmark (v2.0)}
-	\begin{figure}
-		\begin{tikzpicture}
-		\begin{axis}[
-		mbarplot,
-		ymin=0, ymax=88.0,
-		%xlabel={Foo},
-		ylabel={\scriptsize Tempo de Execução},
-		width=0.9\textwidth,
-		height=8cm,
-		xticklabels={,,}
-		]
-		
-		\addplot+[orange] plot coordinates {(0, 88.0)};
-		\addplot+[black] plot coordinates {(0, 5.0)};
-		
-		\legend{Python (88s), Rust (5s)}
+		\legend{SQL (1800s)}
 		
 		\end{axis}
 		\end{tikzpicture}
@@ -479,13 +452,48 @@
 		
 		\addplot+[gray] plot coordinates {(0, 1800.0)};
 		\addplot+[orange] plot coordinates {(0, 88.0)};
-		\addplot+[black] plot coordinates {(0, 5.0)};
+		
+		\legend{SQL (1800s), Python (88s)}
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Benchmark (v2.0)}
+	\begin{figure}
+		\begin{tikzpicture}
+		\begin{axis}[
+		mbarplot,
+		ymin=0, ymax=1800.0,
+		%xlabel={Foo},
+		ylabel={\scriptsize Tempo de Execução},
+		width=0.9\textwidth,
+		height=8cm,
+		xticklabels={,,}
+		]
+		
+		\addplot+[gray] plot coordinates {(0, 1800.0)};
+		\addplot+[orange] plot coordinates {(0, 88.0)};
+		\addplot+[purple] plot coordinates {(0, 5.0)};
 		
 		\legend{SQL (1800s), Python (88s), Rust (5s)}
 		
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Benchmark (v2.0)}
+	\begin{center}
+		\includegraphics[width=12.8cm]{imgs/bench2zoom.png}	
+	\end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Benchmark (v2.0)}
+	\begin{center}
+		\includegraphics[width=10.0cm]{imgs/choque_de_cultura_02.jpg}	
+	\end{center}
 \end{frame}
 
 \begin{frame}{Conclusões}	
