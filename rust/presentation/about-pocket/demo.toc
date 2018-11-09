@@ -1,6 +1,4 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
-\beamer@sectionintoc {2}{Quem usa? E para que?}{15}{0}{2}
-\beamer@sectionintoc {3}{Sugest\IeC {\~o}es de regras do Velocity}{27}{0}{3}
-\beamer@sectionintoc {4}{Mostre-me o c\IeC {\'o}digo}{39}{0}{4}
-\beamer@sectionintoc {5}{Curiosidades}{40}{0}{5}
-\beamer@sectionintoc {6}{Material de estudos}{49}{0}{6}
+\beamer@sectionintoc {2}{Quem usa? E para que?}{14}{0}{2}
+\beamer@sectionintoc {3}{Como otimizar um c\IeC {\'o}digo em Rust}{23}{0}{3}
+\beamer@sectionintoc {4}{Resolu\IeC {\c c}\IeC {\~a}o de um problema}{26}{0}{4}
