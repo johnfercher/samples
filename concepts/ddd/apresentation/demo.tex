@@ -36,7 +36,7 @@
 \lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}}
 
 
-\title{Domain-Driven Design: Parte 1}
+\title{Domain-Driven Design: Parte I}
 \date{}
 \author{Johnathan Fercher}
 %\institute{Braspag}
@@ -85,7 +85,7 @@
 		\item Regras de negócio;
 	\end{itemize}
 
-	Ex: Uma \textbf{pessoa} possui \textbf{cartões de créditos}. \textbf{Cartões de créditos} podem ser utilizados em \textbf{transações}. Quando uma \textbf{transação} é realizada com um \textbf{cartão de crédito} sem permissão, a mesma se caracterizada como \textbf{fraude}. Uma \textbf{fraude} pode acarretar em um \textbf{chargeback}. Quando um \textbf{chargeback} ocorre, o \textbf{cartão de crédito} vinculado aquela \textbf{transação} é cancelado.
+	Ex: Uma \textbf{pessoa} possui \textbf{cartões de créditos}. \textbf{Cartões de créditos} podem ser utilizados em \textbf{transações}. Quando uma \textbf{transação} é realizada com um \textbf{cartão de crédito} sem permissão, a mesma se caracteriza como \textbf{fraude}. Uma \textbf{fraude} pode acarretar em um \textbf{chargeback}. Quando um \textbf{chargeback} ocorre, o \textbf{cartão de crédito} vinculado aquela \textbf{transação} é cancelado.
 \end{frame}
 
 \begin{frame}{O que é um Modelo}
@@ -138,7 +138,7 @@
 \begin{frame}{O que é um Design}	
 	\begin{itemize}	
 		\item Implementação do software;
-		\item Aspectos técnicos: Performance, reusabilidade, segurança, tolerância a falhas, escalabilidade e etc;
+		\item Aspectos técnicos: performance, reusabilidade, segurança, tolerância a falhas, escalabilidade e etc;
 	\end{itemize}
 	Vamos armazenar as \textbf{transações} em um \textbf{Redis}. Vamos utilizar um \textbf{facade} que tente obter os valores no \textbf{cache}, caso não ache ele vai no \textbf{banco}. 
 \end{frame}
@@ -166,7 +166,7 @@
 
 \begin{frame}{O que é necessário para realizar essa ligação?}	
 	\begin{itemize}	
-		\item É interessante que o software seja construído usando algum \textbf{padrão arquitetural} que isole o domínio e mantenha um baixo acoplamento e uma alta coesão entre "camadas". 
+		\item É interessante que o software seja construído usando algum \textbf{padrão arquitetural} que isole o domínio e mantenha um baixo acoplamento e uma alta coesão entre camadas. 
 		\item O modelo deve ser construído utilizando os \textbf{blocos de construção}.
 	\end{itemize}
 \end{frame}
@@ -179,6 +179,12 @@
 \end{frame}
 
 \section{Padrões Arquiteturais}
+\begin{frame}{Arquitetura em Camadas (Clássica)}	
+	\begin{center}
+		\includegraphics[width=5cm]{imgs/layered-architecture}
+	\end{center}
+\end{frame}
+
 \begin{frame}{Arquitetura em Camadas (Clássica)}	
 	\begin{multicols}{2}		
 		\begin{center}
@@ -193,6 +199,12 @@
 	\end{multicols}
 \end{frame}
 
+\begin{frame}{Arquitetura em Camadas (Com foco no Negócio)}			
+	\begin{center}
+		\includegraphics[width=5cm]{imgs/dip-layered-architecture}
+	\end{center}
+\end{frame}
+
 \begin{frame}{Arquitetura em Camadas (Com foco no Negócio)}	
 	\begin{multicols}{2}		
 		\begin{center}
@@ -203,6 +215,12 @@
 			\item \textbf{Business} agora não depende de ninguém e somente quebra com mudanças de negócio;
 		\end{itemize}
 	\end{multicols}
+\end{frame}
+
+\begin{frame}{Arquitetura de Cebola}			
+	\begin{center}
+		\includegraphics[width=6cm]{imgs/onion-architecture}
+	\end{center}
 \end{frame}
 
 \begin{frame}{Arquitetura de Cebola}	
@@ -219,18 +237,26 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}{Arquitetura Hexagonal}	
-	\begin{multicols}{2}		
-		\begin{center}
-			\includegraphics[width=6cm]{imgs/hexagonal}
-		\end{center}
-		\begin{itemize}	
-			\item Também isola a camada \textbf{Business};
-			\item Também isola \textbf{UI} e \textbf{DA};
-			\item No lado esquerdo temos os atores principais, aqueles que estimulam a aplicação;
-			\item No lado direito temos os atores secundários, aqueles que são dirigidos pela aplicação;
-		\end{itemize}
-	\end{multicols}
+\begin{frame}{Arquitetura Hexagonal}			
+	\begin{center}
+		\includegraphics[width=6cm]{imgs/hexagonal}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Arquitetura Hexagonal}			
+	\begin{itemize}	
+		\item Também isola a camada \textbf{Business};
+		\item O \textit{Release Equivalence Principle} é violado, pois  alterações na camada \textbf{UI} afetam a versão de \textbf{DA}, e vice-versa. 
+		\item O \textit{Common Closure Principle} é violado, pois a camada muda por razões de \textbf{UI} e \textbf{DA}. 
+		\item O \textit{Common Reuse Principle} é violado, pois \textbf{DA} não poderia ser reutilizado sem que dependências de \textbf{UI} sejam levadas juntas, e vice-versa.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Por que separar em camadas além de isolar o domínio?}	
+	\begin{itemize}	
+		\item Desacoplar soluções;
+		\item Aumentar coesão dentro dos pacotes;
+	\end{itemize}
 \end{frame}
 
 \section{Blocos de Construção}
@@ -238,15 +264,52 @@
 	\begin{itemize}	
 		\item Entidades;
 		\item Objetos de Valor;
-		\item Agregados;
 		\item Serviços;
+		\item Módulos;
 	\end{itemize}
+\end{frame}
+
+\begin{frame}{Entidades}	
+	...
+\end{frame}
+
+\begin{frame}{Objetos de Valor}	
+	...
+\end{frame}
+
+\begin{frame}{Serviços}	
+	...
+\end{frame}
+
+\begin{frame}{Módulos}	
+	...
+\end{frame}
+
+\section{Ciclo de Vida de um Objeto de Domínio}
+\begin{frame}{Blocos de Construção}	
+	\begin{itemize}	
+		\item Agregados;
+		\item Fábricas;
+		\item Repositórios;
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Agregados}	
+	...
+\end{frame}
+
+\begin{frame}{Fábricas}	
+	...
+\end{frame}
+
+\begin{frame}{Repositórios}	
+	...
 \end{frame}
 
 \section{Referências}
 \begin{frame}{Referências}	
 	\begin{itemize}	
-		\item \href{https://github.com/johnfercher/software-literature-review/blob/master/PROGRAMMING2.md}{https://github.com/johnfercher/software-literature-review/blob/master/PROGRAMMING2.md}
+		\item \href{https://github.com/johnfercher/software-literature-review}{https://github.com/johnfercher/software-literature-review}
 	\end{itemize}
 \end{frame}
 

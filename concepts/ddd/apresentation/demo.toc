@@ -1,5 +1,6 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Linguagem Ub\IeC {\'\i }qua}{14}{0}{2}
 \beamer@sectionintoc {3}{Padr\IeC {\~o}es Arquiteturais}{16}{0}{3}
-\beamer@sectionintoc {4}{Blocos de Constru\IeC {\c c}\IeC {\~a}o}{21}{0}{4}
-\beamer@sectionintoc {5}{Refer\IeC {\^e}ncias}{23}{0}{5}
+\beamer@sectionintoc {4}{Blocos de Constru\IeC {\c c}\IeC {\~a}o}{26}{0}{4}
+\beamer@sectionintoc {5}{Ciclo de Vida de um Objeto de Dom\IeC {\'\i }nio}{32}{0}{5}
+\beamer@sectionintoc {6}{Refer\IeC {\^e}ncias}{37}{0}{6}
