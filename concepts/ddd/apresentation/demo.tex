@@ -267,7 +267,7 @@
 \begin{frame}{O que isso tem a ver com DDD?}	
 	\begin{itemize}	
 		\item Um software é constituído de coisas além das regras de negócio;
-		\item Existem questões como: interface de usuário, autenticação, autorização, cache, banco de dados e etc;
+		\item Existem questões como: interface de usuário, acesso via rede, autenticação, autorização, cache, banco de dados e etc;
 		\item Isolando o domínio, garantimos coesão e desacoplamento relacionado aos outros aspectos do sistema;
 		\item Podemos estender esse isolamento para todas as outras partes; 
 	\end{itemize}
@@ -346,13 +346,6 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Por que separar em camadas além de isolar o domínio?}	
-	\begin{itemize}	
-		\item Desacoplar soluções;
-		\item Aumentar coesão dentro dos pacotes;
-	\end{itemize}
-\end{frame}
-
 \section{Blocos de Construção}
 \begin{frame}{Blocos de Construção (Model-Driven Design)}	
 	\begin{center}
@@ -361,11 +354,30 @@
 \end{frame}
 
 \begin{frame}{Entidades}	
-	...
+	\begin{itemize}	
+		\item Possuem identidade;
+		\item São mutáveis;
+		\item Todo o ciclo de vida é importante;
+	\end{itemize}
+
+	Posso chamar qualquer Diego de otário? Ou o Diego da Braspag, é chamado assim por que tem uma identidade e foi otário no passado? Ele pode deixar de ser otário?
 \end{frame}
 
 \begin{frame}{Objetos de Valor}	
-	...
+	\begin{itemize}	
+		\item Não possuem identidade;
+		\item São geralmente imutáveis;
+		\item Podem ser compartilhados via referência em memória (Flyweight Pattern);
+	\end{itemize}
+
+	Salvando o histórico de edições de uma entidade. É importante distinguir cada alteração entre sí, ou somente é interessante saber a última alteração ou todo o histórico?
+\end{frame}
+
+\begin{frame}{Por que não considerar tudo como Entidades?}	
+	\begin{itemize}	
+		\item Entidades devem ser rastreáveis, isso requer identidade e gera custos;
+		\item Entidades servem para direcionar os aspectos mais importantes de um modelo;
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Serviços}	
