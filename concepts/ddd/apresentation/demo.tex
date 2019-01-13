@@ -103,6 +103,7 @@
 				\item Id;
 				\item Nome;
 				\item Cartões;
+				\item Email;
 			\end{itemize}
 		\end{itemize}
 		\begin{itemize}	
@@ -358,6 +359,8 @@
 		\item Possuem identidade;
 		\item São mutáveis;
 		\item Todo o ciclo de vida é importante;
+		\item Guardam estado;
+		\item Devem fazer parte da linguagem ubíqua;
 	\end{itemize}
 
 	Posso chamar qualquer Diego de otário? Ou o Diego da Braspag, é chamado assim por que tem uma identidade e foi otário no passado? Ele pode deixar de ser otário?
@@ -368,6 +371,8 @@
 		\item Não possuem identidade;
 		\item São geralmente imutáveis;
 		\item Podem ser compartilhados via referência em memória (Flyweight Pattern);
+		\item Guardam estado;
+		\item Devem fazer parte da linguagem ubíqua;
 	\end{itemize}
 
 	Salvando o histórico de edições de uma entidade. É importante distinguir cada alteração entre sí, ou somente é interessante saber a última alteração ou todo o histórico?
@@ -381,11 +386,50 @@
 \end{frame}
 
 \begin{frame}{Serviços}	
-	...
+	\begin{itemize}	
+		\item Definem ações/comportamentos;
+		\item Comportamentos que não fazem sentido estarem dentro de Entidades/Objetos de Valor;
+		\item Não guardam estado;
+		\item Devem fazer parte da linguagem ubíqua;
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Tipos de serviços}	
+	\begin{multicols}{2}		
+		\begin{itemize}	
+			\item Serviço de Domínio:
+			\begin{itemize}	
+				\item Verbos ligados diretamente a operações do domínio;
+				\item Devem ser declarados na camada de domínio;
+				\item Ex: ChargebackFraudClassifier, CardStatusUpdater e etc; 
+			\end{itemize}
+		\end{itemize}
+		\begin{itemize}	
+			\item Outros Serviços:
+			\begin{itemize}	
+				\item Qualquer serviço não ligado diretamente ao domínio;
+				\item Não podem ser declarados na camada de domínio;
+				\item Ex: InvalidCardEmailNotifier, TransactionRetryer e etc;
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Somente serviços podem possuir comportamento?}	
+	\begin{itemize}	
+		\item Entidades e objetos de valores podem possuir comportamento;
+		\item A separação total entre classes de comportamento e de estado faz com que o código se torne procedural;
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Módulos}	
-	...
+	\begin{itemize}	
+		\item Uma maneira de agrupar conceitos dentro do domínio;
+		\item Usado para aumentar coesão e diminuir acoplamento;
+		\item Coesão comunicativa x Coesão funcional;
+	\end{itemize}
+
+	Os serviços relacionados diretamente as transações devem estar no mesmo módulo que os serviços relacionados aos chargebacks?
 \end{frame}
 
 \begin{frame}{Agregados}	
