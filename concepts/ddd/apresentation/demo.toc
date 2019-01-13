@@ -2,5 +2,4 @@
 \beamer@sectionintoc {2}{Linguagem Ub\IeC {\'\i }qua}{17}{0}{2}
 \beamer@sectionintoc {3}{Padr\IeC {\~o}es Arquiteturais}{26}{0}{3}
 \beamer@sectionintoc {4}{Blocos de Constru\IeC {\c c}\IeC {\~a}o}{36}{0}{4}
-\beamer@sectionintoc {5}{Ciclo de Vida de um Objeto de Dom\IeC {\'\i }nio}{42}{0}{5}
-\beamer@sectionintoc {6}{Refer\IeC {\^e}ncias}{47}{0}{6}
+\beamer@sectionintoc {5}{Refer\IeC {\^e}ncias}{45}{0}{5}
