@@ -35,12 +35,13 @@
 
 \lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}}
 
-
 \title{Domain-Driven Design: Parte I}
 \date{}
 \author{Johnathan Fercher}
 %\institute{Braspag}
 \titlegraphic{\hfill\includegraphics[height=1.1cm]{imgs/logo.png}}
+
+\newcommand{\ubiquitouslanguagesample}{Ex: Uma \textbf{pessoa} possui \textbf{cartões de créditos}. \textbf{Cartões de créditos} podem ser utilizados em \textbf{transações}. Quando uma \textbf{transação} é realizada com um \textbf{cartão de crédito} sem permissão, a mesma se caracteriza como \textbf{fraude}. Uma \textbf{fraude} pode acarretar em um \textbf{chargeback}. Quando um \textbf{chargeback} ocorre, o \textbf{cartão de crédito} vinculado aquela \textbf{transação} é cancelado.}
 
 \begin{document}
 \maketitle
@@ -70,7 +71,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{O que é DDD}	
+\begin{frame}{O que é DDD?}	
 	\begin{itemize}	
 		\item O que é um Domínio?
 		\item O que é um Modelo?
@@ -78,23 +79,23 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{O que é um Domínio}	
+\begin{frame}{O que é um Domínio?}	
 	\begin{itemize}	
 		\item Uma esfera de conhecimento;
 		\item Uma área de interesse ao qual um programa é criado para lidar;
 		\item Regras de negócio;
 	\end{itemize}
 
-	Ex: Uma \textbf{pessoa} possui \textbf{cartões de créditos}. \textbf{Cartões de créditos} podem ser utilizados em \textbf{transações}. Quando uma \textbf{transação} é realizada com um \textbf{cartão de crédito} sem permissão, a mesma se caracteriza como \textbf{fraude}. Uma \textbf{fraude} pode acarretar em um \textbf{chargeback}. Quando um \textbf{chargeback} ocorre, o \textbf{cartão de crédito} vinculado aquela \textbf{transação} é cancelado.
+	\ubiquitouslanguagesample
 \end{frame}
 
-\begin{frame}{O que é um Modelo}
+\begin{frame}{O que é um Modelo?}
 	\begin{itemize}	
 		\item Um sistema de abstrações que descreve os aspectos mais importantes de um domínio;
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{O que é um Modelo}	
+\begin{frame}{O que é um Modelo?}	
 	\begin{multicols}{2}		
 		\begin{itemize}	
 			\item \textbf{Pessoa}
@@ -135,7 +136,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}{O que é um Design}	
+\begin{frame}{O que é um Design?}	
 	\begin{itemize}	
 		\item Implementação do software;
 		\item Aspectos técnicos: performance, reusabilidade, segurança, tolerância a falhas, escalabilidade e etc;
@@ -143,14 +144,15 @@
 	Vamos armazenar as \textbf{transações} em um \textbf{Redis}. Vamos utilizar um \textbf{facade} que tente obter os valores no \textbf{cache}, caso não ache ele vai no \textbf{banco}. 
 \end{frame}
 
-\begin{frame}{O que é DDD}	
+\begin{frame}{O que é DDD?}	
 	\begin{itemize}	
-		\item Uma abordagem de desenvolvimento de software para sistemas complexos que busca ligar o design ao modelo.
+		\item Uma abordagem de desenvolvimento de software iterativo para sistemas complexos que busca ligar o design ao modelo.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Por que é importante ligar o design ao modelo?}	
 	\begin{itemize}	
+		\item Um software útil não pode ser desacoplado da realidade do domínio;
 		\item Um modelo construído somente visando as regras de negócio pode ser péssimo de se implementar e manter;
 		\item Um design construído somente visando aspectos técnicos pode não resolver o problema do domínio de forma satisfatória.
 	\end{itemize}
@@ -158,7 +160,7 @@
 
 \begin{frame}{O que é necessário para realizar essa ligação?}	
 	\begin{itemize}	
-		\item Os especialistas de domínio devem construir o modelo em conjunto com os desenvolvedores;
+		\item Os especialistas de domínio devem construir o modelo em conjunto com os desenvolvedores; (Planning)
 		\item Mudanças no modelo devem refletir no código e mudanças no código devem refletir no modelo. (Refactoring)
 		\item Especialistas de domínio e desenvolvedores devem utilizar a \textbf{linguagem ubíqua}.
 	\end{itemize}
@@ -171,12 +173,86 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{Ligação de DDD com Desenvolvimento Ágil}	
+	\begin{center}
+		\includegraphics[width=11cm]{imgs/agile-waterfall}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Devo ou não devo usar DDD?}	
+	\begin{multicols}{2}		
+		\begin{itemize}	
+			\item Usar uma biblioteca de IA para aprender e gerar um artefato;
+			\item Escrever o controle embarcado de um robô;
+			\item Escrever um \textit{console application} para tratar algo pontual;
+			\item Coisas simples; 
+		\end{itemize}
+		\begin{itemize}	
+			\item Construir uma API de OAuth;
+			\item Construir um sistema de pagamentos;
+			\item Criar um jogo;
+			\item Qualquer coisa complexa, onde o domínio precisa ser muito bem compreendido;
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{O que custa mais caro?}	
+	\begin{multicols}{2}		
+		\begin{itemize}	
+			\item Errar uma abstração de um modelo.
+			\begin{itemize}	
+				\item Ex: A tabela X deveria ser na verdade duas tabelas. E essas tabelas possuem casos de uso e responsabilidades totalmente diferentes.
+			\end{itemize}
+		\end{itemize}
+		\begin{itemize}	
+			\item Errar a implementação de um aspecto de um modelo.
+			\begin{itemize}	
+				\item Ex: Não contava que teriamos que paralelizar esse processamento, não vai ser possível usar um \textbf{decorator}. Podemos utilizar um \textbf{composite}.
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
 \section{Linguagem Ubíqua}
-\begin{frame}{Linguagem Ubíqua, Linguagem Onipresente ou Ubiquitous Language}	
+\begin{frame}{Linguagem Ubíqua ou Linguagem Onipresente}	
 	\begin{itemize}	
-		\item ...
+		\item Formas de expressar um modelo: diagramas, casos de uso, desenhos e etc;
+		\item Tudo isso precisa ser atualizado constantemente;
+		\item A fala/escrita é usada de forma constante. Se algo soa errado, provavelmente está errado.
+		\item Por que não fazer a fala/escrita nossa representação do modelo?
 	\end{itemize}
 \end{frame}
+
+\begin{frame}{Linguagem Ubíqua ou Linguagem Onipresente}
+	Ex: Um \textbf{cartão de crédito} realiza uma \textbf{transação}. Uma \textbf{transação} pode ser uma \textbf{fraude}.
+\end{frame}
+
+\begin{frame}{Linguagem Ubíqua ou Linguagem Onipresente}
+	Ex: Um \textbf{cartão de crédito} realiza uma \textbf{transação}. Uma \textbf{transação} pode ser uma \textbf{fraude}. Um \textbf{chargeback} é uma \textbf{fraude}.
+\end{frame}
+
+\begin{frame}{Linguagem Ubíqua ou Linguagem Onipresente}
+	Ex: Um \textbf{cartão de crédito} realiza uma \textbf{transação}. Uma \textbf{transação} pode ser uma \textbf{fraude}. Um \textbf{chargeback} pode acarretar em uma \textbf{fraude}.
+\end{frame}
+
+\begin{frame}{Linguagem Ubíqua ou Linguagem Onipresente}
+	Ex: Uma \textbf{pessoa} possui \textbf{cartões de créditos}. \textbf{Cartões de créditos} podem ser utilizados em \textbf{transações}. Uma \textbf{transação} pode ser uma \textbf{fraude}. Um \textbf{chargeback} pode acarretar em uma \textbf{fraude}.
+\end{frame}
+
+\begin{frame}{Linguagem Ubíqua ou Linguagem Onipresente}
+	Ex: Uma \textbf{pessoa} possui \textbf{cartões de créditos}. \textbf{Cartões de créditos} podem ser utilizados em \textbf{transações}. Quando uma \textbf{transação} é realizada com um \textbf{cartão de crédito} sem permissão, a mesma se caracteriza como \textbf{fraude}. Um \textbf{chargeback} pode acarretar em uma \textbf{fraude}.
+\end{frame}
+
+\begin{frame}{Linguagem Ubíqua ou Linguagem Onipresente}
+	\ubiquitouslanguagesample
+\end{frame}
+
+\begin{frame}{Linguagem Ubíqua ou Linguagem Onipresente}	
+	\begin{center}
+		\includegraphics[width=11cm]{imgs/ubiquitous-language}
+	\end{center}
+\end{frame}
+
 
 \section{Padrões Arquiteturais}
 \begin{frame}{Arquitetura em Camadas (Clássica)}	
