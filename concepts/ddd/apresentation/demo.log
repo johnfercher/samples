@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.7)  13 JAN 2019 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.7)  13 JAN 2019 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1869,86 +1869,86 @@ Overfull \vbox (52.03873pt too high) detected at line 256
 
  <./imgs/ubiquitous-language.jpg>] [26
 
+] [27
+
+] [28
+
 ]
-<imgs/layered-architecture.jpg, id=194, 138.5175pt x 141.52875pt>
+<imgs/layered-architecture.jpg, id=204, 138.5175pt x 141.52875pt>
 File: imgs/layered-architecture.jpg Graphic file (type jpg)
 <use imgs/layered-architecture.jpg>
-Package pdftex.def Info: imgs/layered-architecture.jpg  used on input line 264.
+Package pdftex.def Info: imgs/layered-architecture.jpg  used on input line 280.
 
 (pdftex.def)             Requested size: 142.26378pt x 145.35727pt.
- [27
+ [29
 
  <./imgs/layered-architecture.jpg>]
 File: imgs/layered-architecture.jpg Graphic file (type jpg)
 <use imgs/layered-architecture.jpg>
-Package pdftex.def Info: imgs/layered-architecture.jpg  used on input line 278.
+Package pdftex.def Info: imgs/layered-architecture.jpg  used on input line 294.
 
 (pdftex.def)             Requested size: 142.26378pt x 145.35727pt.
- [28
+ [30
 
 ]
-<imgs/dip-layered-architecture.jpg, id=205, 132.495pt x 137.313pt>
+<imgs/dip-layered-architecture.jpg, id=215, 132.495pt x 137.313pt>
 File: imgs/dip-layered-architecture.jpg Graphic file (type jpg)
 <use imgs/dip-layered-architecture.jpg>
 Package pdftex.def Info: imgs/dip-layered-architecture.jpg  used on input line 
-284.
+300.
 (pdftex.def)             Requested size: 142.26378pt x 147.44725pt.
- [29
+ [31
 
  <./imgs/dip-layered-architecture.jpg>]
 File: imgs/dip-layered-architecture.jpg Graphic file (type jpg)
 <use imgs/dip-layered-architecture.jpg>
 Package pdftex.def Info: imgs/dip-layered-architecture.jpg  used on input line 
-296.
+312.
 (pdftex.def)             Requested size: 142.26378pt x 147.44725pt.
- [30
+ [32
 
 ]
-<imgs/onion-architecture.jpg, id=216, 179.4705pt x 163.812pt>
+<imgs/onion-architecture.jpg, id=227, 179.4705pt x 163.812pt>
 File: imgs/onion-architecture.jpg Graphic file (type jpg)
 <use imgs/onion-architecture.jpg>
-Package pdftex.def Info: imgs/onion-architecture.jpg  used on input line 302.
+Package pdftex.def Info: imgs/onion-architecture.jpg  used on input line 318.
 (pdftex.def)             Requested size: 170.71652pt x 155.82047pt.
- [31
+ [33
 
  <./imgs/onion-architecture.jpg>]
 File: imgs/onion-architecture.jpg Graphic file (type jpg)
 <use imgs/onion-architecture.jpg>
-Package pdftex.def Info: imgs/onion-architecture.jpg  used on input line 316.
+Package pdftex.def Info: imgs/onion-architecture.jpg  used on input line 332.
 (pdftex.def)             Requested size: 170.71652pt x 155.82047pt.
- [32
+ [34
 
 ]
-<imgs/hexagonal.jpg, id=228, 180.07275pt x 156.585pt>
+<imgs/hexagonal.jpg, id=238, 180.07275pt x 156.585pt>
 File: imgs/hexagonal.jpg Graphic file (type jpg)
 <use imgs/hexagonal.jpg>
-Package pdftex.def Info: imgs/hexagonal.jpg  used on input line 322.
+Package pdftex.def Info: imgs/hexagonal.jpg  used on input line 338.
 (pdftex.def)             Requested size: 170.71652pt x 148.45624pt.
- [33
+ [35
 
- <./imgs/hexagonal.jpg>] [34
+ <./imgs/hexagonal.jpg>] [36
 
-] [35
+] [37
 
-] [36
+] [38
 
 ]
-<imgs/building_blocks.png, id=249, 1242.6425pt x 906.38625pt>
+<imgs/building_blocks.png, id=260, 1242.6425pt x 906.38625pt>
 File: imgs/building_blocks.png Graphic file (type png)
 <use imgs/building_blocks.png>
-Package pdftex.def Info: imgs/building_blocks.png  used on input line 345.
+Package pdftex.def Info: imgs/building_blocks.png  used on input line 361.
 (pdftex.def)             Requested size: 298.75394pt x 217.91055pt.
 
-Overfull \vbox (35.20415pt too high) detected at line 345
+Overfull \vbox (35.20415pt too high) detected at line 361
  []
 
-[37
+[39
 
- <./imgs/building_blocks.png>] [38
-
-] [39
-
-] [40
+ <./imgs/building_blocks.png>] [40
 
 ] [41
 
@@ -1960,10 +1960,14 @@ Overfull \vbox (35.20415pt too high) detected at line 345
 
 ] [45
 
-]
-[46
+] [46
 
 ] [47
+
+]
+[48
+
+] [49
 
 ]
 \tf@nav=\write6
@@ -1975,11 +1979,11 @@ Overfull \vbox (35.20415pt too high) detected at line 345
 \tf@snm=\write8
 \openout8 = `demo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
  (./demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
 Package rerunfilecheck Info: File `demo.out' has not changed.
 (rerunfilecheck)             Checksum: 5750C9BFEF4BC79123FEBD941FA850B5;274.
 
@@ -1988,10 +1992,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 41867 strings out of 494830
- 957402 string characters out of 6178379
+ 41875 strings out of 494830
+ 957476 string characters out of 6178379
  1111950 words of memory out of 5000000
- 44386 multiletter control sequences out of 15000+600000
+ 44390 multiletter control sequences out of 15000+600000
  545698 words of font info for 56 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  71i,13n,98p,10417b,705s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2004,10 +2008,10 @@ k> </home/john/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600p
 k> </home/john/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600p
 k> </home/john/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on demo.pdf (47 pages, 427165 bytes).
+Output written on demo.pdf (49 pages, 429145 bytes).
 PDF statistics:
- 656 PDF objects out of 1000 (max. 8388607)
- 295 compressed objects within 3 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 104 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
