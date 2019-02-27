@@ -10,3 +10,8 @@ a.out
 *.VC.db
 node_modules/*
 *.pyc
+
+# JetBrains
+.idea
+.idea/
+.idea/*
