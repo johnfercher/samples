@@ -15,3 +15,6 @@ node_modules/*
 .idea
 .idea/
 .idea/*
+*/.idea
+*/.idea/
+*/.idea/*
