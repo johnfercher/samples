@@ -13,4 +13,7 @@ func main() {
 
 	fmt.Println(a)
 	fmt.Println(b)
+
+	a = int(b)
+	fmt.Println(a)
 }
