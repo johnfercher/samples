@@ -4,26 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"regexp"
-	"strconv"
 	"strings"
 )
-
-func add(a float64, b float64) float64 {
-	return a + b
-}
-
-func subtract(a float64, b float64) float64 {
-	return a - b
-}
-
-func multiply(a float64, b float64) float64 {
-	return a * b
-}
-
-func divide(a float64, b float64) float64 {
-	return a / b
-}
 
 func instructionsPrinter() {
 	fmt.Println("Friendly Calculador exit() to exit")
@@ -37,58 +19,40 @@ func printExiting() {
 func readStdin() string {
 	var reader = bufio.NewReader(os.Stdin)
 	text, _ := reader.ReadString('\n')
-	return text
+	return strings.TrimRight(text, "\n")
 }
 
 func isExit(input string) bool {
-	return strings.TrimRight(input, "\n") == "exit()"
-}
-
-func operationInterpreter(input string) func(float64, float64) float64 {
-	if strings.Contains(input, "+") {
-		return add
-	} else if strings.Contains(input, "-") {
-		return subtract
-	} else if strings.Contains(input, "*") {
-		return multiply
-	} else if strings.Contains(input, "/") {
-		return divide
-	}
-
-	return add
+	return input == "exit()"
 }
 
 func main() {
 	instructionsPrinter()
+	stdinNumbersInterpreter := StdinNumbersInterpreter{}
+	stdinOperationInterpreter := StdinOperationInterpreter{}
 
 	for {
 		input := readStdin()
-
-		operation := operationInterpreter(input)
-		numbers := numbersInterpreter(input)
-
-		fmt.Printf("%f\n", operation(numbers[0], numbers[1]))
 
 		if isExit(input) {
 			printExiting()
 			break
 		}
-	}
-}
 
-func numbersInterpreter(input string) []float64 {
-	numbers_string := regexp.MustCompile(`\s?[+\-*/]\s?`).Split(input, -1)
+		operation, err := stdinOperationInterpreter.interpret(input)
 
-	numbers := make([]float64, len(numbers_string))
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
 
-	for _, number_string := range numbers_string {
-		value, err := strconv.ParseFloat(number_string, 64)
+		numbers := stdinNumbersInterpreter.interpret(input)
+		result, err := operation(numbers[0], numbers[1])
 
-		if err == nil {
-			print(value)
-			numbers = append(numbers, value)
+		if err != nil {
+			fmt.Println(err)
+		} else {
+			fmt.Printf("%f\n", result)
 		}
 	}
-
-	return numbers
 }
